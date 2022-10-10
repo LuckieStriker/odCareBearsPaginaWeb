@@ -1,0 +1,26 @@
+{
+  "name": "odcarebearspaginaweb",
+  "version": "1.0.0",
+  "description": "install boostrap, npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riveraeduardo94/odCareBearsPaginaWeb.git"
+  },
+  "keywords": [
+    "ecomerce",
+    "odcarebears"
+  ],
+  "author": "Alfa buena maravilla onda dinamita  escuadron lobo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riveraeduardo94/odCareBearsPaginaWeb/issues"
+  },
+  "homepage": "https://github.com/riveraeduardo94/odCareBearsPaginaWeb#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}
