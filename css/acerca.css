@@ -1,0 +1,38 @@
+.imagen-circular{
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  background-color: black;
+}
+.imagen-circular img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.imagen-circular img:hover{
+  animation-duration: 1s;
+  animation-name: fadeout;
+  opacity: 0;
+}
+.imagen-circular img:not(:hover){
+  animation-duration: 1s;
+  animation-name: fadein;
+  opacity: 1;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
