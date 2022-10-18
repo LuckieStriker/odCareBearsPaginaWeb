@@ -22,45 +22,45 @@
           aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand odCare" href="#">odCareBears</a>
+        <a class="navbar-brand odCare ms-5" href="#">odCareBears</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01"><!--contenedor de hamburguesa-->
+          
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Categorías</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link">Nosotros</a>
             </li>
           </ul>
+          <form class="form"><!--Buscador-->
+            <button>
+                <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                    <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            <input class="input" placeholder="Buscar" required="" type="text">
+            <button class="reset" type="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </form>
+        </div><!--Termina el contenedor de hamburguesa-->
 
-          <form class="d-flex" role="search">
-            <div class="input-group mb-3">
-              <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
-                  <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
-                  <path
-                    d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z" />
-                </svg></span>
-              <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                <label for="floatingInputGroup1">Search</label>
-              </div>
-            </div>
-          </form>
-
-          <div class="d-flex">
-            <a href="google.com">
-              <img width="40" height="40" src="./assets/img/bear-svgrepo-com.svg" alt="Profile">
+        <div class="d-flex"><!--Logos de carrito y oso-->
+            <a class="p-1" href="google.com">
+              <img class="pb" width="40" height="40" src="./assets/img/bear-svgrepo-com.svg" alt="Profile">
             </a>
-            <a href="google.com">
+            <a class="pb" href="google.com">
               <img width="40" height="40" src="./assets/img/shopping-cart-svgrepo-com.svg" alt="Cart">
             </a>
           </div>
-        </div>
       </div>
+      
     </nav>
   </header>
   <main class="container-fluid">
@@ -93,9 +93,11 @@
         <a href="google.com"><img width="40" height="40" src="./assets/img/tiktok.svg" alt="Tiktok"></a>
         <a href="google.com"><img width="40" height="40" src="./assets/img/whatsapp.svg" alt="Whatsapp"></a>
       </div>
+      odCareBears 2022
     </div>
   </footer>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 
 </html
