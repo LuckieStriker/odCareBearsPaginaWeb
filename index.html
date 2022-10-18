@@ -1,55 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <title>odCareBears</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/custom_bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!--<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+  <title>odCareBears</title>
 </head>
+
 <body>
-    <header>
+  <header>
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">odCareBears</a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand odCare" href="#">odCareBears</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <div class="input-group mb-3">
+              <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+                  <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+                  <path
+                    d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z" />
+                </svg></span>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+                <label for="floatingInputGroup1">Search</label>
+              </div>
+            </div>
+          </form>
+
+          <div class="d-flex">
+            <a href="google.com">
+              <img width="40" height="40" src="./assets/img/bear-svgrepo-com.svg" alt="Profile">
+            </a>
+            <a href="google.com">
+              <img width="40" height="40" src="./assets/img/shopping-cart-svgrepo-com.svg" alt="Cart">
+            </a>
           </div>
         </div>
-      </nav>
-      </header>
-      <main class="container-fluid">
-      <h1>eComerce</h1>
-      
+      </div>
+    </nav>
+  </header>
+  <main class="container-fluid">
+    <h1>eComerce</h1>
 
 
 
-      </main>
-    <footer class="bd-footer py-4 py-md-5 mt-5 bg-light">
-        <div class="row">
-            <div class="col-md-6">Copyright 2022 ©️ BootStrap Tutorial</div>
-            <div class="col-md-6"> <a href="#">Términos y condiciones</a> |
-                <a href="#">Términos y condiciones</a>
-            </div>
-        </div>
-    </footer>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  </main>
+  <footer class="bd-footer bg-primary py-4 py-md-5 mt-5 bg-info">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <a class="navbar-brand odCare" href="#">odCareBears</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center my-2">
+        <a class="footer-link" href="#"> Contáctanos </a> |
+        <a class="footer-link" href="#"> Políticas de privacidad</a> |
+        <a class="footer-link" href="#"> Términos y condiciones</a> |
+        <a class="footer-link" href="#"> Facturación</a> |
+        <a class="footer-link" href="#"> Política de reembolso</a>
+      </div>
+    </div>
+    <div class="row my-2">
+      <div class="col-md-12 text-center ">
+        <a href="google.com"><img width="40" height="40" src="./assets/img/facebook-rosa.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/od_CareBears/"><img width="40" height="40" src="./assets/img/instagram.svg"
+            alt="Instagram"></a>
+        <a href="google.com"><img width="40" height="40" src="./assets/img/tiktok.svg" alt="Tiktok"></a>
+        <a href="google.com"><img width="40" height="40" src="./assets/img/whatsapp.svg" alt="Whatsapp"></a>
+      </div>
+    </div>
+  </footer>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+
+</html
