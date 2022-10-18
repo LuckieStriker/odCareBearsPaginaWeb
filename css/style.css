@@ -1,0 +1,27 @@
+
+
+.odCare{
+    font-family: 'Lily Script One', cursive;
+    font-size: 30px;
+    color: #F4B2B0;
+    -webkit-text-stroke-color: #f58682 ;
+    -webkit-text-stroke-width: 1px ;
+
+}
+
+.odCare:hover{
+    font-family: 'Lily Script One', cursive;
+    font-size: 30px;
+    color: #f58682;
+    -webkit-text-stroke-color: #F4B2B0 ;
+    -webkit-text-stroke-width: 1px ;
+
+}
+
+.footer-link{
+    color: #766C83;
+}
+
+.footer-link:hover{
+    color: #443b4f;
+}
