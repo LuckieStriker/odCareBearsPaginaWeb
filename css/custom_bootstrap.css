@@ -10771,5 +10771,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+HTML {
+  height: 100%;
+}
+
+BODY {
+  background: linear-gradient(135deg, #f3e9ff 1.2em, rgba(243, 233, 255, 0) 1.2em) 0 4em, linear-gradient(-135deg, #f3e9ff 1.2em, rgba(243, 233, 255, 0) 1.2em) 0 4em, radial-gradient(circle at 7.16em 7.4em, #f3e9ff 1.02em, rgba(243, 233, 255, 0) 1.044em) 0 -4em, radial-gradient(circle at 0.84em 7.4em, #f3e9ff 1.02em, rgba(243, 233, 255, 0) 1.044em) 0 -4em, linear-gradient(135deg, #ffe9e9 1.2em, rgba(255, 233, 233, 0) 1.2em) 4em 0, linear-gradient(-135deg, #ffe9e9 1.2em, rgba(255, 233, 233, 0) 1.2em) 4em 0, radial-gradient(circle at 7.16em 7.4em, #ffe9e9 1.02em, rgba(255, 233, 233, 0) 1.044em) 4em 0, radial-gradient(circle at 0.84em 7.4em, #ffe9e9 1.02em, rgba(255, 233, 233, 0) 1.044em) 4em 0;
+  background-size: 8em 8em;
+  background-color: #fcfcef;
+  background-repeat: repeat;
+}
 
 /*# sourceMappingURL=custom_bootstrap.css.map */
