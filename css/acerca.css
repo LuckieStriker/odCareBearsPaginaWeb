@@ -5,7 +5,7 @@ html{
 #descripcion{
   color: #766c86;
   height: 156px;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 /* Fuerza a que el container no cambie su tamaño */
 .first-content{
@@ -67,6 +67,9 @@ html{
 }
 
 @media screen and (width <= 420px) {
+  #descripcion{
+    overflow-y: scroll;
+  }
   .texto-encima{
     top: 380px;
   }
