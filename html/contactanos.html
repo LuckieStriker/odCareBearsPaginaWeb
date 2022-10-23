@@ -38,26 +38,32 @@
         <br />
         <div class="col">
             <!-- Formulario -->
-            <form class="row g-3" id="registro">
+            <form onsubmit="event.preventDefault(); validateForm()" id="form" class="contact-form row g-3" name="contact-form">
                 <div class="col-md-5">
                     <label for="inputname" class="form-label" id="labelname">Nombre:</label>
-                    <input type="text" class="form-control" id="inputname" placeholder="Alegrosita" required/>
+                    <input type="text" name="name"  class="form-control" id="name" placeholder="Alegrosita Feliz" />
+                    <small class="error"> </small>
                 </div>
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-5">
                     <label for="inputemail" class="form-label" id="labelemail">Email:</label>
-                    <input type="email" class="form-control" id="inputmail" placeholder="alegrosita@kawais.com" required/>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="alegrosita@kawais.com" />
+                    <small class="error"> </small>
                 </div>
                 <div class="col-md-5"><label for="inputphone" class="form-label" id="labelphone">Telefono:</label>
-                    <input type="text" class="form-control" id="inputphone"  placeholder="5525663234" required/>
+                    <input type="text" name="phone" class="form-control" id="phone"  placeholder="5525663234"/>
+                    <small class="error"> </small>
                 </div>
                 <div class="mb-5">
                     <label for="mensaje" class="form-label" id="mensaje">Mensaje:</label>
-                    <textarea class="form-control" id="txtmensaje"rows="3"  placeholder="Escribe tu mensaje aquí" required></textarea>
+                    <textarea name="message" class="form-control" id="message"rows="3" placeholder="Escribe tu mensaje aquí"> </textarea>
+                    <small class="error"> </small>
                 </div>
                 <div class="d-grid gap-2 col-4 mx-auto">
-                    <button type="submit" class="btn btn-primary" id="btnenviar"><img src="../assets/img/envio.png"> Enviar</button>
+                    <button type="submit" class="btn btn-primary" id="btnenviar"><img width="40" height="40" src="../assets/img/enviar.svg" 
+                        alt="Iconoenviar"> Enviar</button>
+                    
                 </div>
             </form>
             <br>
@@ -65,6 +71,7 @@
 
         </div>
     </div>
+    <script src="../js/contactanos.js"></script>
     <!--BootstrapJS-->
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
