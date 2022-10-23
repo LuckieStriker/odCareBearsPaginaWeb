@@ -1,3 +1,7 @@
+/* Fuerza que no aparezca el scroll horizontal */
+html{
+  overflow-x: hidden;
+}
 /* Elemento posterior a la imagen */
 .imagen-circular{
   height: 200px; /* Altura de la imagen y el contenedor debajo de esta */
