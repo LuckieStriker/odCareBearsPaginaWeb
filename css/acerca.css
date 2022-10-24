@@ -1,14 +1,38 @@
+/* Fuerza que no aparezca el scroll horizontal */
+html{
+  overflow-x: hidden;
+}
+#descripcion{
+  color: #766c86;
+  height: 156px;
+  overflow-y: hidden;
+}
+/* Fuerza a que el container no cambie su tamaño */
+.first-content{
+  height: 261px;
+}
 /* Elemento posterior a la imagen */
 .imagen-circular{
   height: 200px; /* Altura de la imagen y el contenedor debajo de esta */
   width: 200px; /* Ancho de la imagen y el contenedor debajo de esta */
-  background-color: black; /* Color del contenedor que esta debajo de la imagen */
+}
+.texto-circular{
+  background-color: #766c86; /* Color del contenedor que esta debajo de la imagen */
+  color: #f7f0d6; /* Color del texto */
+  height: 200px; /* Altura de la imagen y el contenedor debajo de esta */
+  width: 200px; /* Ancho de la imagen y el contenedor debajo de esta */
 }
 /* Imagen */
 .imagen-circular img{
+  opacity: 1;
   object-fit: cover; /* Evita que la imagen se distorsione */
   height: 100%; /* Adquiere la altura de su elemento padre */
   width: 100%; /* Adquiere el ancho de su elemento padre */
+}
+.texto-encima{
+  /* position: absolute; */
+  top: 332px;
+  width: 100%;
 }
 /* Pseudo clase del posicionamiento sobre la imagen */
 .imagen-circular img:hover{
@@ -39,5 +63,20 @@
   }
   to {
     opacity: 1; /* Visible */
+  }
+}
+
+@media screen and (width <= 420px) {
+  #descripcion{
+    overflow-y: scroll;
+  }
+  .texto-encima{
+    top: 380px;
+  }
+}
+
+@media screen and (width <= 332px) {
+  .texto-encima{
+    top: 420px;
   }
 }
