@@ -1,4 +1,9 @@
-
+h1{
+  font-family: 'Lily Script One', cursive;
+  color: #F4B2B0;
+    -webkit-text-stroke-color: #f58682 ;
+    -webkit-text-stroke-width: 1px ;
+}
 
 .odCare{
     font-family: 'Lily Script One', cursive;

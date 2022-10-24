@@ -2,7 +2,7 @@ body{
     width: 100;
     height: 100vh;
     background-image: url(https://img.freepik.com/free-vector/light-pink-heart-pattern_53876-67660.jpg?t=st=1664928571~exp=1664929171~hmac=bd180fed064026ede9400e641dca594dcb0c12c883d3f5ae2aeeb73c9caa0e02);
-    background-size: cover;
+    background-repeat: repeat;
     background-position: center;
 }
 
