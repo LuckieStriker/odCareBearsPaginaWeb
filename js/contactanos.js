@@ -26,13 +26,13 @@ function validateForm(){
         }
 
         if(!phoneIsValid(phone.value)){
-                errorNodes[2].innerText  =  "El Telefono es invalido";
+                errorNodes[2].innerText  =  "El Telefono es invalido, debe tener un total de 10 caracteres";
                 phone.classList.add("error-border");
                 errorFlag = true;
         }
 
         if(!messageIsValid(message.value)){
-                errorNodes[3].innerText  =  "El mensaje es requerido y no debe de exceder los 255 caracteres";
+                errorNodes[3].innerText  =  "El mensaje es requerido";
                 message.classList.add("error-border");
                 errorFlag = true;
         }

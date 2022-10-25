@@ -87,24 +87,24 @@
             <form onsubmit="event.preventDefault(); validateForm()" id="form" class="contact-form row g-3" name="contact-form">
                 <div class="col-md-5">
                     <label for="inputname" class="form-label" id="labelname">Nombre:</label>
-                    <input type="text" name="name"  class="form-control" id="name" placeholder="Alegrosita Feliz" />
+                    <input type="text" name="name"  class="form-control" id="name" placeholder="Alegrosita Feliz" required/>
                     <small class="error"> </small>
                 </div>
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-5">
                     <label for="inputemail" class="form-label" id="labelemail">Email:</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="alegrosita@kawais.com" />
+                    <input type="email" name="email" class="form-control" id="email" placeholder="alegrosita@kawais.com"  required/>
                     <small class="error"> </small>
                 </div>
                 <div class="col-md-5"><label for="inputphone" class="form-label" id="labelphone">Telefono:</label>
-                    <input type="text" name="phone" class="form-control" id="phone"  placeholder="5525663234 "/>
+                    <input type="text" name="phone" class="form-control" id="phone"  placeholder="5525663234"  required/>
                     <small class="error"> </small>
                 </div>
 
                 <div class="mb-5">
                     <label for="mensaje" class="form-label" id="mensaje">Mensaje:</label>
-                    <textarea placeholder="Escribe tu mensaje aquí 🐻" class="form-control" name="message" id="message" rows="3"></textarea>
+                    <textarea placeholder="Escribe tu mensaje aquí 🐻" class="form-control" name="message" id="message" rows="3" required></textarea>
                     <small class="error"> </small> 
                 </div>
 
