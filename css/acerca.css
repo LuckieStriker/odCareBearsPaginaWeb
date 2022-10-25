@@ -13,10 +13,12 @@ html{
 }
 /* Elemento posterior a la imagen */
 .imagen-circular{
+  position: relative;
   height: 200px; /* Altura de la imagen y el contenedor debajo de esta */
   width: 200px; /* Ancho de la imagen y el contenedor debajo de esta */
 }
 .texto-circular{
+  position: relative;
   background-color: #766c86; /* Color del contenedor que esta debajo de la imagen */
   color: #f7f0d6; /* Color del texto */
   height: 200px; /* Altura de la imagen y el contenedor debajo de esta */
@@ -24,15 +26,13 @@ html{
 }
 /* Imagen */
 .imagen-circular img{
+  top: 0;
+  left: 0;
+  position: absolute;
   opacity: 1;
   object-fit: cover; /* Evita que la imagen se distorsione */
-  height: 100%; /* Adquiere la altura de su elemento padre */
-  width: 100%; /* Adquiere el ancho de su elemento padre */
-}
-.texto-encima{
-  /* position: absolute; */
-  top: 332px;
-  width: 100%;
+  height: 200px; /* Adquiere la altura de su elemento padre */
+  width: 200px; /* Adquiere el ancho de su elemento padre */
 }
 /* Pseudo clase del posicionamiento sobre la imagen */
 .imagen-circular img:hover{
@@ -69,14 +69,5 @@ html{
 @media screen and (width <= 420px) {
   #descripcion{
     overflow-y: scroll;
-  }
-  .texto-encima{
-    top: 380px;
-  }
-}
-
-@media screen and (width <= 332px) {
-  .texto-encima{
-    top: 420px;
   }
 }

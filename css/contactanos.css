@@ -8,7 +8,9 @@
     color: #F4B2B0; 
     -webkit-text-stroke-color:  #f58682; ;
     -webkit-text-stroke-width: 1px ;
+
 }
+
 
 /*Parrafos*/
 #bienvenida{
@@ -19,6 +21,7 @@
     text-align: center;
     color: rgba(29, 0, 66, 0.8);
 }
+
 #parrafo{
     font-family: 'Baloo 2';
     font-style: normal;
@@ -27,29 +30,17 @@
     text-align: justify;
     color: rgba(29, 0, 66, 0.8);
 }
+
 /* label Formularios */
-#labelname{
+.contact-form label {
     font-family: 'Baloo 2';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     color: #766C83;
 }
-#labelemail{
-    font-family: 'Baloo 2';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    color: #766C83;
-}
-#labelphone{
-    font-family: 'Baloo 2';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    color: #766C83;
-}
-#mensaje{
+#message{
+    background: #D9EFFA;
     font-family: 'Baloo 2';
     font-style: normal;
     font-weight: 400;
@@ -58,9 +49,7 @@
 }
 
 /* inputs Formularios */
-
-
-#inputname{
+.contact-form input{
     background: #D9EFFA;
     box-sizing: border-box;
     border: 1px solid #766C83;
@@ -71,38 +60,12 @@
     color: #766C83;
     flex: none;
     order: 1;
-    flex-grow: 0
+    flex-grow: 0;
+    margin-bottom: 5px;
 }
 
-#inputmail{
-    background: #D9EFFA;
-    box-sizing: border-box;
-    border: 1px solid #766C83;
-    border-radius: 15px;
-    font-family: 'Baloo 2';
-    font-style: normal;
-    font-size: 20px;
-    color: #766C83;
-    flex: none;
-    order: 1;
-    flex-grow: 0
-}
 
-#inputphone{
-    background: #D9EFFA;
-    box-sizing: border-box;
-    border: 1px solid #766C83;
-    border-radius: 15px;
-    font-family: 'Baloo 2';
-    font-style: normal;
-    font-size: 20px;
-    color: #766C83;
-    flex: none;
-    order: 1;
-    flex-grow: 0
-}
-
-#txtmensaje{
+#message{
 box-sizing: border-box;
 height: 200px;
 background: #D9EFFA;
@@ -115,15 +78,17 @@ color: #766C83;
 }
 /* Botones */
 #btnenviar{
+align-items: center;
 background: #F7F0D6;
 border: 1px solid #766C83;
 border-radius: 70px; 
-font-family: 'Baloo Bhaijaan 2';
+cursor: pointer;
 color: #766C83;
+font-family: 'Baloo Bhaijaan 2';
 font-size: 20px;
 justify-content: center;
-align-items: center;
-cursor: pointer;
+margin-top:-30px;
+
 transition: .3s;
 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
@@ -135,15 +100,18 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transform: translateY(-7px);
 }
 
+/*Nuevos cambios para validaciones*/
 
+.error{
+    color: red;
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-size: 18px;
 
+}
 
-
-
-
-
-
-
-
+.error-border {
+    border: 1px solid red;
+  }
 
 

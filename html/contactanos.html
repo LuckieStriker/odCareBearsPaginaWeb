@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--LOGO pestaña-->
-    <link rel="icon" type="image/x-icon" href="/assets/img/contáctanos.png" />
-    <!--CSS-->
-    <link rel="stylesheet" href="../css/contactanos.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/oso.ico"> 
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="../css/custom_bootstrap.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contactanos.css" />
+
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,9 +20,53 @@
 </head>
 <body>
     <!-- NAV BAR -->
-    <div class="navbar">
-
-    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand odCare ms-5" href="#">odCareBears</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01"><!--contenedor de hamburguesa-->
+                    
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categorías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Nosotros</a>
+                    </li>
+                    </ul>
+                    <form class="form"><!--Buscador-->
+                    <button>
+                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <input class="input" placeholder="Buscar" required="" type="text">
+                    <button class="reset" type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </form>
+                </div><!--Termina el contenedor de hamburguesa-->
+        
+                <div class="d-flex"><!--Logos de carrito y oso-->
+                    <a class="p-1" href="google.com">
+                        <img class="pb" width="40" height="40" src="../assets/img/bear-svgrepo-com.svg" alt="Profile">
+                    </a>
+                    <a class="pb" href="google.com">
+                        <img width="40" height="40" src="../assets/img/shopping-cart-svgrepo-com.svg" alt="Cart">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- Descripción -->
     <div class="container">
         <div class="row">
@@ -38,31 +84,70 @@
         <br />
         <div class="col">
             <!-- Formulario -->
-            <form class="row g-3" id="registro">
+            <form onsubmit="event.preventDefault(); validateForm()" id="form" class="contact-form row g-3" name="contact-form">
                 <div class="col-md-5">
                     <label for="inputname" class="form-label" id="labelname">Nombre:</label>
-                    <input type="text" class="form-control" id="inputname" placeholder="Alegrosita" required/>
+                    <input type="text" name="name"  class="form-control" id="name" placeholder="Alegrosita Feliz" required/>
+                    <small class="error"> </small>
                 </div>
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-5">
                     <label for="inputemail" class="form-label" id="labelemail">Email:</label>
-                    <input type="email" class="form-control" id="inputmail" placeholder="alegrosita@kawais.com" required/>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="alegrosita@kawais.com"  required/>
+                    <small class="error"> </small>
                 </div>
                 <div class="col-md-5"><label for="inputphone" class="form-label" id="labelphone">Telefono:</label>
-                    <input type="number" class="form-control" id="inputphone"  placeholder="5525663234" required/>
+                    <input type="text" name="phone" class="form-control" id="phone"  placeholder="5525663234"  required/>
+                    <small class="error"> </small>
                 </div>
+
                 <div class="mb-5">
                     <label for="mensaje" class="form-label" id="mensaje">Mensaje:</label>
-                    <textarea class="form-control" id="txtmensaje"rows="3"  placeholder="Escribe tu mensaje aquí" required></textarea>
+                    <textarea placeholder="Escribe tu mensaje aquí 🐻" class="form-control" name="message" id="message" rows="3" required></textarea>
+                    <small class="error"> </small> 
                 </div>
+
                 <div class="d-grid gap-2 col-4 mx-auto">
-                    <button type="submit" class="btn btn-primary" id="btnenviar">Enviar</button>
+                    <button type="submit" class="btn btn-primary" id="btnenviar"><img width="40" height="40" src="../assets/img/enviar.svg" 
+                        alt="Iconoenviar"> Enviar</button>
+                    
                 </div>
             </form>
+            <br>
         </div>
     </div>
+
+    <footer class="bd-footer bg-primary py-4 py-md-5 mt-5 bg-info">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <a class="navbar-brand odCare" href="#">odCareBears</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center my-2">
+            <a class="footer-link" href="#"> Contáctanos </a> |
+            <a class="footer-link" href="#"> Políticas de privacidad</a> |
+            <a class="footer-link" href="#"> Términos y condiciones</a> |
+            <a class="footer-link" href="#"> Facturación</a> |
+            <a class="footer-link" href="#"> Política de reembolso</a>
+          </div>
+        </div>
+        <div class="row my-2">
+          <div class="col-md-12 text-center ">
+            <a href="google.com"><img width="40" height="40" src="../assets/img/facebook-rosa.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/od_CareBears/"><img width="40" height="40" src="../assets/img/instagram.svg"
+                alt="Instagram"></a>
+            <a href="google.com"><img width="40" height="40" src="../assets/img/tiktok.svg" alt="Tiktok"></a>
+            <a href="google.com"><img width="40" height="40" src="../assets/img/whatsapp.svg" alt="Whatsapp"></a>
+          </div>
+          odCareBears 2022
+        </div>
+      </footer>
+
+    <script src="../js/contactanos.js"></script>
     <!--BootstrapJS-->
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
