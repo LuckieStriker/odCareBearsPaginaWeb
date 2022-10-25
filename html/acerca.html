@@ -6,88 +6,261 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Titulo de la pagina -->
   <title>Acerca de Nosotros</title>
+  <!--Estilos del nav y footer-->
+  <link rel="stylesheet" href="../css/custom_bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
   <!-- Uso de bootstrap CSS -->
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">-->
   <!-- Uso de CSS -->
   <link rel="stylesheet" href="../css/acerca.css">
 </head>
 <body>
   <!-- Parte del header navbar -->
-  <header></header>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand odCare ms-5" href="../index.html">odCareBears</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01"><!--contenedor de hamburguesa-->
+          
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categorías</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Nosotros</a>
+            </li>
+          </ul>
+          <form class="form"><!--Buscador-->
+            <button>
+                <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                    <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            <input class="input" placeholder="Buscar" required="" type="text">
+            <button class="reset" type="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </form>
+        </div><!--Termina el contenedor de hamburguesa-->
+
+        <div class="d-flex"><!--Logos de carrito y oso-->
+            <a class="p-1" href="google.com">
+              <img class="pb" width="40" height="40" src="../assets/img/bear-svgrepo-com.svg" alt="Profile">
+            </a>
+            <a class="pb" href="google.com">
+              <img width="40" height="40" src="../assets/img/shopping-cart-svgrepo-com.svg" alt="Cart">
+            </a>
+          </div>
+      </div>
+      
+    </nav>
+  </header>
   <!-- Contenido de la pagina -->
   <main class="container-fliud">
     <!-- Seccion del titulo y un texto descriptivo -->
-    <section>
+    <section class="container first-content pt-5">
       <!-- Encabezado -->
-      <h1>Team</h1>
+      <h1 class="text-center">Team</h1>
       <!-- Parrafo con la descripcion -->
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At neque, accusantium quos perferendis ducimus similique aspernatur praesentium eaque corrupti voluptates, sed officia. Fuga quaerat blanditiis in esse quos molestiae deserunt.</p>
+      <p id="descripcion" class="container border-0 text-center">
+        Somos una empresa socialmente responsable, comprometida con sus usuarios, brindando una experiencia única y eficiente de compra y venta, dignificando el trabajo a través de la automatización de procesos.
+      </p>
     </section>
     <!-- Seccion de imagenes con nombres de los integrantes -->
     <section class="text-center">
       <!-- Primer fila -->
-      <div class="row border-danger">
+      <div class="row" alt="Clarisa">
         <!-- Contenedor de una imagen -->
-        <div class="col-3">
-          <!-- Parte posterior de la imagen (la oscura) -->
-          <div class="imagen-circular rounded-circle">
-            <!-- Imagen -->
-            <img src="https://picsum.photos/200/300" class="rounded-circle">
+        <div class="col-12 col-md-4 px-0 py-3">
+          <!-- Fila para centrar contenido -->
+          <div class="row justify-content-center">
+            <!-- Parte posterior de la imagen (la oscura) -->
+            <div class="imagen-circular rounded-circle p-0">
+              <!-- Detras de la imagen -->
+              <div class="col-12 col-md-4 align-text-bottom texto-circular rounded-circle text-center">
+                <div class="row align-content-center h-100">
+                  <div class="col-12">
+                    <strong>
+                      Clarisa<br>
+                    </strong>
+                      Developer<br>
+                      Ingeniera en Energías Renovables<br>
+                      Ama escribir código
+                  </div>
+                </div>
+              </div>
+              <!-- Imagen -->
+              <img src="../assets/img/avatarClari (1).png" class="img-fluid p-0 rounded-circle">
+            </div>
           </div>
         </div>
         <!-- Contenedor de una imagen -->
-        <div class="col-3">
-          <!-- Parte posterior de la imagen (la oscura) -->
-          <div class="imagen-circular rounded-circle">
-            <!-- Imagen -->
-            <img src="https://picsum.photos/200/300" class="rounded-circle">
+        <div class="col-12 col-md-4 px-0 py-3">
+          <!-- Fila para centrar contenido -->
+          <div class="row justify-content-center">
+            <!-- Parte posterior de la imagen (la oscura) -->
+            <div class="imagen-circular rounded-circle p-0">
+              <!-- Detras de la imagen -->
+              <div class="col-12 col-md-4 align-text-bottom texto-circular rounded-circle text-center">
+                <div class="row align-content-center h-100">
+                  <div class="col-12">
+                    <strong>
+                      Miguel<br>
+                    </strong>
+                    Developer<br>
+                    Full stack Java developer (Student)<br>
+                    Biomedical engineer<br>
+                    Clinical engineer
+                  </div>
+                </div>
+              </div>
+              <!-- Imagen -->
+              <img src="../assets/img/Phoenix-final.png" class="img-fluid p-0 rounded-circle">
+            </div>
           </div>
         </div>
         <!-- Contenedor de una imagen -->
-        <div class="col-3">
-          <!-- Parte posterior de la imagen (la oscura) -->
-          <div class="imagen-circular rounded-circle">
-            <!-- Imagen -->
-            <img src="https://picsum.photos/200/300" class="rounded-circle">
-          </div>
-        </div>
-        <!-- Contenedor de una imagen -->
-        <div class="col-3">
-          <!-- Parte posterior de la imagen (la oscura) -->
-          <div class="imagen-circular rounded-circle">
-            <!-- Imagen -->
-            <img src="https://picsum.photos/200/300" class="rounded-circle">
+        <div class="col-12 col-md-4 px-0 py-3" >
+          <!-- Fila para centrar contenido -->
+          <div class="row justify-content-center">
+            <!-- Parte posterior de la imagen (la oscura) -->
+            <div class="imagen-circular rounded-circle p-0">
+              <!-- Detras de la imagen -->
+              <div class="col-12 col-md-4 align-text-bottom texto-circular rounded-circle text-center">
+                <div class="row align-content-center h-100">
+                  <div class="col-12">
+                    <strong>
+                      Fernanda<br>
+                    </strong>
+                    Comediante<br>
+                    Full Stack Java developer (Student)<br>
+                    Bioquimica Diagnostica
+                  </div>
+                </div>
+              </div>
+              <!-- Imagen -->
+              <img src="../assets/img/avatarfer.png" class="img-fluid p-0 rounded-circle">
+            </div>
           </div>
         </div>
       </div>
       <!-- Segunda fila -->
-      <div class="row border">
+      <div class="row">
         <!-- Contenedor de una imagen -->
-        <div class="col-4">
-          <!-- Parte posterior de la imagen (la oscura) -->
-          <div class="imagen-circular rounded-circle">
-            <img src="https://picsum.photos/200/300" class="rounded-circle">
+        <div class="col-12 col-md-4 px-0 py-3">
+          <!-- Fila para centrar contenido -->
+          <div class="row justify-content-center">
+            <!-- Parte posterior de la imagen (la oscura) -->
+            <div class="imagen-circular rounded-circle p-0">
+              <!-- Detras de la imagen -->
+              <div class="col-12 col-md-4 align-text-bottom texto-circular rounded-circle text-center">
+                <div class="row align-content-center h-100">
+                  <div class="col-12">
+                    <strong>
+                      Abelardo<br>
+                    </strong>
+                    Developer<br>
+                    Full Stack Java Developer en formación<br>
+                    Ingeniero en Sistemas Computacionales
+                  </div>
+                </div>
+              </div>
+              <!-- Imagen -->
+              <img src="../assets/img/avatarAbe.png" class="img-fluid p-0 rounded-circle">
+            </div>
           </div>
         </div>
         <!-- Contenedor de una imagen -->
-        <div class="col-4">
-          <!-- Parte posterior de la imagen (la oscura) -->
-          <div class="imagen-circular rounded-circle">
-            <img src="https://picsum.photos/200/300" class="rounded-circle">
+        <div class="col-12 col-md-4 px-0 py-3">
+          <!-- Fila para centrar contenido -->
+          <div class="row justify-content-center">
+            <!-- Parte posterior de la imagen (la oscura) -->
+            <div class="imagen-circular rounded-circle p-0">
+              <!-- Detras de la imagen -->
+              <div class="col-12 col-md-4 align-text-bottom texto-circular rounded-circle text-center">
+                <div class="row align-content-center h-100">
+                  <div class="col-12">
+                    <strong>
+                      Audrey<br>
+                    </strong>
+                    Developer<br>
+                    Full Stack Java Developer en formación<br>
+                    Ingeniera industrial
+                  </div>
+                </div>
+              </div>
+              <!-- Imagen -->
+              <img src="../assets/img/avatarAud.png" class="img-fluid p-0 rounded-circle">
+            </div>
           </div>
         </div>
         <!-- Contenedor de una imagen -->
-        <div class="col-4">
-          <!-- Parte posterior de la imagen (la oscura) -->
-          <div class="imagen-circular rounded-circle">
-            <img src="https://picsum.photos/200/300" class="rounded-circle">
+        <div class="col-12 col-md-4 px-0 py-3">
+          <!-- Fila para centrar contenido -->
+          <div class="row justify-content-center">
+            <!-- Parte posterior de la imagen (la oscura) -->
+            <div class="imagen-circular rounded-circle p-0">
+              <!-- Detras de la imagen -->
+            <div class="col-12 col-md-4 align-text-bottom texto-circular rounded-circle text-center">
+              <div class="row align-content-center h-100">
+                <div class="col-12">
+                  <strong>
+                    Vivanco<br>
+                  </strong>
+                  Developer<br>
+                  Full stack Java developer (Student)<br>
+                  Ilustrador digital
+                </div>
+              </div>
+            </div>
+            <!-- Imagen -->
+              <img src="../assets/img/avatarviv.png" class="img-fluid p-0 rounded-circle">
+            </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
   <!-- Parte del footer -->
-  <footer></footer>
+  <footer class="bd-footer bg-primary py-4 py-md-5 mt-5 bg-info">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <a class="navbar-brand odCare" href="#">odCareBears</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center my-2">
+        <a class="footer-link" href="./contactanos.html"> Contáctanos </a> |
+        <a class="footer-link" href="#"> Políticas de privacidad</a> |
+        <a class="footer-link" href="#"> Términos y condiciones</a> |
+        <a class="footer-link" href="#"> Facturación</a> |
+        <a class="footer-link" href="#"> Política de reembolso</a>
+      </div>
+    </div>
+    <div class="row my-2">
+      <div class="col-md-12 text-center ">
+        <a href="google.com"><img width="40" height="40" src="../assets/img/facebook-rosa.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/od_CareBears/"><img width="40" height="40" src="../assets/img/instagram.svg"
+            alt="Instagram"></a>
+        <a href="google.com"><img width="40" height="40" src="../assets/img/tiktok.svg" alt="Tiktok"></a>
+        <a href="google.com"><img width="40" height="40" src="../assets/img/whatsapp.svg" alt="Whatsapp"></a>
+      </div>
+      odCareBears 2022
+    </div>
+  </footer>
   <!-- Uso de bootstrap JS -->
   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
