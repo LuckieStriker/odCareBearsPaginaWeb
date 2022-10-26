@@ -39,8 +39,8 @@ function validateForm(){
 
         
         if (!errorFlag) {
-        //Enviar emails
-  
+        alert("Correo enviado");
+
                 
                 
         }
