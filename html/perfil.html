@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Estilos bootstrap-->
+    <link rel="stylesheet" href="../css/custom_bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Letras estilos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
     <title>Mi perfil</title>
 </head>
+
 <body>
-    <h1>En construcción</h1>
+    <!--Nav bar-->
+
+    <h1 class="text-center my-3">Mi cuenta</h1>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div id="Datos usuario" class="col">
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample1" aria-expanded="false"
+                        aria-controls="collapseWidthExample">
+                        Tus Datos
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-vertical" id="collapseWidthExample1">
+                        <div class="card card-body" style="width: 300px;">
+                            This is some placeholder content for a horizontal collapse. It's hidden by default and
+                            shown when triggered.
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample" aria-expanded="false"
+                        aria-controls="collapseWidthExample">
+                        Tus Direcciones
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-vertical" id="collapseWidthExample">
+                        <div class="card card-body" style="width: 300px;">
+                            This is some placeholder content for a horizontal collapse. It's hidden by default and
+                            shown when triggered.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Historial" class="col">
+                <div class="card" style="width: 50rem;">
+                    <div class="card-header">
+                        <div class="text-center">
+                      Historial de Compras
+                    </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
+                    </div>
+            </div>
+        </div>
+        </section>
+
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
