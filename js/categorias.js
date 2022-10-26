@@ -53,27 +53,21 @@ const products=[
         "categoria":"kawaii",
         "nombre":"Kawaii",
         "productos":[
-            {
-               ...
-            },
+            
         ]
     },
     {
         "categoria":"ceramica",
         "nombre":"Cerámica",
         "productos":[
-            {
-               ...
-            },
+            
         ]
     },
     {
         "categoria":"otros",
-        "nombre":"Variedad",
+        "nombre":"Otros",
         "productos":[
-            {
-               ...
-            },
+            
         ]
     } 
 ]
@@ -88,7 +82,7 @@ function getParameterByName(name, url = window.location.href) {
 }
 
 function getCategoria(categoriaPath){
-    let categoria=null;
+    let categoria = null;
     products.forEach(element=>{
         if(element.categoria===categoriaPath){
             categoria= element;
