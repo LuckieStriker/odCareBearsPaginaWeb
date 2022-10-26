@@ -64,6 +64,7 @@ form.addEventListener("submit", (e) => {
 
         if (isFormValid) {
                 alert("Mensaje enviado");
+              
         }
 });
 
