@@ -61,12 +61,48 @@ const products = [
         "nombre": "Cerámica",
         "productos": [
 
+            {
+                "categoria": "ceramica",
+                "nombre": "Alajero",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "Alajero.jpg"
+            },
+            {
+                "categoria": "ceramica",
+                "nombre": "Cajita pastel",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "CajitaPastel.jpg"
+            },
+            {
+                "categoria": "ceramica",
+                "nombre": "Plato largo",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "PlatoLargo.jpg"
+            },
+            {
+                "categoria": "ceramica",
+                "nombre": "Taza",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "Taza.jpg"
+            },
+
         ]
     },
     {
         "categoria": "otros",
         "nombre": "Otros",
         "productos": [
+            {
+                "categoria": "otros",
+                "nombre": "Pintura",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "Pintura1.jpg"
+            },
 
         ]
     }
