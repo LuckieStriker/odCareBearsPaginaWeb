@@ -35,7 +35,6 @@ const isValidMesagge = (message) => {
 };
 
 
-
 let shouldValidate = false;
 let isFormValid = false;
 
@@ -57,10 +56,26 @@ const validateInputs = () => {
 };
 
 /**
+ * Funcion para enviar las alertas
+ */
+
+const showAlert = () =>{
+        Swal.fire({
+                icon: 'success',
+                title: 'Gracias por tus comentarios C:',
+                backdrop: true,
+                padding: '2rem',
+                background: '#D9EFFA',
+                confirmButtonText: 'Cerrar',
+                with: '50%'
+        });
+};
+
+
+/**
  * Funcion para enviar correo
  * 
 */
-
 function enviarEmail(){
         let params = {
                 name: document.getElementById("name").value,
@@ -68,11 +83,10 @@ function enviarEmail(){
                 phone: document.getElementById("phone").value,
                 message: document.getElementById("message").value,
         };
-        const servicioID = "service_0skg31p";
-const templateID = "template_i68cps5";
-
-emailjs.send(servicioID,templateID,params)
-.then(res =>{
+                const servicioID = "service_0skg31p";
+                const templateID = "template_i68cps5";
+                emailjs.send(servicioID,templateID,params)
+                .then(res =>{
                 document.getElementById("name").value = "";
                 document.getElementById("email").value = "";
                 document.getElementById("phone").value = "";
@@ -81,23 +95,7 @@ emailjs.send(servicioID,templateID,params)
 
         })
         .catch((err) =>console.log(err));
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+};
 
 
 //      Evento del boton
@@ -107,10 +105,8 @@ form.addEventListener("submit", (e) => {
         validateInputs();
 
         if (isFormValid) {
-                //Llamando la funcion para enviar el Email
                 enviarEmail();
-             
-
+                showAlert(); 
         }
 });
 

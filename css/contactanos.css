@@ -108,3 +108,11 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 .hide {
     opacity: 0;
 }
+
+.popup-class{
+    border-radius: 15px;
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-size: 20px;
+    color: #766C83;
+}
