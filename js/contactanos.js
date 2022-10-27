@@ -56,6 +56,50 @@ const validateInputs = () => {
         });
 };
 
+/**
+ * Funcion para enviar correo
+ * 
+*/
+
+function enviarEmail(){
+        let params = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                phone: document.getElementById("phone").value,
+                message: document.getElementById("message").value,
+        };
+        const servicioID = "service_0skg31p";
+const templateID = "template_i68cps5";
+
+emailjs.send(servicioID,templateID,params)
+.then(res =>{
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("phone").value = "";
+                document.getElementById("message").value = "";
+                console.log(res);
+
+        })
+        .catch((err) =>console.log(err));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //      Evento del boton
 form.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -63,8 +107,10 @@ form.addEventListener("submit", (e) => {
         validateInputs();
 
         if (isFormValid) {
-                alert("Mensaje enviado");
-              
+                //Llamando la funcion para enviar el Email
+                enviarEmail();
+             
+
         }
 });
 
