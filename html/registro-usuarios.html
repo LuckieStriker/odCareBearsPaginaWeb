@@ -11,6 +11,7 @@
         <!--CSS-->
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/registro-usuarios.css" />
+        
     
         <!--FONTS-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,58 +20,58 @@
         <title>Registro</title>
     </head>
 <body>
-    <!-- Container -->
-    <div class="container">
-        <div class="row">
-            <div class="col d-none d-md-block">
-            <!-- Imagen -->
-            <img src="../assets/img/osito-logo.png" class="img-fluid rounded" alt="Logo OdCareBears">
-        </div>
-        <div class="col">
-            <div class="row">
-                <div id="titulo">
-                    <h1 id="titulo-h1" class="text-center my-4">Crear una nueva cuenta</h1>
-                </div>
-            </div>
-            <!-- Formulario -->
-            <form  class="contact-form row g-3">
-                <div class="col-md-8">
-                    <label for="inputname" class="form-label" id="labelname">Nombre Completo</label>
-                    <input type="text" class="form-control" id="inputname" placeholder="Divertosito Feliz" />
-                </div>
 
-                <div class="col-md-8">
-                    <label for="inputemail" class="form-label" id="labelemail">Email</label>
-                    <input type="email" class="form-control" id="inputmail" placeholder="divertosito@kawais.com" />
-                </div>
 
-                <div class="col-md-8">
-                    <label for="inputphone" class="form-label" id="labelphone">Teléfono:</label>
-                    <input type="text" name="phone" class="form-control" id="phone"  placeholder="5525663234"  required/>
-                </div>
 
-                <div class="col-md-8">
-                    <label for="inputPassword" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="inputPassword" required>
+
+
+    
+
+    <div class="registro container-fluid">
+        <form class="contact-form">
+                <h2 id="titulo-h1">Crea tu cuenta</h1>
+
+                <div class="form-group">
+                    <label for="inputemail" class="form-label" id="labelemail">Correo Electrónico</label>
+                    <input type="email" class="form-control formulario" id="inputmail" name="email" placeholder="Correo electrónico" />
+                    <p class="msj-error" style="color: red;" id="errorEmail"></p>
+                </div>
+            
+                <div class="form-group">
+                    <div class="form-row row g-3">
+                        <div class="form-group col-md-6">
+                            <label for="inputname" class="form-label" id="labelemail">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo">
+                            <p class="msj-error" style="color: red;" id="errorNombre"></p>
+                        </div>   
+
+                        <div class="form-group col-md-6">
+                            <label for="inputPhone" class="form-label" id="labelphone">Teléfono</label>
+                            <input type="text" class="form-control"  id="phone" name="phone" placeholder="Teléfono">
+                            <p class="msj-error" style="color: red;" id="errorTelefono"></p>
+                        </div>
+                    </div>    
                 </div>
 
-                <div class="d-grid gap-sm-3  mx-auto">
-                    <button type="submit" class="btn btn-primary" id="btnregistro">Registrar</button>
-                    
+                <div class="form-group">
+                        <label for="inputcontraseña" class="form-label" id="labelcontraseña">Contraseña</label>
+                        <input type="password" class="form-control" id="password"  name="password" placeholder="Contraseña">
+                    <p class="msj-error" style="color: red;" id="errorPassword"></p>
                 </div>
 
-
-
-                <div>
-                    <p id="bienvenida">¿Ya tienes una cuenta? 🤔</p>
-                    <div class="d-grid gap-2 col-6">
-                        <button type="submit" class="btn-primary" id="btnlogin">Entra aquí</button>
-                    </div>
+                <div class="d-grid gap-2 col-4 mx-auto">
+                    <button type="submit" class="btn btn-primary" id="btnregistro">Registrar</button> 
                 </div>
 
-            </form>
-        </div>
-    </div>
+                <div class="text-center">
+                    <p><p id="parrafo"> ¿Ya tienes una cuenta? 🤔</p></p> 
+                    <a class="anclas" href="">Inicia sesión</a>
+                </div> 
+        </form>
+    </div>    
+
+
+
 
 
 
