@@ -352,3 +352,6 @@ MigrationBackup/
 
 #Storage folder MacOs
 .DS_Store
+
+#Imagenes
+assets/img/backgrounds/*
