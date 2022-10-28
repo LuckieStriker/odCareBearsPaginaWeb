@@ -32,15 +32,7 @@
 }
 
 /* label Formularios */
-.contact-form label {
-    font-family: 'Baloo 2';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    color: #766C83;
-}
-#message{
-    background: #D9EFFA;
+.contactForm label {
     font-family: 'Baloo 2';
     font-style: normal;
     font-weight: 400;
@@ -48,8 +40,22 @@
     color: #766C83;
 }
 
+#message{
+    background: #D9EFFA;
+    border: 1px solid #766C83;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #766C83;
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    height: 200px;
+}
+
 /* inputs Formularios */
-.contact-form input{
+.contactForm input{
     background: #D9EFFA;
     box-sizing: border-box;
     border: 1px solid #766C83;
@@ -65,17 +71,6 @@
 }
 
 
-#message{
-box-sizing: border-box;
-height: 200px;
-background: #D9EFFA;
-border: 1px solid #766C83;
-border-radius: 15px;
-font-family: 'Baloo 2';
-font-style: normal;
-font-size: 20px;
-color: #766C83;
-}
 /* Botones */
 #btnenviar{
 align-items: center;
@@ -110,8 +105,14 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 
 }
 
-.error-border {
-    border: 1px solid red;
-  }
+.hide {
+    opacity: 0;
+}
 
-
+.popup-class{
+    border-radius: 15px;
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-size: 20px;
+    color: #766C83;
+}
