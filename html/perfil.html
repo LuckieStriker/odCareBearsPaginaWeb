@@ -8,10 +8,15 @@
     <!--Estilos bootstrap-->
     <link rel="stylesheet" href="../css/custom_bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/perfil.css">
     <!--Letras estilos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <!--Fuente parrafo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
     <title>Mi perfil</title>
 </head>
 
@@ -19,60 +24,155 @@
     <!--Nav bar-->
 
     <h1 class="text-center my-3">Mi cuenta</h1>
-
-    <section class="container-fluid">
-        <div class="row">
-            <div id="Datos usuario" class="col">
-                <p>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseWidthExample1" aria-expanded="false"
-                        aria-controls="collapseWidthExample">
-                        Tus Datos
-                    </button>
-                </p>
-                <div style="min-height: 120px;">
-                    <div class="collapse collapse-vertical" id="collapseWidthExample1">
-                        <div class="card card-body" style="width: 300px;">
-                            This is some placeholder content for a horizontal collapse. It's hidden by default and
-                            shown when triggered.
-                        </div>
-                    </div>
-                </div>
-
-                <p>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseWidthExample" aria-expanded="false"
-                        aria-controls="collapseWidthExample">
-                        Tus Direcciones
-                    </button>
-                </p>
-                <div style="min-height: 120px;">
-                    <div class="collapse collapse-vertical" id="collapseWidthExample">
-                        <div class="card card-body" style="width: 300px;">
-                            This is some placeholder content for a horizontal collapse. It's hidden by default and
-                            shown when triggered.
-                        </div>
-                    </div>
-                </div>
+    <!--Inicio tarjeta principal-->
+    <div id="Historial" class="row width: auto; margin: auto auto">
+        <div class="card" style="width: 1040px;">
+            <!--Encabezado tarjeta principal-->
+            <div class="card-header">
+                <h4 class="text-center my-3">MIS DATOS</h4>
             </div>
-            <div id="Historial" class="col">
-                <div class="card" style="width: 50rem;">
-                    <div class="card-header">
-                        <div class="text-center">
-                      Historial de Compras
+
+            <section class="container-fluid">
+                <!--Aquí inician los inputs de datos-->
+                <div id="Datos usuario" class="col">
+                    <p>
+                        <button class="btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseWidthExample1" aria-expanded="false"
+                            aria-controls="collapseWidthExample">
+                            Datos Personales
+                        </button>
+                    </p>
+                    <div>
+                        <div class="collapse collapse-vertical" id="collapseWidthExample1">
+                            <div class="container">
+                                <div class="form-floating mb-3">
+                                    <div>Usuario:
+                                        <br>
+                                        <input placeholder="Alegrosita01" type="text" class="dato1" required="">
+                                    </div>
+                                    <div>Nombre completo:
+                                        <br>
+                                        <input placeholder="Clarisa Betancourt" type="text" class="dato1" required="">
+                                    </div>
+                                    <div>Email:
+                                        <br>
+                                        <input placeholder="clarisa@gmail.com" type="text" class="dato1" required="">
+                                    </div>
+                                    <div> Teléfono:
+                                        <br>
+                                        <input placeholder="2226547652" type="text" class="dato1" required="">
+                                    </div>
+                                </div>
+                                <button class="btn-guardar"> Guardar
+                                </button>
+                                
+                            </div>
+                        </div>
                     </div>
+                    <br>
+                    <p>
+                        <button class="btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseWidthExample" aria-expanded="false"
+                            aria-controls="collapseWidthExample">
+                            Tus Direcciones
+                        </button>
+                    </p>
+                    <div style="min-height: 30px;">
+                        <div class="collapse collapse-vertical" id="collapseWidthExample">
+                            <div class="container">
+                                <div>Estado:
+                                    <br>
+                                    <input placeholder="Estado de México" type="text" class="dato1" required="">
+                                </div>
+                                <div>Ciudad:
+                                    <br>
+                                    <input placeholder="Texcoco" type="text" class="dato1" required="">
+                                </div>
+                                <div>Colonia:
+                                    <br>
+                                    <input placeholder="Real de Guadalupe" type="text" class="dato1" required="">
+                                </div>
+                                <div> Calle:
+                                    <br>
+                                    <input placeholder="114 A Poniente" type="text" class="dato1" required="">
+                                </div>
+                                <div> Num.Ext/Int:
+                                    <br>
+                                    <input placeholder="201" type="text" class="dato1" required="">
+                                </div>
+                                <div> Cp:
+                                    <br>
+                                    <input placeholder="72022" type="text" class="dato1" required="">
+                                </div>
+                                <div class="col my-3">
+                                <button class="btn-guardar"> Guardar
+                                </button>
+                            </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
+
+                    <!--Aquí terminan los inputs de datos-->
+                    <br>
+                    <div class="text-center my-3">
+                        <h4>HISTORIAL DE COMPRAS</h4>
+                    </div>
+
+                    <div class="container">
+                        <form class="form">
+                            <!--Buscador-->
+                            <button>
+                                <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    aria-labelledby="search">
+                                    <path
+                                        d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                                        stroke="currentColor" stroke-width="1.333" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <input class="input" placeholder="Busca tu Compra" required="" type="text">
+                            <button class="reset" type="reset">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12">
+                                    </path>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+                <!--Lista de las compras del usuario-->
+                <div class="container">
+                    <ul>
+                        <br>
+                        <li class="list-inline">
+                            <img class="image" src="../assets/img/Ositos/Picsart_22-10-05_03-05-54-844.jpg">
+                            First checkbox
+                        </li>
+                        <br>
+                        <li class="list-inline">
+                            <img class="image" src="../assets/img/Ositos/Picsart_22-10-05_03-05-01-913.jpg">
+                            Second checkbox
+                        </li>
+                        <br>
+                        <li class="list-inline">
+                            <img class="image" src="../assets/img/Ositos/Picsart_22-10-05_20-18-28-504.jpg">
+                            Third checkbox
+                        </li>
+                        <br>
+                        <li class="list-inline">
+                            <img class="image" src="../assets/img/Ositos/Picsart_22-10-05_20-48-18-380.jpg">
+                            First checkbox
+                        </li>
                     </ul>
-                    </div>
-            </div>
+                </div>
+
         </div>
-        </section>
+    </div>
+    
+    </section>
 
 
 
