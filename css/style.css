@@ -6,22 +6,32 @@ h1{
 }
 
 .odCare{
-  font-family: 'Lily Script One', cursive;
-  font-size: 30px;
-  color: #F4B2B0;
-  -webkit-text-stroke-color: #f58682 ;
-  -webkit-text-stroke-width: 1px ;
-
+    /*font-family: 'Lily Script One', cursive;*/
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: #f58682;
+    -webkit-text-stroke-color: #f58682 ;
+    -webkit-text-stroke-width: 0px ;
 }
 
 .odCare:hover{
-  font-family: 'Lily Script One', cursive;
-  font-size: 30px;
-  color: #f58682;
-  -webkit-text-stroke-color: #F4B2B0 ;
-  -webkit-text-stroke-width: 1px ;
-
+    font-family: 'Lily Script One', cursive;
+    font-size: 30px;
+    color: #f58682;
+    -webkit-text-stroke-color: #F4B2B0 ;
+    -webkit-text-stroke-width: 1px ;
+    
 }
+
+.collapse.navbar-collapse{
+  /*font-family: 'Baloo 2';*/
+  font-family: 'Pacifico', cursive;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 35px;
+  color: rgba(77, 8, 168, 0.8);
+}
+
 
 .footer-link{
   color: #766C83;
