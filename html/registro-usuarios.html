@@ -11,8 +11,6 @@
         <!--CSS-->
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/registro-usuarios.css" />
-        
-    
         <!--FONTS-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,29 +31,29 @@
 
                 <div class="form-group">
                     <label for="inputemail" class="form-label" id="labelemail">Correo Electrónico</label>
-                    <input type="email" class="form-control formulario" id="inputmail" name="email" placeholder="Correo electrónico" />
-                    <p class="msj-error" style="color: red;" id="errorEmail"></p>
+                    <input type="email" class="form-control formulario" id="inputmail" name="email" placeholder="Correo electrónico" required />
+                    <p class="msj-error" id="errorEmail"></p>
                 </div>
             
                 <div class="form-group">
                     <div class="form-row row g-3">
                         <div class="form-group col-md-6">
                             <label for="inputname" class="form-label" id="labelemail">Nombre completo</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo">
-                            <p class="msj-error" style="color: red;" id="errorNombre"></p>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo" required />
+                            <p class="msj-error" id="errorNombre"></p>
                         </div>   
 
                         <div class="form-group col-md-6">
                             <label for="inputPhone" class="form-label" id="labelphone">Teléfono</label>
-                            <input type="text" class="form-control"  id="phone" name="phone" placeholder="Teléfono">
-                            <p class="msj-error" style="color: red;" id="errorTelefono"></p>
+                            <input type="text" class="form-control"  id="phone" name="telefono" placeholder="Teléfono" required />
+                            <p class="msj-error"  id="errorTelefono"></p>
                         </div>
                     </div>    
                 </div>
 
                 <div class="form-group">
                         <label for="inputcontraseña" class="form-label" id="labelcontraseña">Contraseña</label>
-                        <input type="password" class="form-control" id="password"  name="password" placeholder="Contraseña">
+                        <input type="password" class="form-control" id="password"  name="password" placeholder="Contraseña" required />
                     <p class="msj-error" style="color: red;" id="errorPassword"></p>
                 </div>
 
@@ -65,7 +63,7 @@
 
                 <div class="text-center">
                     <p><p id="parrafo"> ¿Ya tienes una cuenta? 🤔</p></p> 
-                    <a class="anclas" href="">Inicia sesión</a>
+                    <a class="anclas" href="./login.html ">Inicia sesión</a>
                 </div> 
         </form>
     </div>    
@@ -81,12 +79,10 @@
 
 
 
-
+    <script src="../js/registro.js"></script>
+    <!-- script de SweetAlert -->
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <!--BootstrapJS-->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous">
-    </script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>  

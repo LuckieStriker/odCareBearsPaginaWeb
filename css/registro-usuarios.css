@@ -72,6 +72,7 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transform: translateY(-7px);
 }
 
+/*elementos a*/
 .anclas{
     font-family: 'Baloo 2';
     font-style: normal;
@@ -86,7 +87,8 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 
 /*Nuevos cambios para validaciones*/
 
-.error{
+/*clase error*/
+.msj-error{
     color: red;
     font-family: 'Baloo 2';
     font-style: normal;
@@ -94,12 +96,12 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 
 }
 
-.error-border {
-    border: 1px solid red;
-  }
+.hide {
+    opacity: 0;
+}
 
 
-
+/* estilos formulario */
   .registro{
 	background-color:#F7F0D6;
 	width: 50%;
@@ -113,25 +115,6 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 	
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.formulario__grupo-correcto .formulario__validacion-estado{
-	color: green;
-}
-
-
 
 
 @media screen and (max-width: 768px) {
