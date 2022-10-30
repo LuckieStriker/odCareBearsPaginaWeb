@@ -1,18 +1,23 @@
-.product-small-img img{
-    width: 100%;
-    border: 1px solid rgba(0,0,0, 0.2);
-    padding: 8px;
-    margin: 10px 10px 15px;
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 32%;
     cursor: pointer;
 }
-.product-small-img{
-    width: 8%;
-    display: flex;
+.sproduct{
+    display: block;
+    padding: 5px 10px;
 }
-.img-container img{
-    height: 460px;
+
+.sproduct input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
 }
-.img-container{
-    padding: 10px;
-    width: 45%;
+.sproduct input:focus{
+    outline: none;
 }

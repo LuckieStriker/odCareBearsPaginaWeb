@@ -15,17 +15,33 @@
     <link rel="stylesheet" href="../css/detalles-producto.css">
 </head>
 <body>
-    <div class ="product" style="margin-left: 3em;">
-        <div class="img-container">
-            <img id="imageBox" src="../assets/img/osito-morado1.jpg" alt="">
+    <section class="container sproduct my-5 pt-5">
+        <div class="row mt-5"> 
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pb-2" src="../assets/img/osito-morado1.jpg" id="ImagenPrincipal" alt="">
+             <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="../assets/img/osito-morado1.jpg"  width="100% " class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../assets/img/osito-morado2.jpg"  width="100% " class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../assets/img/osito-morado3.jpg"  width="100% " class="small-img" alt="">
+                </div>
+             </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12">
+                <h6>Home / Osito</h6>
+                <h3 class="py-4">Osito Morado</h3>
+                <h2>$199.00 MNMX</h2 >
+                <input type="number" value="1">
+                <button class="bcomprar">Agregar al carrito </button>
+                <h4 class="mt-5 mb-5">Detalles del Producto</h4>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. In labore ipsum atque eum magnam dolorem vitae eveniet dolore, modi ipsam, quis doloribus neque quos molestiae laborum distinctio dignissimos. Sint, neque!</span>
+            </div>
         </div>
-        <div class="product-small-img">
-            <img src="../assets/img/osito-morado1.jpg" alt="" onclick="myFuntion(this)">
-            <img src="../assets/img/osito-morado2.jpg" alt="" onclick="myFuntion(this)">
-            <img src="../assets/img/osito-morado3.jpg" alt="" onclick="myFuntion(this)">
-
-        </div>
-    </div>         
+    </section>
     
 </body>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
