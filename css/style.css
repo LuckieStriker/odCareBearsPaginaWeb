@@ -15,8 +15,9 @@ h1{
 }
 
 .odCare:hover{
-    font-family: 'Lily Script One', cursive;
-    font-size: 30px;
+    /*font-family: 'Lily Script One', cursive;*/
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
     color: #f58682;
     -webkit-text-stroke-color: #F4B2B0 ;
     -webkit-text-stroke-width: 1px ;
@@ -31,7 +32,13 @@ h1{
   font-size: 35px;
   color: rgba(77, 8, 168, 0.8);
 }
+.navbar {
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
 
+  /* the rest of your styling */
+}
 
 .footer-link{
   color: #766C83;

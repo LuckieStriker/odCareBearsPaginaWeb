@@ -12,9 +12,15 @@
       href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <title>Carrito</title>
   </head>
   <body>
+      <!---Navbar --->
+  <div id="navigation"></div>
+  <script src="../js/nav.js"></script>
+<!---Navbar --->
     <main class="container-fluid">
       <page-title class="row justify-content-center my-3">
         <div class="col text-center">
@@ -46,25 +52,18 @@
               </div>
             </div>
           </div>
+          <div id="fila-1"></div>
           <!--- Carta con botón de pago-->
           <div class="card">
             <div class="row g-0">
               <div class="col-md-4 my-auto">
               </div>
               <div class="col-md-6 my-auto">
-<<<<<<< Updated upstream
-                <div class="card-body">
-                  <h5 class="card-title">Total:</h5>
-                  <p class="card-text">$3200.00 MXN</p>
-                </div>
-              </div>
-=======
                 
                   <h5>Total:</h5>
                   <p >$3200.00 MXN</p>
                 </div>
               
->>>>>>> Stashed changes
               <div class="col-md-2 text-center my-auto">
                 <a href="#" class="btn btn-success"> Pagar </a>
               </div>
@@ -80,20 +79,14 @@
                 </small>
                   </div>
             </div>
-<<<<<<< Updated upstream
-          </div>
-        </section>
-        <!--- Productos recomendados-->
-        <section class="col-3">
-=======
         
         </section>
         <!--- Productos recomendados-->
         <section class="col-sm-3">
->>>>>>> Stashed changes
+          <div class = "container-fluid">
           <div class="card">
             <div class="card-header">Promocionado</div>
-            <div class="card-body text-center">
+            <div class="card-body text-center" id ="1">
               <h5 class="card-title">¡No te vayas sin esto!</h5>
               <p class="card-text">
                 Perrito bonito, fácil de cuidar, ¡Te seguirá a todas partes!
@@ -103,13 +96,17 @@
                 class="img-fluid img-thumbnail w-75"
                 alt="Producto recomendado"
               />
-              <br />
-              <a href="#" class="btn btn-light my-3"> Agregar </a>
+              <br>
+              <h5> $300.00 MXN</h5>
+              <br>
+              <a href="#" class="btn btn-light my-3 add-cart"> Agregar </a>
             </div>
           </div>
+        </div>
         </section>
       </section>
     </main>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/carrito.js"></script>
   </body>
 </html>
