@@ -8,7 +8,7 @@ const products = [
                 "nombre": "Osos",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "Osos.jpg",
+                "imagen": "osos.jpg",
                 "id": 1
             },
             {
@@ -114,6 +114,14 @@ const products = [
                 "imagen": "Pintura1.jpg",
                 "id": 11
             },
+            {
+                "categoria": "otros",
+                "nombre": "Pintura",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "Pintura1.jpg",
+                "id": 12
+            }
 
         ]
     }
