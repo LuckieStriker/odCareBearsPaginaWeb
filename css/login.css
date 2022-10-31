@@ -1,3 +1,21 @@
+.login{
+    background-color:#F7F0D6;
+	width: 50%;
+	padding: 5% 5%;
+	border-radius: 30px;
+	text-align: center;
+	align-content: center;
+	margin-top: 5vh;
+	margin-bottom: 6vh;
+	height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario__grupo-correcto .formulario__validacion-estado{
+	color: green;
+}
+
 /* titulos */
 #titulo-h1{
     font-family: 'Lily Script One', cursive;
@@ -11,6 +29,14 @@
 }
 
 /*Parrafos*/
+#bienvenida{
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(29, 0, 66, 0.8);
+}
 
 #parrafo{
     font-family: 'Baloo 2';
@@ -22,7 +48,7 @@
 }
 
 /* label Formularios */
-.contact-form label {
+.login-form label {
     font-family: 'Baloo 2';
     font-style: normal;
     font-weight: 400;
@@ -32,7 +58,7 @@
 
 
 /* inputs Formularios */
-.contact-form input{
+.login-form input{
     background: #D9EFFA;
     box-sizing: border-box;
     border: 1px solid #766C83;
@@ -47,8 +73,9 @@
     margin-bottom: 5px;
 }
 
+
 /* Botones */
-#btnregistro{
+#btningresar{
 align-items: center;
 background: #F7F0D6;
 border: 1px solid #766C83;
@@ -63,7 +90,7 @@ transition: .3s;
 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-#btnregistro:hover{
+#btningresar:hover{
     background: #FCEBAB;
     box-shadow: 0px 15px 20px rgba(109, 209, 248, 0.4);
     color: #766C83;
@@ -78,6 +105,7 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     font-size: 20px;
     text-align: center;
     text-decoration: none;
+   
     color: #766C83;
 
 }
@@ -98,23 +126,10 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 
-/* estilos formulario */
-  .registro{
-	background-color:#F7F0D6;
-	width: 50%;
-	padding: 4% 3%;
-	border-radius: 30px;
-	text-align: center;
-	align-content: center;
-	margin-top: 5vh;
-	margin-bottom: 6vh;
-	height: 50%;
-
-}
 
 
 @media screen and (max-width: 768px) {
-		.registro{
+		.login{
 			width: 80%;
 		}
 	

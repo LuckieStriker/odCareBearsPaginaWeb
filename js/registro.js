@@ -16,71 +16,71 @@ const expresiones = {
 	password: /^.{4,12}$/
 };
 
-const statusInf = {
+const statusInfo = {
 	nombre: false,
 	email: false,
 	telefono: false,
 	password: false,
 };
 
-inputs.forEach((inp) => {
-	inp.addEventListener('keyup', (e) => {
+inputs.forEach((input) => {
+	input.addEventListener('keyup', (e) => {
 		switch (e.target.name) {
 			case 'email':
 				if (expresiones.email.test(e.target.value)) {
-					statusInf.email = true;
+					statusInfo.email = true;
 					emailError.textContent = '';
-					inp.classList.remove("border-danger");
-					inp.nextElementSibling.classList.add("hide");
+					input.classList.remove("border-danger");
+					input.nextElementSibling.classList.add("hide");
 
 				} else {
-					statusInf.email = false;
-					emailError.textContent = 'Correo electronico incorrecto';
-					inp.classList.add("border-danger");
-					inp.nextElementSibling.classList.remove("hide");
+					statusInfo.email = false;
+					emailError.textContent = 'Correo electrónico incorrecto';
+					input.classList.add("border-danger");
+					input.nextElementSibling.classList.remove("hide");
 				}
 				break;
 
 			case 'nombre':
 					if (expresiones.nombre.test(e.target.value)) {
-						statusInf.nombre = true;
+						statusInfo.nombre = true;
 						nombreError.textContent = '';
-						inp.classList.remove("border-danger");
-						inp.nextElementSibling.classList.add("hide");
+						input.classList.remove("border-danger");
+						input.nextElementSibling.classList.add("hide");
 					} else {
-						statusInf.nombre = false;
+						statusInfo.nombre = false;
 						nombreError.textContent = 'Nombre incorrecto';
-						inp.classList.add("border-danger");
-						inp.nextElementSibling.classList.remove("hide");
+						input.classList.add("border-danger");
+						input.nextElementSibling.classList.remove("hide");
 					}
 					break;
 
 			case "telefono":
 				if(expresiones.telefono.test(e.target.value)){
-					statusInf.telefono = true;
+					statusInfo.telefono = true;
 					telefonoError.textContent = "";
-					inp.classList.remove("border-danger");
-					inp.nextElementSibling.classList.add("hide");
+					input.classList.remove("border-danger");
+					input.nextElementSibling.classList.add("hide");
 				}
 				else{
-					statusInf.telefono = false 
-					telefonoError.textContent = "Telefono Incorrecto";
-					inp.classList.add("border-danger");
-					inp.nextElementSibling.classList.remove("hide");
+					statusInfo.telefono = false 
+					telefonoError.textContent = "Teléfono Incorrecto";
+					input.classList.add("border-danger");
+					input.nextElementSibling.classList.remove("hide");
 				}
 				break;
 				
 			case 'password':
 				if (expresiones.password.test(e.target.value)) {
-					statusInf.password = true;
+					statusInfo.password = true;
 					passwordError.textContent = '';
-					inp.classList.remove("border-danger");
-					inp.nextElementSibling.classList.add("hide");
+					input.classList.remove("border-danger");
+					input.nextElementSibling.classList.add("hide");
 				} else {
-					statusInf.password = false;
+					statusInfo.password = false;
 					passwordError.textContent = 'Contraseña incorrecta';
-					inp.classList.add("border-danger");
-					inp.nextElementSibling.classList.remove("hide");
+					input.classList.add("border-danger");
+					input.nextElementSibling.classList.remove("hide");
 				}
 				break;
 		}
@@ -89,21 +89,41 @@ inputs.forEach((inp) => {
 
 
 
+  /**
+ * Funcion para enviar las alertas
+ */
+
+const showAlert = () =>{
+	Swal.fire({
+		icon: 'error',
+		title: 'Vuelve a intentar',
+		text: '¡Los datos son incorrectos!',
+		backdrop: true,
+		padding: '2rem',
+		background: '#D9EFFA',
+		confirmButtonText: 'Cerrar',
+		with: '50%'
+	});
+};
 
 
-//Verificando las validacciones
+
+//Evento de botón
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
-	if (Object.values(statusInf).every((value) => value === true)) {
-		const formData = Object.fromEntries(new FormData(e.target));
+	if (Object.values(statusInfo).every((value) => value === true)) {
+		//Convirtiendo a Json la informacion del usuario
+		const formDatos = Object.fromEntries(new FormData(e.target));
 		formulario.reset();
-		console.log(formData);
+		//Imprimiendo el objeto json
+		console.log(formDatos);
 
 
-	console.log('Informacion correcta');
+	console.log('Informacion Guardada');
 	} else {
 		console.log('No enviado');
-		formulario.reset();
+		showAlert();
+		
 	}
 });
 
