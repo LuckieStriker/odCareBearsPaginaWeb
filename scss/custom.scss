@@ -7,6 +7,14 @@ $light: #F7F0D6;
 $info: #D9EFFA;
 $dark: #766C83;
 
+$navbar-light-color:                #766C83;
+$navbar-light-hover-color:          #766C83;
+$navbar-light-active-color:         #766C83;
+$dropdown-link-color:               #766C83;
+$dropdown-link-hover-color:         shade-color($dropdown-link-color, 10%);
+$dropdown-link-hover-bg:            #D9EFFA;
+$dropdown-bg:                       rgb(255,255,255,0.9);
+
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/bootstrap";
 
