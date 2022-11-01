@@ -1,7 +1,6 @@
 /* titulos */
 #titulo-h1{
-    /*font-family: 'Lily Script One', cursive;*/
-    font-family: 'Pacifico', cursive;
+    font-family: 'Lily Script One', cursive;
     font-style: normal;
     text-align: center;
     line-height: 80px;
@@ -9,12 +8,11 @@
     color: #F4B2B0; 
     -webkit-text-stroke-color:  #f58682; ;
     -webkit-text-stroke-width: 1px ;
-
 }
 
-
 /*Parrafos*/
-#bienvenida{
+
+#parrafo{
     font-family: 'Baloo 2';
     font-style: normal;
     font-weight: 400;
@@ -23,17 +21,8 @@
     color: rgba(29, 0, 66, 0.8);
 }
 
-#parrafo{
-    font-family: 'Baloo 2';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: justify;
-    color: rgba(29, 0, 66, 0.8);
-}
-
 /* label Formularios */
-.contactForm label {
+.contact-form label {
     font-family: 'Baloo 2';
     font-style: normal;
     font-weight: 400;
@@ -41,22 +30,9 @@
     color: #766C83;
 }
 
-#message{
-    background: #D9EFFA;
-    border: 1px solid #766C83;
-    border-radius: 15px;
-    box-sizing: border-box;
-    color: #766C83;
-    font-family: 'Baloo 2';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    font-style: normal;
-    height: 200px;
-}
 
 /* inputs Formularios */
-.contactForm input{
+.contact-form input{
     background: #D9EFFA;
     box-sizing: border-box;
     border: 1px solid #766C83;
@@ -71,9 +47,8 @@
     margin-bottom: 5px;
 }
 
-
 /* Botones */
-#btnenviar{
+#btnregistro{
 align-items: center;
 background: #F7F0D6;
 border: 1px solid #766C83;
@@ -83,22 +58,34 @@ color: #766C83;
 font-family: 'Baloo Bhaijaan 2';
 font-size: 20px;
 justify-content: center;
-margin-top:-30px;
-
+margin-top:10px;
 transition: .3s;
 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-#btnenviar:hover{
+#btnregistro:hover{
     background: #FCEBAB;
     box-shadow: 0px 15px 20px rgba(109, 209, 248, 0.4);
     color: #766C83;
     transform: translateY(-7px);
 }
 
+/*elementos a*/
+.anclas{
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #766C83;
+
+}
+
 /*Nuevos cambios para validaciones*/
 
-.error{
+/*clase error*/
+.msj-error{
     color: red;
     font-family: 'Baloo 2';
     font-style: normal;
@@ -110,10 +97,27 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     opacity: 0;
 }
 
-.popup-class{
-    border-radius: 15px;
-    font-family: 'Baloo 2';
-    font-style: normal;
-    font-size: 20px;
-    color: #766C83;
+
+/* estilos formulario */
+  .registro{
+	background-color:#F7F0D6;
+	width: 50%;
+	padding: 4% 3%;
+	border-radius: 30px;
+	text-align: center;
+	align-content: center;
+	margin-top: 5vh;
+	margin-bottom: 6vh;
+	height: 50%;
+
 }
+
+
+@media screen and (max-width: 768px) {
+		.registro{
+			width: 80%;
+		}
+	
+}
+
+

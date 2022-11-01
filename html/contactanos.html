@@ -41,43 +41,54 @@
         <br />
         <div class="col">
             <!-- Formulario -->
-            <form onsubmit="event.preventDefault(); validateForm()" id="form" class="contact-form row g-3" name="contact-form">
+            <form  id="form"  class="contactForm row g-3" name="contact-form">
                 <div class="col-md-5">
-                    <label for="inputname" class="form-label" id="labelname">Nombre:</label>
+                    <label for="inputname" class="form-label" id="labelname">Nombre</label>
                     <input type="text" name="name"  class="form-control" id="name" placeholder="Alegrosita Feliz" required/>
-                    <small class="error"> </small>
-                </div>
-                <div class="col-md-2">
-                </div>
-                <div class="col-md-5">
-                    <label for="inputemail" class="form-label" id="labelemail">Email:</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="alegrosita@kawais.com"  required/>
-                    <small class="error"> </small>
-                </div>
-                <div class="col-md-5"><label for="inputphone" class="form-label" id="labelphone">Telefono:</label>
-                    <input type="text" name="phone" class="form-control" id="phone"  placeholder="5525663234"  required/>
-                    <small class="error"> </small>
+                    <small class="error hide">El nombre es Invalido</small>
+                    <!-- <div class="error hide">El nombre es Invalido</div> -->
                 </div>
 
-                <div class="mb-5">
-                    <label for="mensaje" class="form-label" id="mensaje">Mensaje:</label>
-                    <textarea placeholder="Escribe tu mensaje aquí 🐻" class="form-control" name="message" id="message" rows="3" required></textarea>
-                    <small class="error"> </small> 
+                <div class="col-md-2">
                 </div>
+
+                <div class="col-md-5">
+                    <label for="inputemail" class="form-label" id="labelemail">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="alegrosita@kawais.com" required />
+                    <small class="error hide">El Email es invalido</small>
+                </div>
+
+                <div class="col-md-5">
+                    <label for="inputphone" class="form-label" id="labelphone">Telefono</label>
+                    <input type="text" name="phone" class="form-control" id="phone"  placeholder="5525663234"  required/>
+                    <small class="error hide">El Telefono es invalido, debe tener un total de 10 caracteres</small>
+                </div>
+
+                <div class= "mb-5">
+                    <label for="mensaje" class="form-label" id="mensaje">Mensaje</label>
+                    <textarea placeholder="Escribe tu mensaje aquí 🐻" class="form-control" name="message" id="message" rows="3" required></textarea>
+                    <small class="error hide">El mensaje es requerido</small>
+                </div>
+
 
                 <div class="d-grid gap-2 col-4 mx-auto">
                     <button type="submit" class="btn btn-primary" id="btnenviar"><img width="40" height="40" src="../assets/img/enviar.svg" 
-                        alt="Iconoenviar"> Enviar</button>
-                    
+                        alt="Iconoenviar"> Enviar</button> 
                 </div>
             </form>
             <br>
         </div>
+
     </div>
 
     <footer id ="footer"></footer>
 
     <script src="../js/contactanos.js"></script>
+    <!-- script de SweetAlert -->
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <!-- Script de la funcion para enviar el email -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">(function(){emailjs.init("OYa_pQ5a6y0KVomtq");})();</script>
     <!--BootstrapJS-->
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

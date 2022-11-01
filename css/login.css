@@ -1,7 +1,24 @@
+.login{
+    background-color:#F7F0D6;
+	width: 50%;
+	padding: 5% 5%;
+	border-radius: 30px;
+	text-align: center;
+	align-content: center;
+	margin-top: 5vh;
+	margin-bottom: 6vh;
+	height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario__grupo-correcto .formulario__validacion-estado{
+	color: green;
+}
+
 /* titulos */
 #titulo-h1{
-    /*font-family: 'Lily Script One', cursive;*/
-    font-family: 'Pacifico', cursive;
+    font-family: 'Lily Script One', cursive;
     font-style: normal;
     text-align: center;
     line-height: 80px;
@@ -9,9 +26,7 @@
     color: #F4B2B0; 
     -webkit-text-stroke-color:  #f58682; ;
     -webkit-text-stroke-width: 1px ;
-
 }
-
 
 /*Parrafos*/
 #bienvenida{
@@ -28,12 +43,12 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
     color: rgba(29, 0, 66, 0.8);
 }
 
 /* label Formularios */
-.contactForm label {
+.login-form label {
     font-family: 'Baloo 2';
     font-style: normal;
     font-weight: 400;
@@ -41,22 +56,9 @@
     color: #766C83;
 }
 
-#message{
-    background: #D9EFFA;
-    border: 1px solid #766C83;
-    border-radius: 15px;
-    box-sizing: border-box;
-    color: #766C83;
-    font-family: 'Baloo 2';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    font-style: normal;
-    height: 200px;
-}
 
 /* inputs Formularios */
-.contactForm input{
+.login-form input{
     background: #D9EFFA;
     box-sizing: border-box;
     border: 1px solid #766C83;
@@ -73,7 +75,7 @@
 
 
 /* Botones */
-#btnenviar{
+#btningresar{
 align-items: center;
 background: #F7F0D6;
 border: 1px solid #766C83;
@@ -83,22 +85,35 @@ color: #766C83;
 font-family: 'Baloo Bhaijaan 2';
 font-size: 20px;
 justify-content: center;
-margin-top:-30px;
-
+margin-top:10px;
 transition: .3s;
 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-#btnenviar:hover{
+#btningresar:hover{
     background: #FCEBAB;
     box-shadow: 0px 15px 20px rgba(109, 209, 248, 0.4);
     color: #766C83;
     transform: translateY(-7px);
 }
 
+/*elementos a*/
+.anclas{
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+   
+    color: #766C83;
+
+}
+
 /*Nuevos cambios para validaciones*/
 
-.error{
+/*clase error*/
+.msj-error{
     color: red;
     font-family: 'Baloo 2';
     font-style: normal;
@@ -110,10 +125,14 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     opacity: 0;
 }
 
-.popup-class{
-    border-radius: 15px;
-    font-family: 'Baloo 2';
-    font-style: normal;
-    font-size: 20px;
-    color: #766C83;
+
+
+
+@media screen and (max-width: 768px) {
+		.login{
+			width: 80%;
+		}
+	
 }
+
+
