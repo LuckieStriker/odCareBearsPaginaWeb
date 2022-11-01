@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./css/home.css">
   <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <title>odCareBears</title>
 </head>
 
@@ -71,6 +73,12 @@
   </header>
   <main class="container-fluid p-0">
     <!-- <h1>eComerce</h1> -->
+    <section class="position-absolute p-5 w-100 h-100">
+      <img src="./assets/img/chispa.svg" id="chispa1" alt="">
+      <img src="./assets/img/chispa.svg" id="chispa2" alt="">
+      <img src="./assets/img/chispa.svg" id="chispa3" alt="">
+      <img src="./assets/img/chispa.svg" id="chispa4" alt="">
+    </section>
     <!-- Presentacion -->
     <section class="container-fluid" id="presentacion">
       <div class="col-6 d-block h-100 align-content-center">
@@ -83,65 +91,78 @@
     </section>
     <!-- Inicio de categorias 272-->
     <h2>Categorias</h2>
-    <section class="container-fluid p-0 border border-danger categoria justify-content-center">
-      <div class="row border border-primary m-0 h-100 w-100 d-block justify-content-center">
-        <div class="col-categorias border border-secondary align-content-center h-100">
-          <a href="#" class="w-100">
-            <div class="card h-100" style="width: 18rem;" id="card-ositos">
-              <div class="card-body text-center h-100">
-                <h5 class="card-title">Ositos</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-categorias border border-secondary align-content-center h-100">
-          <a href="#" class="w-100">
-            <div class="card h-100" style="width: 18rem;" id="card-kawaii">
-              <div class="card-body text-center h-100">
-                <h5 class="card-title">Kawaii</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-categorias border border-secondary align-content-center h-100">
-          <a href="#" class="w-100">
-            <div class="card h-100" style="width: 18rem;" id="card-ceramica">
-              <div class="card-body text-center h-100">
-                <h5 class="card-title">Ceramica</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-categorias border border-secondary align-content-center h-100">
-          <a href="#" class="w-100">
-            <div class="card h-100" style="width: 18rem;" id="card-otros">
-              <div class="card-body text-center h-100">
-                <h5 class="card-title">Otros</h5>
-              </div>
-            </div>
-          </a>
+    <section class="container-fluid p-0 categoria justify-content-center">
+      <div class="row m-0 h-100 w-100">
+
+          <div class="col-3 col-categorias p-0 align-content-center h-100">
+            <nav class="justify-content-center text-center h-100">
+              <a href="#" class="w-100 h-100 d-inline-block p-0">
+                <div class="card d-inline-block h-100" style="width: 18rem;" id="card-ositos">
+                  <div class="card-body text-center h-100 d-grid align-content-center">
+                    <h5 class="card-title">Ositos</h5>
+                  </div>
+                </div>
+              </a>
+            </nav>
+          </div>
+
+          <div class="col-3 col-categorias p-0 align-content-center h-100">
+            <nav class="justify-content-center text-center h-100">
+              <a href="#" class="w-100 h-100 d-inline-block p-0">
+                <div class="card d-inline-block h-100" style="width: 18rem;" id="card-kawaii">
+                  <div class="card-body text-center h-100 d-grid align-content-center">
+                    <h5 class="card-title">Kawaii</h5>
+                  </div>
+                </div>
+              </a>
+            </nav>
+          </div>
+
+          <div class="col-3 col-categorias p-0 align-content-center h-100">
+            <nav class="justify-content-center text-center h-100">
+              <a href="#" class="w-100 h-100 d-inline-block p-0">
+                <div class="card d-inline-block h-100" style="width: 18rem;" id="card-ceramica">
+                  <div class="card-body text-center h-100 d-grid align-content-center">
+                    <h5 class="card-title">Ceramica</h5>
+                  </div>
+                </div>
+              </a>
+            </nav>
+          </div>
+
+          <div class="col-3 col-categorias p-0 align-content-center h-100">
+            <nav class="justify-content-center text-center h-100">
+              <a href="#" class="w-100 h-100 d-inline-block p-0">
+                <div class="card d-inline-block h-100" style="width: 18rem;" id="card-otros">
+                  <div class="card-body text-center h-100 d-grid align-content-center">
+                    <h5 class="card-title">Otros</h5>
+                  </div>
+                </div>
+              </a>
+            </nav>
+          </div>
         </div>
       </div>
     </section>
     <!-- Basarme en https://bscs.mx/ -->
     <!-- Fin de categorias -->
-    <hr>
+
     <!-- Checar https://www.codeply.com/p/0CWffz76Q9 -->
     <!-- Inicio de destacados -->
     <section>
       <h2>Destacados</h2>
       <!-- Inicio de Carrusel -->
-      <div class="row justify-content-center">
+      <!-- <div class="row justify-content-center">
         <div class="col-12 carrusel">
-          <div id="carouselExampleDark" class="carousel carousel-dark slide h-100" data-bs-ride="carousel">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide h-100" data-bs-ride="carousel"> -->
             <!-- Descripciones en el carrusel -->
-            <div class="carousel-indicators">
+            <!-- <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
+            </div> -->
             <!-- Contenido del carrusel -->
-            <div class="row justify-content-center h-100">
+            <!-- <div class="row justify-content-center h-100">
               <div class="col-1 text-center">
                 <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                   <span class="left-arrow" aria-hidden="true"></span>
@@ -149,9 +170,9 @@
                 </button>
               </div>
               <div class="col-10">
-                <div id="carouselExampleControls" class="carousel slide h-100" data-bs-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide h-100" data-bs-ride="carousel"> -->
                   <!-- Contenedor de las imagenes -->
-                  <div class="carousel-inner h-100 d-flex align-items-center rounded-4">
+                  <!-- <div class="carousel-inner h-100 d-flex align-items-center rounded-4">
                     <div class="carousel-item active" data-bs-interval="10000">
                       <img src="https://picsum.photos/200/300" class="d-block w-100 h-100 rounded-4" alt="...">
                       <div class="carousel-caption d-none d-md-block">
@@ -185,8 +206,92 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     <!-- Fin de Carrusel -->
+    <!-- Carrusel 2 -->
+      <div class="row mx-auto my-auto justify-content-center">
+        <div id="recipeCarousel" class="carousel slide carrusel" data-bs-ride="carousel">
+          <div class="carousel-inner h-100" role="listbox">
+            <div class="carousel-item active">
+              <div class="col-md-4">
+                <div class="card rounded-4">
+                  <div class="card-img rounded-4">
+                    <img src="https://picsum.photos/200/300" class="img-fluid d-block w-100 h-100 rounded-4">
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-4">
+                <div class="card rounded-4">
+                  <div class="card-img rounded-4">
+                    <img src="https://picsum.photos/200" class="img-fluid d-block w-100 h-100 rounded-4">
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-4">
+                <div class="card rounded-4">
+                  <div class="card-img rounded-4">
+                    <img src="https://picsum.photos/300/200" class="img-fluid d-block w-100 h-100 rounded-4">
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-4">
+                <div class="card rounded-4">
+                  <div class="card-img rounded-4">
+                    <img src="https://picsum.photos/300" class="img-fluid d-block w-100 h-100 rounded-4">
+                  </div>
+                  <div class="card-img-overlay">Slide 4</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-4">
+                <div class="card rounded-4">
+                  <div class="card-img rounded-4">
+                    <img src="https://picsum.photos/200" class="img-fluid d-block w-100 h-100 rounded-4">
+                  </div>
+                  <div class="card-img-overlay">Slide 5</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-4">
+                <div class="card rounded-4">
+                  <div class="card-img rounded-4">
+                    <img src="https://picsum.photos/300/200" class="img-fluid d-block w-100 h-100 rounded-4">
+                  </div>
+                  <div class="card-img-overlay">Slide 6</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+            <span class="left-arrow" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+            <span class="right-arrow" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </section>
     <!-- Fin de destacados -->
   </main>
@@ -221,7 +326,8 @@
      </div>
   </footer>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  
+  <!-- Carrusel -->
+  <script src="./js/carrusel.js"></script>
 </body>
 
 </html

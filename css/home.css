@@ -1,0 +1,334 @@
+html {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Pacifico', cursive;
+}
+/* Carrusel */
+/* Altura general del carrusel */
+.carrusel {
+  height:350px;
+}
+/* Contenedor de la imagen carrusel */
+.carousel-item {
+  max-height: 350px;
+  background-size: cover;
+}
+/* Flecha a la izquierda */
+.left-arrow {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-right: 60px solid #F4B2B0;
+  border-bottom: 30px solid transparent;
+}
+/* Flecha a la derecha */
+.right-arrow {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-left: 60px solid #F4B2B0;
+  border-bottom: 30px solid transparent;
+}
+
+a > .card{
+  height: 200px;
+}
+/* Card Ositos */
+#card-ositos{
+  background-size: cover;
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://picsum.photos/200);
+  background-color: #fff;
+}
+#card-ositos:hover{
+  /* animation-duration: 1s;
+  animation-name: ositos-expandir; */
+  background-size: 120%;
+  background-position: center;
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://picsum.photos/200);
+  background-color: #fff;
+}
+/* Card Kawaii */
+#card-kawaii{
+  background-size: cover;
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://picsum.photos/200);
+  background-color: #fff;
+}
+#card-kawaii:hover{
+  background-size: 120%;
+  background-position: center;
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://picsum.photos/200);
+  background-color: #fff;
+}
+/* Card Ceramica */
+#card-ceramica{
+  background-size: cover;
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://picsum.photos/200);
+  background-color: #fff;
+}
+#card-ceramica:hover{
+  background-size: 120%;
+  background-position: center;
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://picsum.photos/200);
+  background-color: #fff;
+}
+/* Card Otros */
+#card-otros{
+  background-size: cover;
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://picsum.photos/200);
+  background-color: #fff;
+}
+#card-otros:hover{
+  background-size: 120%;
+  background-position: center;
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://picsum.photos/200);
+  background-color: #fff;
+}
+/* Contenedor Categoria */
+.categoria{
+  height: 300px;
+}
+.categoria > .row{
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+/* Columna de categorias */
+.col-categorias{
+  display: inline-block;
+  min-width: 300px;
+}
+/* Columna interna del enlace */
+nav > a {
+  max-width: 286px;
+}
+/* Scroll */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+/* Barra */
+::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  */
+  border-radius: 10px;
+}
+/* Desplazador */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #F4B2B0;
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+}
+/* Contenedor inicial */
+#presentacion{
+  height: 800px;
+  background-size: cover;
+  background-image: url("../assets/img/backgrounds/png_20221027_180509_0000.png")
+}
+/* Osito en la presentacion */
+#osito{
+  animation-duration: 12s;
+  animation-name: encoger-expandir;
+  animation-iteration-count: 1;
+  position: absolute;
+  top: 25%;
+  right: 1%;
+  width: 500px;
+  /* width: 500px; */
+}
+/* Carrusel 2 */
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+/* Carrusel 2 fin */
+
+#chispa1{
+  animation-name: chispazo1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  z-index: 1;
+  opacity: 0;
+}
+#chispa2{
+  animation-name: chispazo2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  position: absolute;
+  left: 80%;
+  top: 25%;
+  z-index: 1;
+  opacity: 0;
+}
+#chispa3{
+  animation-name: chispazo3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.8s;
+  position: absolute;
+  left: 10%;
+  top: 80%;
+  z-index: 1;
+  opacity: 0;
+}
+#chispa4{
+  animation-name: chispazo4;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.3s;
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  z-index: 1;
+  opacity: 0;
+}
+
+/* Animacion del osito */
+@keyframes encoger-expandir {
+  0% {
+    opacity: 0;
+    top: 50%;
+    right: 20%;
+    width: 100px;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    top: 23%;
+    right: 0;
+    width: 520px;
+  }
+  100% {
+    top: 25%;
+    right: 1%;
+    width: 500px;
+  }
+}
+/* Animacion de chispas */
+@keyframes chispazo1 {
+  0%{
+    opacity: 1;
+    width: 128px;
+    left: 50%;
+    top: 60%;
+  }
+  40%{
+    width: 80px;
+    left: 52%;
+    top: 64%;
+  }
+  100%{
+    width: 128px;
+    left: 50%;
+    top: 60%;
+  }
+}
+@keyframes chispazo2 {
+  0%{
+    opacity: 1;
+    width: 128px;
+    left: 80%;
+    top: 25%;
+  }
+  40%{
+    width: 80px;
+    left: 82%;
+    top: 29%;
+  }
+  100%{
+    width: 128px;
+    left: 80%;
+    top: 25%;
+  }
+}
+@keyframes chispazo3 {
+  0%{
+    opacity: 1;
+    width: 128px;
+    left: 10%;
+    top: 80%;
+  }
+  40%{
+    width: 80px;
+    left: 12%;
+    top: 84%;
+  }
+  100%{
+    width: 128px;
+    left: 10%;
+    top: 80%;
+  }
+}
+@keyframes chispazo4 {
+  0%{
+    opacity: 1;
+    width: 128px;
+    left: 25%;
+    top: 10%;
+  }
+  40%{
+    width: 80px;
+    left: 27%;
+    top: 13%;
+  }
+  100%{
+    width: 128px;
+    left: 25%;
+    top: 10%;
+  }
+}
+/* Animacion de cada categoria */
+/* @keyframes ositos-expandir {
+  0% {
+    background-size: cover;
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://picsum.photos/200);
+  }
+  25% {
+    background-size: cover;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://picsum.photos/200);
+  }
+  26% {
+    background-size: cover;
+    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(https://picsum.photos/200);
+  }
+  100% {
+    background-size: 120%;
+    background-position: center;
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(25  5,255,255,0.7)), url(https://picsum.photos/200);
+  }
+} */
+
