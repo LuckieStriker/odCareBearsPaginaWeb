@@ -1,3 +1,17 @@
+/* estilos formulario */
+.registro{
+	background-color:#F7F0D6;
+	width: 50%;
+	padding: 4% 3%;
+	border-radius: 30px;
+	text-align: center;
+	align-content: center;
+	margin-top: 5vh;
+	margin-bottom: 6vh;
+	height: 50%;
+
+}
+
 /* titulos */
 #titulo-h1{
     font-family: 'Lily Script One', cursive;
@@ -98,19 +112,7 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 
-/* estilos formulario */
-  .registro{
-	background-color:#F7F0D6;
-	width: 50%;
-	padding: 4% 3%;
-	border-radius: 30px;
-	text-align: center;
-	align-content: center;
-	margin-top: 5vh;
-	margin-bottom: 6vh;
-	height: 50%;
 
-}
 
 
 @media screen and (max-width: 768px) {

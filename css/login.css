@@ -12,9 +12,7 @@
     align-items: center;
 }
 
-.formulario__grupo-correcto .formulario__validacion-estado{
-	color: green;
-}
+
 
 /* titulos */
 #titulo-h1{
@@ -124,8 +122,6 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 .hide {
     opacity: 0;
 }
-
-
 
 
 @media screen and (max-width: 768px) {
