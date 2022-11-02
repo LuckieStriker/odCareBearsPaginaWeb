@@ -210,86 +210,74 @@
     <!-- Fin de Carrusel -->
     <!-- Carrusel 2 -->
       <div class="row mx-auto my-auto justify-content-center">
-        <div id="recipeCarousel" class="carousel slide carrusel" data-bs-ride="carousel">
-          <div class="carousel-inner h-100" role="listbox">
-            <div class="carousel-item active">
-              <div class="col-md-4">
-                <div class="card rounded-4">
-                  <div class="card-img rounded-4">
-                    <img src="https://picsum.photos/200/300" class="img-fluid d-block w-100 h-100 rounded-4">
-                  </div>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                  </div>
+        <div class="col-12 carrusel">
+          <div id="recipeCarousel" class="carousel slide h-100 border" data-bs-ride="carousel">
+            <!-- Contenido del carrusel -->
+            <div class="carousel-inner h-100 d-flex align-items-center rounded-4 border border-primary" role="listbox">
+              <div class="carousel-item col-4 active h-100">
+                <a href="#" class="d-block w-100 h-100">
+                  <img src="https://picsum.photos/200/300" class="img-fluid d-block w-100 h-100">
+                </a>
+                <div class="carousel-caption d-none d-md-block rounded-4">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item col-4 h-100">
+                <a href="#" class="d-block w-100 h-100">
+                  <img src="https://picsum.photos/200" class="img-fluid d-block w-100 h-100">
+                </a>
+                <div class="carousel-caption d-none d-md-block rounded-4">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item col-4 h-100">
+                <a href="#" class="d-block w-100 h-100">
+                  <img src="https://picsum.photos/300/200" class="img-fluid d-block w-100 h-100">
+                </a>
+                <div class="carousel-caption d-none d-md-block rounded-4">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item col-4 h-100">
+                <a href="#" class="d-block w-100 h-100">
+                  <img src="https://picsum.photos/300" class="img-fluid d-block w-100 h-100">
+                </a>
+                <div class="carousel-caption d-none d-md-block rounded-4">
+                  <h5>Fourth slide label</h5>
+                  <p>Some representative placeholder content for the fourth slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item col-4 h-100">
+                <a href="#" class="d-block w-100 h-100">
+                  <img src="https://picsum.photos/200" class="img-fluid d-block w-100 h-100">
+                </a>
+                <div class="carousel-caption d-none d-md-block rounded-4">
+                  <h5>Fifth slide label</h5>
+                  <p>Some representative placeholder content for the fifth slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item col-4 h-100">
+                <a href="#" class="d-block w-100 h-100">
+                  <img src="https://picsum.photos/300/200" class="img-fluid d-block w-100 h-100">
+                </a>
+                <div class="carousel-caption d-none d-md-block rounded-4">
+                  <h5>Sixth slide label</h5>
+                  <p>Some representative placeholder content for the sixth slide.</p>
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="col-md-4">
-                <div class="card rounded-4">
-                  <div class="card-img rounded-4">
-                    <img src="https://picsum.photos/200" class="img-fluid d-block w-100 h-100 rounded-4">
-                  </div>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-md-4">
-                <div class="card rounded-4">
-                  <div class="card-img rounded-4">
-                    <img src="https://picsum.photos/300/200" class="img-fluid d-block w-100 h-100 rounded-4">
-                  </div>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-md-4">
-                <div class="card rounded-4">
-                  <div class="card-img rounded-4">
-                    <img src="https://picsum.photos/300" class="img-fluid d-block w-100 h-100 rounded-4">
-                  </div>
-                  <div class="card-img-overlay">Slide 4</div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-md-4">
-                <div class="card rounded-4">
-                  <div class="card-img rounded-4">
-                    <img src="https://picsum.photos/200" class="img-fluid d-block w-100 h-100 rounded-4">
-                  </div>
-                  <div class="card-img-overlay">Slide 5</div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-md-4">
-                <div class="card rounded-4">
-                  <div class="card-img rounded-4">
-                    <img src="https://picsum.photos/300/200" class="img-fluid d-block w-100 h-100 rounded-4">
-                  </div>
-                  <div class="card-img-overlay">Slide 6</div>
-                </div>
-              </div>
-            </div>
+            <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+              <span class="left-arrow" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+              <span class="right-arrow" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
-            <span class="left-arrow" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
-            <span class="right-arrow" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </section>

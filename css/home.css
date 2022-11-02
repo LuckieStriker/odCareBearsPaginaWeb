@@ -2,18 +2,34 @@ html {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5 {
+h2, h3, h4, h5 {
+  display: block;
+  text-align: center;
   font-family: 'Pacifico', cursive;
+  margin: 32px;
 }
 /* Carrusel */
 /* Altura general del carrusel */
 .carrusel {
-  height:350px;
+  height: 320px;
 }
 /* Contenedor de la imagen carrusel */
 .carousel-item {
-  max-height: 350px;
-  background-size: cover;
+  object-fit: cover;
+  /* background-size: cover; */
+}
+
+.carousel-item a {
+  object-fit: cover;
+  max-width: 40%;
+  min-width: 35%;
+}
+/* Letras del carrusel */
+.carousel .carousel-caption{
+  background-color: rgb(118, 108, 134,0.4);
+}
+.carousel-caption h5{
+  margin: 10px;
 }
 /* Flecha a la izquierda */
 .left-arrow {
