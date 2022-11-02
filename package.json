@@ -25,10 +25,6 @@
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
     "jquery": "^3.6.1",
-<<<<<<< HEAD
-    "sweetalert2": "^11.6.2"
-=======
     "sweetalert2": "^11.6.4"
->>>>>>> phoenix
   }
 }
