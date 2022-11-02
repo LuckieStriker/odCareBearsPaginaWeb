@@ -10,66 +10,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2&family=Lily+Script+One&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <title>odCareBears</title>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand odCare ms-5" href="#">odCareBears</a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01"><!--contenedor de hamburguesa-->
-          
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Categorías
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./html/categorías.html">Ositos</a></li>
-                <li><a class="dropdown-item" href="#">Kawaii</a></li>
-                <li><a class="dropdown-item" href="#">Cerámica</a></li>
-                <li><a class="dropdown-item" href="#">Otros</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./html/acerca.html">Nosotros</a>
-            </li>
-          </ul>
-          <form class="form"><!--Buscador-->
-            <button>
-                <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
-                    <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-            </button>
-            <input class="input" placeholder="Buscar" required="" type="text">
-            <button class="reset" type="reset">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-        </form>
-        </div><!--Termina el contenedor de hamburguesa-->
+<!--- NavBar --->
+<div id = "navigation" class="sticky-top"></div>
+<script src="js/nav.js"></script>
+<!--- NavBar --->
 
-        <div class="d-flex"><!--Logos de carrito y oso-->
-            <a class="p-1" href="./html/login.html">
-              <img class="pb" width="40" height="40" src="./assets/img/bear-svgrepo-com.svg" alt="Profile">
-            </a>
-            <a class="pb" href="html/carrito.html">
-              <img width="40" height="40" src="./assets/img/shopping-cart-svgrepo-com.svg" alt="Cart">
-            </a>
-          </div>
-      </div>
-      
-    </nav>
-  </header>
   <main class="container-fluid">
     <h1>eComerce</h1>
 
@@ -77,7 +30,7 @@
 
 
   </main>
-  <footer class=" container-fluid bd-footer bg-primary py-4 pt-md-5 mt-5 bg-info">
+  <footer id ="footer" class="container-fluid bd-footer bg-primary py-4 pt-md-5 mt-5 bg-info">
     <div class="row">
       <div class="col-md-12 text-center">
         <a class="navbar-brand odCare" href="../index.html#">odCareBears</a>
@@ -85,7 +38,7 @@
     </div>
     <div class="row">
       <div class="col-md-12 text-center my-1">
-        <a class="footer-link" href="./html/contactanos.html"> Contáctanos </a> |
+        <a class="footer-link" href="../html/contactanos.html"> Contáctanos </a> |
         <a class="footer-link" href="#"> Políticas de privacidad</a> |
         <a class="footer-link" href="#"> Términos y condiciones</a> |
         <a class="footer-link" href="#"> Facturación</a> |
@@ -94,11 +47,11 @@
     </div>
     <div class="row mt-2">
       <div class="col-md-12 text-center">
-        <a href="google.com"><img width="40" height="40" src="./assets/img/facebook-rosa.svg" alt="Facebook"></a>
-        <a href="https://www.instagram.com/od_CareBears/"><img width="40" height="40" src="./assets/img/instagram.svg"
+        <a href="google.com"><img width="40" height="40" src="../assets/img/facebook-rosa.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/od_CareBears/"><img width="40" height="40" src="../assets/img/instagram.svg"
             alt="Instagram"></a>
-        <a href="google.com"><img width="40" height="40" src="./assets/img/tiktok.svg" alt="Tiktok"></a>
-        <a href="google.com"><img width="40" height="40" src="./assets/img/whatsapp.svg" alt="Whatsapp"></a>
+        <a href="google.com"><img width="40" height="40" src="../assets/img/tiktok.svg" alt="Tiktok"></a>
+        <a href="google.com"><img width="40" height="40" src="../assets/img/whatsapp.svg" alt="Whatsapp"></a>
       </div>
     </div>
     <div class="row text-center mt-5">
