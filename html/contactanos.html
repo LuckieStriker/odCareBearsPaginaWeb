@@ -11,22 +11,24 @@
     <!--CSS-->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/contactanos.css" />
-
+    <!--- JQUERY -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2&family=Lily+Script+One&display=swap" rel="stylesheet"/>
     <title>Contactanos</title>
 </head>
 <body>
-   
-
-
-
-    
-    <div class="contacto container-fluid">
-        <form class="contact-form">
-                <h1 id="titulo-h1">CONTACTO</h1>
+    <!-- NAV BAR -->
+    <div id="navigation" class="sticky-top"></div>
+    <script src="../js/nav.js"></script>
+    <!-- Descripción -->
+    <div class="container">
+        <div class="row">
+            <div id="titulo">
+                <h1 id="titulo-h1" class="text-center my-4">Contacta con nosotros</h1>
                 <p id="bienvenida">¡Queremos escucharte! ❤️</p>
                 <p id="parrafo">
                     Si quieres información sobre cualquiera de nuestros productos o
@@ -67,33 +69,8 @@
 
 
 
-    <footer class="bd-footer bg-primary py-4 py-md-5 mt-5 bg-info">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <a class="navbar-brand odCare" href="#">odCareBears</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center my-2">
-                <a class="footer-link" href="#"> Contáctanos </a> |
-                <a class="footer-link" href="#"> Políticas de privacidad</a> |
-                <a class="footer-link" href="#"> Términos y condiciones</a> |
-                <a class="footer-link" href="#"> Facturación</a> |
-                <a class="footer-link" href="#"> Política de reembolso</a>
-            </div>
-        </div>
-        <div class="row my-2">
-            <div class="col-md-12 text-center ">
-                <a href="google.com"><img width="40" height="40" src="../assets/img/facebook-rosa.svg" alt="Facebook"></a>
-                <a href="https://www.instagram.com/od_CareBears/"><img width="40" height="40" src="../assets/img/instagram.svg"
-                    alt="Instagram"></a>
-                <a href="google.com"><img width="40" height="40" src="../assets/img/tiktok.svg" alt="Tiktok"></a>
-                <a href="google.com"><img width="40" height="40" src="../assets/img/whatsapp.svg" alt="Whatsapp"></a>
-            </div>
-            odCareBears 2022
-        </div>
-    </footer>
-    
+    <footer id ="footer"></footer>
+
     <script src="../js/contactanos.js"></script>
     <!-- script de SweetAlert -->
     <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>

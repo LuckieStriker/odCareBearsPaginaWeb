@@ -7,72 +7,19 @@ $light: #F7F0D6;
 $info: #D9EFFA;
 $dark: #766C83;
 
+$navbar-light-color:                #766C83;
+$navbar-light-hover-color:          #766C83;
+$navbar-light-active-color:         #766C83;
+$dropdown-link-color:               #766C83;
+$dropdown-link-hover-color:         shade-color($dropdown-link-color, 10%);
+$dropdown-link-hover-bg:            #D9EFFA;
+$dropdown-bg:                       rgb(255,255,255,0.9);
+
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 
 // 2. Include any default variable overrides here
-
-
-//fondo
-$bgcolor: #fcfcef;
-$transparent: rgba(255, 255, 255, 0);
-
-$color-1: #f3e9ff;
-$color-1-t: transparentize($color-1, 1);
-$color-2: #ffe9e9;
-$color-2-t: transparentize($color-2, 1);
-
-$size: 4em;
-$big-size: $size*2;
-$min: $size*.3;
-$max: $size*.5;
-
-HTML {
-  height: 100%;
-  }
-BODY {
-  background: 
-    linear-gradient(135deg,
-      $color-1 $min,
-      $color-1-t $min
-      ) 0 #{$size},
-    linear-gradient(-135deg,
-      $color-1 $min,
-      $color-1-t $min
-      ) 0 #{$size},
-    
-    radial-gradient(circle at #{$big-size - $min*.7} $size*1.85,
-      $color-1 $min*.85,
-      $color-1-t $min*.87
-      ) 0 -#{$size},
-    radial-gradient(circle at #{$min*.7} $size*1.85,
-      $color-1 $min*.85,
-      $color-1-t $min*.87
-      ) 0 -#{$size},
-
-
-    linear-gradient(135deg,
-      $color-2 $min,
-      $color-2-t $min
-      ) $size 0,
-    linear-gradient(-135deg,
-      $color-2 $min,
-      $color-2-t $min
-      ) $size 0,
-    
-    radial-gradient(circle at #{$big-size - $min*.7} $size*1.85,
-      $color-2 $min*.85,
-      $color-2-t $min*.87
-      ) $size 0,
-    radial-gradient(circle at #{$min*.7} $size*1.85,
-      $color-2 $min*.85,
-      $color-2-t $min*.87
-      ) $size 0
-    ;
-  background-size:  $big-size $big-size;
-  background-color: $bgcolor;
-  background-repeat: repeat;
-  }
+  
 
 
