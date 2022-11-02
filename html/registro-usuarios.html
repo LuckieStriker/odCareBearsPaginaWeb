@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--LOGO pestaña-->
+        <link rel="icon" type="image/x-icon" href="../assets/img/oso.ico"> 
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="../css/custom_bootstrap.css">
+        <!--CSS-->
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/registro-usuarios.css" />
+        <!--FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2&family=Lily+Script+One&display=swap" rel="stylesheet"/>
+        <title>Registro</title>
+    </head>
+<body>
+
+
+
+
+
+    
+
+    <div class="registro container-fluid">
+        <form class="contact-form">
+                <h1 id="titulo-h1">Crea tu cuenta</h1>
+
+                <div class="form-group">
+                    <label for="inputemail" class="form-label" id="labelemail">Correo Electrónico</label>
+                    <input type="email" class="form-control formulario" id="inputmail" name="email" placeholder="Correo electrónico" required />
+                    <p class="msj-error" id="errorEmail"></p>
+                </div>
+            
+                <div class="form-group">
+                    <div class="form-row row g-3">
+                        <div class="form-group col-md-6">
+                            <label for="inputname" class="form-label" id="labelemail">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo" required />
+                            <p class="msj-error" id="errorNombre"></p>
+                        </div>   
+
+                        <div class="form-group col-md-6">
+                            <label for="inputPhone" class="form-label" id="labelphone">Teléfono</label>
+                            <input type="text" class="form-control"  id="phone" name="telefono" placeholder="Teléfono" required />
+                            <p class="msj-error"  id="errorTelefono"></p>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="form-group">
+                        <label for="inputcontraseña" class="form-label" id="labelcontraseña">Contraseña</label>
+                        <input type="password" class="form-control" id="password"  name="password" placeholder="Contraseña" required />
+                    <p class="msj-error" id="errorPassword"></p>
+                </div>
+
+                <div class="d-grid gap-2 col-4 mx-auto">
+                    <button type="submit" class="btn btn-primary" id="btnregistro">Registrar</button> 
+                </div>
+
+                <div class="text-center">
+                    <p><p id="parrafo"> ¿Ya tienes una cuenta? 🤔</p></p> 
+                    <a class="anclas" href="./login.html ">Inicia sesión</a>
+                </div> 
+        </form>
+    </div>    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../js/registro.js"></script>
+    <!-- script de SweetAlert -->
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <!--BootstrapJS-->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>  
