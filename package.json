@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/riveraeduardo94/odCareBearsPaginaWeb.git"
+    "url": "git+https://github.com/luckiestriker/odCareBearsPaginaWeb.git"
   },
   "keywords": [
     "ecomerce",
@@ -17,19 +17,14 @@
   "author": "Alfa buena maravilla onda dinamita  escuadron lobo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/riveraeduardo94/odCareBearsPaginaWeb/issues"
+    "url": "https://github.com/luckiestriker/odCareBearsPaginaWeb/issues"
   },
-  "homepage": "https://github.com/riveraeduardo94/odCareBearsPaginaWeb#readme",
+  "homepage": "https://github.com/luckiestriker/odCareBearsPaginaWeb#readme",
   "dependencies": {
     "axios": "^1.1.3",
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
     "jquery": "^3.6.1",
-<<<<<<< HEAD
-=======
-    "sweetalert2": "^11.6.2"
-=======
->>>>>>> eb65ef2f6e1130cd8ab07dbc9d106218bcd41d98
     "sweetalert2": "^11.6.4"
   }
 }
