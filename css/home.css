@@ -31,22 +31,6 @@ h2, h3, h4, h5 {
 .carousel-caption h5{
   margin: 10px;
 }
-/* Flecha a la izquierda */
-.left-arrow {
-  width: 0;
-  height: 0;
-  border-top: 30px solid transparent;
-  border-right: 60px solid #F4B2B0;
-  border-bottom: 30px solid transparent;
-}
-/* Flecha a la derecha */
-.right-arrow {
-  width: 0;
-  height: 0;
-  border-top: 30px solid transparent;
-  border-left: 60px solid #F4B2B0;
-  border-bottom: 30px solid transparent;
-}
 
 a > .card{
   height: 200px;
