@@ -1,6 +1,6 @@
 {
-  "name": "odcarebearspaginaweb",
-  "version": "1.0.0",
+  "name": "odcarebearsweb",
+  "version": "1.0.1",
   "description": "install boostrap, npm",
   "main": "index.js",
   "scripts": {
@@ -26,5 +26,6 @@
     "bootstrap-icons": "^1.9.1",
     "jquery": "^3.6.1",
     "sweetalert2": "^11.6.4"
-  }
+  },
+  "devDependencies": {}
 }
