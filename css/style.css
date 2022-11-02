@@ -1,3 +1,6 @@
+body{
+  font-family: 'Niramit', sans-serif;
+}
 h1{
   font-family: 'Lily Script One', cursive;
   color: #F4B2B0;
@@ -5,23 +8,43 @@ h1{
     -webkit-text-stroke-width: 1px ;
 }
 
-.odCare{
-  font-family: 'Lily Script One', cursive;
-  font-size: 30px;
-  color: #F4B2B0;
-  -webkit-text-stroke-color: #f58682 ;
-  -webkit-text-stroke-width: 1px ;
-
+.odCare, .odCare:visited{
+    /*font-family: 'Lily Script One', cursive;*/
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: #f58682;
+    -webkit-text-stroke-color: #f58682 ;
+    -webkit-text-stroke-width: 0px ;
 }
 
 .odCare:hover{
-  font-family: 'Lily Script One', cursive;
-  font-size: 30px;
-  color: #f58682;
-  -webkit-text-stroke-color: #F4B2B0 ;
-  -webkit-text-stroke-width: 1px ;
-
+    /*font-family: 'Lily Script One', cursive;*/
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: #f58682;
+    -webkit-text-stroke-color: #F4B2B0 ;
+    -webkit-text-stroke-width: 2px ;
+    
 }
+
+.navbar{
+  /*font-family: 'Baloo 2';*/
+  /*font-family: 'Niramit', sans-serif;*/
+  font-family: 'Pacifico', cursive;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  
+  /*color: rgba(77, 8, 168, 0.8);*/
+}
+.navbar {
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+
+  /* the rest of your styling */
+}
+
 
 .footer-link{
   color: #766C83;

@@ -1,83 +1,115 @@
-
 //Obteniendo los datos
-const $form = document.querySelector("#form");
+const form = document.querySelector("form[name='contact-form']");
+const nameInput = document.querySelector("input[name='name']");
+const emailInput = document.querySelector("input[name='email']");
+const phoneInput = document.querySelector("input[name='phone']");
+const messageInput = document.querySelector("textarea[name='message']");
 
-const nameInput = document.querySelector("#name");
-const email = document.querySelector("#email");
-const phone = document.querySelector("#phone");
-const message = document.querySelector("#message");
-const errorNodes = document.querySelectorAll(".error");
+nameInput.isValid = () => isValidName(nameInput.value);
+emailInput.isValid = () => isValidEmail(emailInput.value);
+phoneInput.isValid = () => isValidPhone(phoneInput.value);
+messageInput.isValid = () => isValidMesagge(messageInput.value);
 
-//Validando datos 
-function validateForm(){
-        limpiarMensajes();
-        let errorFlag = false;
+const inputFields = [nameInput, emailInput, phoneInput, messageInput];
 
-        if(!nameIsValid(nameInput.value)){
-                errorNodes[0].innerText = "El nombre es invalido";
-                nameInput.classList.add("error-border");
-                errorFlag = true;
-        }
 
-        if(!emailIsValid(email.value)){
-                errorNodes[1].innerText  =  "El Email es invalido";
-                email.classList.add("error-border");
-                errorFlag = true;
-        }
-
-        if(!phoneIsValid(phone.value)){
-                errorNodes[2].innerText  =  "El Telefono es invalido, debe tener un total de 10 caracteres";
-                phone.classList.add("error-border");
-                errorFlag = true;
-        }
-
-        if(!messageIsValid(message.value)){
-                errorNodes[3].innerText  =  "El mensaje es requerido";
-                message.classList.add("error-border");
-                errorFlag = true;
-        }
-
-        
-        if (!errorFlag) {
-        //Enviar emails
-  
-                
-                
-        }
-}
-
-//Limpiar errores
-function limpiarMensajes(){
-        for(let i =0; i<errorNodes.length; i++){
-                errorNodes[i].innerText = "";
-        }
-        nameInput.classList.remove("error-border");
-        email.classList.remove("error-border");
-        phone.classList.remove("error-border");
-        message.classList.remove("error-border");
-}
-
-//Verificar el nombre
-const nameIsValid = (name) => {
+// Validar  el nombre
+const isValidName = (name) => {
         const patter = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
         return patter.test(name);
-};  
-
-//Verificar el email
-const emailIsValid = (email) => {
+};    
+// Validar el email
+const isValidEmail = (email) => {
         const pattern = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/;
         return pattern.test(email);
-}
-
-// Verificar el telefono
-const phoneIsValid = (phone) => {
+};
+// Validar el telefono
+const isValidPhone = (phone) => {
         const patter= /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
         return patter.test(phone);
-}
-
+};
 // Validar el mensaje
-const messageIsValid = (message) => {
+const isValidMesagge = (message) => {
         const patter = /^.{1,255}$/;
         return patter.test(message);
 };
+
+
+let shouldValidate = false;
+let isFormValid = false;
+
+//Validando inputs
+const validateInputs = () => {
+        if (!shouldValidate) return;
+        isFormValid = true;
+        inputFields.forEach((input) => {
+                //si son validos
+        input.classList.remove("border-danger");
+        input.nextElementSibling.classList.add("hide");
+                //Camposinvalidos
+        if (!input.isValid()) {
+                input.classList.add("border-danger");
+                isFormValid = false;
+                input.nextElementSibling.classList.remove("hide");
+        }
+        });
+};
+
+/**
+ * Funcion para enviar las alertas
+ */
+
+const showAlert = () =>{
+        Swal.fire({
+                icon: 'success',
+                title: 'Gracias por tus comentarios C:',
+                backdrop: true,
+                padding: '2rem',
+                background: '#D9EFFA',
+                confirmButtonText: 'Cerrar',
+                with: '50%'
+        });
+};
+
+
+/**
+ * Funcion para enviar correo
+ * 
+*/
+function enviarEmail(){
+        let params = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                phone: document.getElementById("phone").value,
+                message: document.getElementById("message").value,
+        };
+                const servicioID = "service_0skg31p";
+                const templateID = "template_i68cps5";
+                emailjs.send(servicioID,templateID,params)
+                .then(res =>{
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("phone").value = "";
+                document.getElementById("message").value = "";
+                console.log(res);
+
+        })
+        .catch((err) =>console.log(err));
+};
+
+
+//      Evento del boton
+form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        shouldValidate = true;
+        validateInputs();
+
+        if (isFormValid) {
+                enviarEmail();
+                showAlert(); 
+        }
+});
+
+inputFields.forEach((input) => input.addEventListener("input", validateInputs));
+
 
