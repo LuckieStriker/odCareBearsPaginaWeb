@@ -2,7 +2,7 @@
   "name": "odcarebearsweb",
   "version": "1.0.1",
   "description": "install boostrap, npm",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
