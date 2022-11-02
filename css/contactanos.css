@@ -13,7 +13,8 @@
 
 /* titulos */
 #titulo-h1{
-    font-family: 'Lily Script One', cursive;
+    /*font-family: 'Lily Script One', cursive;*/
+    font-family: 'Pacifico', cursive;
     font-style: normal;
     text-align: center;
     line-height: 80px;
