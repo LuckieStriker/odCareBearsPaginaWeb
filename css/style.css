@@ -53,6 +53,10 @@ h1{
 .footer-link:hover{
   color: #443b4f;
 }
+
+.carrito{
+  background-color:#f58682;
+}
 /*---------------------------Estilo del deste de buscar----------------------*/
 .form button {
   border: none;

@@ -30,7 +30,24 @@ function renderCart() {
     let html = "";
     cartProducts.forEach(element => {
         console.log(element.nombre);
-        let fila = '<div class="row"><a target="_blank"><img src="{imagen}" class="img-fluid rounded-4" alt=""></a><p align="center">{nombre}<br> {precioConDescuento}MXN   <s>{precioSinDescuento}MXN</s></p></div>';
+        let fila = `<article class="row g-0">
+        <div class="col-md-4">
+          <img
+            src="../assets/img/Ositos/Picsart_22-10-05_03-05-01-913.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Pareja de ositos</h5>
+            <p class="card-text">$3200.00 MXN</p>
+          </div>
+        </div>
+        <div class="col-md-2 text-center my-auto">
+          <a href="#" class="btn btn-light"> Borrar </a>
+        </div>
+      </article>`;
         //fila = fila.replace("{imagen}", '../assets/img/' + categoriaPath + '/' + element.imagen);
         fila = fila.replace("{nombre}", element.nombre);
         fila = fila.replace("{precioConDescuento}", element.precio - element.descuento);
@@ -39,4 +56,5 @@ function renderCart() {
         html += fila;
     })
     document.getElementById('fila-1').innerHTML = html;
+    document.getElementById('noItems').innerText = cartProducts.length;
 };
