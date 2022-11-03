@@ -56,9 +56,89 @@ const products = [
         ]
     },
     {
-        "categoria": "kawaii",
-        "nombre": "Kawaii",
+        "categoria": "accesorios",
+        "nombre": "Accesorios Kawaii",
         "productos": [
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 7
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 8
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 9
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 10
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 11
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 12
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 13
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 14
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 15
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 16
+            },
 
         ]
     },
@@ -73,7 +153,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Alajero.jpg",
-                "id": 7
+                "id": 17
             },
             {
                 "categoria": "ceramica",
@@ -81,7 +161,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "CajitaPastel.jpg",
-                "id": 8
+                "id": 18
             },
             {
                 "categoria": "ceramica",
@@ -89,7 +169,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "PlatoLargo.jpg",
-                "id": 9
+                "id": 19
             },
             {
                 "categoria": "ceramica",
@@ -97,7 +177,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Taza.jpg",
-                "id": 10
+                "id": 20
             },
 
         ]
@@ -112,7 +192,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Pintura1.jpg",
-                "id": 11
+                "id": 21
             },
             {
                 "categoria": "otros",
@@ -120,7 +200,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Pintura1.jpg",
-                "id": 12
+                "id": 22
             }
 
         ]
