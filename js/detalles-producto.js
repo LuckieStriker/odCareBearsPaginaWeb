@@ -8,7 +8,10 @@ const products = [
                 "nombre": "Osos",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "osos.jpg",
+                "imagen": "../assets/img/osito-morado1.jpg",
+                "imagenSec": "../assets/img/osito-morado2.jpg",
+                "imangenTer":"../assets/img/osito-morado3.jpg",
+                "descripcion":"Mochilita cariñosita con correas ajustables y cierre trasero para guardar lo que desees",
                 "id": 1
             },
             {
@@ -127,6 +130,12 @@ const products = [
     }
 ]
 
+
+function cambioImg(smallImg) {
+    let fullImg = document.getElementById("CajaImg");
+    fullImg.src = smallImg.src;
+}
+
 function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
     let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -135,41 +144,51 @@ function getParameterByName(name, url = window.location.href) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+let ID1234 = getParameterByName('id');
 
-function getCategoria(categoriaPath) {
-    let categoria = null;
-    products.forEach(element => {
-        if (element.categoria === categoriaPath) {
-            categoria = element;
-        }
-    });
-    return categoria;
-}
-let categoriaPath = getParameterByName('categoria');
-let categoria = getCategoria(categoriaPath);
+products[0].productos.forEach(element => {
+    ID1234 == element.id ? nuevoProducto(element) : console.log("nones")
+});
+function nuevoProducto(element){
+X = document.getElementById("miProducto");
+X.innerHTML = `
+                <h6>Home / ${element.categoria}</h6>
+                <h3 class="py-4">Osito Morado</h3>
+                <h2>$${element.precio-element.descuento} <s>$${element.precio}</s></h2 >
+                <input type="number" value="1">
+                <button class="bcomprar add-cart">Agregar al carrito </button>
+                <h4 class="mt-5 mb-5">Detalles del Producto</h4>
+                <span>${element.descripcion}`
+                CajaImg(element);
+};
+function CajaImg(element){
+ventana=document.getElementById("miVentana");
+ventana.innerHTML = `
+<img  id="CajaImg" class="img-fluid w-100 rounded mb-2" src=${element.imagen} alt="">
+<div class="small-img-group">
+   <div class="small-img-col">
+       <img src=${element.imagen}  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
+   </div>
+   <div class="small-img-col">
+       <img src=${element.imagenSec}  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
+   </div>
+   <div class="small-img-col">
+       <img src="${element.imangenTer}"  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
+   </div>
+   </div> `
+};
 
-function pintarTitulo() {
-    document.getElementById('titulo-h1').innerHTML = categoria.nombre;
-}
 
-function pintarProductos() {
+/**function pintarProductos() {
     let html = "";
     categoria.productos.forEach(element => {
-        let fila = '<div class="col-md-3"><br><a target="_target" href="/html/detalles-producto.html?id={id}"><img src="{imagen}" class="img-fluid rounded-4" alt=""></a><p align="center">{nombre}<br> {precioConDescuento}MXN   <s>{precioSinDescuento}MXN</s></p><a target="_target" href="/html/detalles-producto.html?id={id}"><p align="center"><button type="button" href="_target" class="btn-historial">Agregar al carrito</button></p></a></div>';
+        let fila = '<div class="col-md-3"><a target="_blank"><img src="{imagen}" class="img-fluid rounded-4" alt=""></a><p align="center">{nombre}<br> {precioConDescuento}MXN   <s>{precioSinDescuento}MXN</s></p></div>';
         fila = fila.replace("{imagen}", '../assets/img/' + categoriaPath + '/' + element.imagen);
         fila = fila.replace("{nombre}", element.nombre);
         fila = fila.replace("{precioConDescuento}", element.precio - element.descuento);
         fila = fila.replace("{precioSinDescuento}", element.precio);
-        fila = fila.replace("{id}", element.id);
-
         console.log(fila);
         html += fila;
     })
-    document.getElementById('fila-1').innerHTML = html;
-}
-
-
-pintarTitulo();
-pintarProductos();
-console.log(products)
-console.log(categoria);
+    document.getElementById('fila-1').innerHTML = html; modificar para que quede en el mismo formato 
+    */
