@@ -8,7 +8,10 @@ const products = [
                 "nombre": "Osos",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "osos.jpg",
+                "imagen": "../assets/img/osito-morado1.jpg",
+                "imagenSec": "../assets/img/osito-morado2.jpg",
+                "imangenTer":"../assets/img/osito-morado3.jpg",
+                "descripcion":"Mochilita cariñosita con correas ajustables y cierre trasero para guardar lo que desees",
                 "id": 1
             },
             {
@@ -49,7 +52,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "OsoRosita.jpg",
-                "id": 6                
+                "id": 6
             },
 
 
@@ -128,9 +131,9 @@ const products = [
 ]
 
 
-function cambioImg(smallImg){
-    let fullImg=document.getElementById("CajaImg");
-    fullImg.src=smallImg.src;
+function cambioImg(smallImg) {
+    let fullImg = document.getElementById("CajaImg");
+    fullImg.src = smallImg.src;
 }
 
 function getParameterByName(name, url = window.location.href) {
@@ -143,9 +146,38 @@ function getParameterByName(name, url = window.location.href) {
 }
 let ID1234 = getParameterByName('id');
 
-products[0].productos.forEach(element=> {
-    ID1234==element.id ? console.log(element) : console.log("nones") 
+products[0].productos.forEach(element => {
+    ID1234 == element.id ? nuevoProducto(element) : console.log("nones")
 });
+function nuevoProducto(element){
+X = document.getElementById("miProducto");
+X.innerHTML = `
+                <h6>Home / ${element.categoria}</h6>
+                <h3 class="py-4">Osito Morado</h3>
+                <h2>$${element.precio-element.descuento} <s>$${element.precio}</s></h2 >
+                <input type="number" value="1">
+                <button class="bcomprar add-cart">Agregar al carrito </button>
+                <h4 class="mt-5 mb-5">Detalles del Producto</h4>
+                <span>${element.descripcion}`
+                CajaImg(element);
+};
+function CajaImg(element){
+ventana=document.getElementById("miVentana");
+ventana.innerHTML = `
+<img  id="CajaImg" class="img-fluid w-100 rounded mb-2" src=${element.imagen} alt="">
+<div class="small-img-group">
+   <div class="small-img-col">
+       <img src=${element.imagen}  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
+   </div>
+   <div class="small-img-col">
+       <img src=${element.imagenSec}  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
+   </div>
+   <div class="small-img-col">
+       <img src="${element.imangenTer}"  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
+   </div>
+   </div> `
+};
+
 
 /**function pintarProductos() {
     let html = "";
