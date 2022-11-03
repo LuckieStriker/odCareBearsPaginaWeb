@@ -144,6 +144,10 @@ nav > a {
   width: 500px;
   /* width: 500px; */
 }
+/* Elemento de en medio en el carrusel */
+.enmedio{
+  min-width: 45%;
+}
 /* Carrusel 2 */
 @media (max-width: 575px) {
   .carousel-inner .carousel-item > div {
