@@ -26,7 +26,7 @@
 
 /*Parrafos*/
 #bienvenida{
-    font-family: 'Baloo 2';
+    font-family: 'Niramit', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -35,7 +35,7 @@
 }
 
 #parrafo{
-    font-family: 'Baloo 2';
+    font-family: 'Niramit', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -45,7 +45,7 @@
 
 /* label Formularios */
 .contact-form label {
-    font-family: 'Baloo 2';
+    font-family: 'Niramit', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
