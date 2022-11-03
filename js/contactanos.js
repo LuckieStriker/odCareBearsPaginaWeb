@@ -117,7 +117,7 @@ const errorAlert = () =>{
  const showEnviar = () =>{
         Swal.fire({
                 icon: 'success',
-                title: 'Gracias por tus comentarios C:',
+                title: 'Gracias por contactarnos C:',
                 backdrop: true,
                 padding: '2rem',
                 background: '#D9EFFA',
@@ -146,7 +146,7 @@ function enviarEmail(){
                 document.getElementById("email").value = "";
                 document.getElementById("telefono").value = "";
                 document.getElementById("mensaje").value = "";
-                console.log(res);
+                /* console.log(res); */
         })
         .catch((err) =>console.log(err));
 };
@@ -172,11 +172,11 @@ formularioContact.addEventListener('submit', (e) => {
         enviarEmail();
         showEnviar(); 
         const formDatos = Object.fromEntries(new FormData(e.target));
-                console.log(formDatos);
+                /* console.log(formDatos); */
                 formularioContact.reset();
 	} else {
                 errorAlert();
-                console.log('Datos no enviados');
+                /* console.log('Datos no enviados'); */
 		
 	}
 });
