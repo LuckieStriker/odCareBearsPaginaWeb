@@ -1,0 +1,92 @@
+/* titulos */
+#titulo-h1{
+    font-family: 'Lily Script One', cursive;
+    font-style: normal;
+    text-align: center;
+    line-height: 80px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #F4B2B0; 
+    -webkit-text-stroke-color:  #f58682; ;
+    -webkit-text-stroke-width: 1px ;
+}
+
+#oso{
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(29, 0, 66, 0.8);
+}
+
+/*Estilos botón*/
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: 'Niramit', sans-serif;;
+    font-size: 10px;
+}
+
+button.btn-historial {
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 1em .50em;
+    background: #fff0f0;
+    border: 2px solid #b18597;
+    border-radius: 0.85em;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.btn-historial::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f9c4d2;
+    border-radius: inherit;
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0.75em, -1em);
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.btn-historial:hover {
+    background: #ffe9e9;
+    -webkit-transform: translate(0, 0.25em);
+    transform: translate(0, 0.25em);
+}
+
+button.btn-historial:hover::before {
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0.5em, -1em);
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+button.btn-historial:active {
+    background: #ffe9e9;
+    -webkit-transform: translate(0em, 0.75em);
+    transform: translate(0em, 0.75em);
+}
+
+button.btn-historial:active::before {
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0, -1em);
+    transform: translate3d(0, 0, -1em);
+}

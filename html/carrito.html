@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
-</head>
-<body>
-    <h1>En construcción</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/custom_bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+        <title>Carrito</title>
+  </head>
+  <body>
+      <!---Navbar --->
+  <div id="navigation" class="sticky-top"></div>
+  <script src="../js/nav.js"></script>
+<!---Navbar --->
+    <main class="container-fluid">
+      <page-title class="row justify-content-center my-3">
+        <div class="col text-center">
+          <h1>Tu Carrito</h1>
+        </div>
+      </page-title>
+
+      <section class="row m-2">
+        <!--- Artículos del carrito --->
+        <section class="col-sm-9 mb-2">
+          <div class="card mb-4">
+            <!--- Elemento en carrito -->
+            <div class="row p-3">
+              <div class="col-3">
+                <img
+                  src="../assets/img/Ositos/Picsart_22-10-05_03-05-01-913.jpg"
+                  class="img-fluid rounded w-75"
+                  alt="..."
+                />
+              </div>
+              <div class="col-3">
+                  <h5>Pareja de ositos</h5>
+              </div>
+              <div class="col-1">
+                1
+            </div>
+            <div class="col-1">
+              $3200.00 MXN
+            </div>
+              <div class="col-2">
+                <a href="#" class="btn btn-light"> Borrar </a>
+              </div>
+            </div>
+          </div>
+          <!--- Carta con botón de pago-->
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-4 my-auto">
+              </div>
+              <div class="col-6 my-auto">
+                
+                  <h5>Total:</h5>
+                  <p >$3200.00 MXN</p>
+                </div>
+              
+              <div class="col-2 text-center my-auto">
+                <a href="#" class="btn btn-success"> Pagar </a>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-8 text-center">
+                    <small class="text-muted">
+                    ¿Tu Compra es un regalo? 
+                    ¡Agrega una envoltura! 
+                    <br>(Gratis en un
+                    mínimo de compra de $300.00 MXN)
+                </small>
+                  </div>
+            </div>
+        
+        </section>
+        
+
+        <!--- Productos recomendados-->
+        <section class="col-sm-3">
+          <div class = "container-fluid">
+          <div class="card">
+            <div class="card-header">Promocionado</div>
+            <div class="card-body text-center" id ="1">
+              <h5 class="card-title">¡No te vayas sin esto!</h5>
+              <p class="card-text">
+                Perrito bonito, fácil de cuidar, ¡Te seguirá a todas partes!
+              </p>
+              <img
+                src="../assets/img/Ositos/Picsart_22-10-05_03-05-01-913.jpg"
+                class="img-fluid img-thumbnail w-75"
+                alt="Producto recomendado"
+              />
+              <br>
+              <h5> $300.00 MXN</h5>
+              <br>
+              <a href="#" class="btn btn-light my-3 add-cart"> Agregar </a>
+            </div>
+          </div>
+        </div>
+        </section>
+      </section>
+    </main>
+    <!---Navbar --->
+  <footer id="footer"></footer>
+  
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/carrito.js"></script>
+  </body>
 </html>
