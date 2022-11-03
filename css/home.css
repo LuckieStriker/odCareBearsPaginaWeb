@@ -21,12 +21,16 @@ h2, h3, h4, h5 {
 
 .carousel-item a {
   object-fit: cover;
-  max-width: 40%;
+  max-width: 100%;
   min-width: 35%;
 }
 
-.carousel-item a img{
+.carousel-item>.img-contenedor{
   object-fit: cover;
+}
+.carousel-item a img{ 
+  object-fit: cover;
+  min-width: 84px;
 }
 /* Letras del carrusel */
 .carousel .carousel-caption{
@@ -140,8 +144,12 @@ nav > a {
   width: 500px;
   /* width: 500px; */
 }
+/* Elemento de en medio en el carrusel */
+.enmedio{
+  min-width: 45%;
+}
 /* Carrusel 2 */
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .carousel-inner .carousel-item > div {
       display: none;
   }
@@ -157,7 +165,7 @@ nav > a {
 }
 
 /* medium and up screens */
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
