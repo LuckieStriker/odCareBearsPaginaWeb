@@ -112,6 +112,8 @@ const products = [
                 "id": 7
             },
 
+            
+
 
 
         ]
@@ -189,6 +191,13 @@ function getParameterByName(name, url = window.location.href) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+let ID1234 = getParameterByName('id');
+for (i=0; i<products.length; i++){
+    products[i].productos.forEach(element => {
+       if(ID1234 == element.id) nuevoProducto(element) 
+        });
+    }
+
 
 function getCategoria(categoriaPath) {
     let categoria = null;
@@ -206,6 +215,7 @@ function pintarTitulo() {
     document.getElementById('titulo-h1').innerHTML = categoria.nombre;
 }
 
+
 function pintarProductos() {
     let html = "";
     categoria.productos.forEach(element => {
@@ -221,7 +231,6 @@ function pintarProductos() {
     })
     document.getElementById('fila-1').innerHTML = html;
 }
-
 
 pintarTitulo();
 pintarProductos();
