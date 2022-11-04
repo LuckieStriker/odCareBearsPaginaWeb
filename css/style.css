@@ -53,6 +53,10 @@ h1{
 .footer-link:hover{
   color: #443b4f;
 }
+
+.carrito{
+  background-color:#f58682;
+}
 /*---------------------------Estilo del deste de buscar----------------------*/
 .form button {
   border: none;
@@ -66,7 +70,7 @@ h1{
   --height-of-input: 40px;
   --border-height: 2px;
   --input-bg: #fff;
-  --border-color: #f58682;
+  --border-color: #f9c4d2;
   --border-radius: 30px;
   --after-border-radius: 1px;
   position: relative;
