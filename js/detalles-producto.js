@@ -63,9 +63,20 @@ const products = [
         ]
     },
     {
-        "categoria": "kawaii",
-        "nombre": "Kawaii",
+        "categoria": "Accesorios",
+        "nombre": "Accesorios",
         "productos": [
+            {
+                "categoria": "Accesorios",
+                "nombre": "Aretes Estrella ",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "/assets/img/Accesorios/AretesCiculares1.jpg",
+                "imagenSec": "/assets/img/Accesorios/AretesCirculares2.jpg",
+                "imagenTer": "/assets/img/Accesorios/AretesCirculares3.jpg",
+                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
+                "id": 6
+            },
 
         ]
     },
@@ -150,9 +161,12 @@ function getParameterByName(name, url = window.location.href) {
 }
 let ID1234 = getParameterByName('id');
 
-products[0].productos.forEach(element => {
-    ID1234 == element.id ? nuevoProducto(element) : console.log("nones")
-});
+
+for (i=0; i<products.length; i++){
+products[i].productos.forEach(element => {
+   if(ID1234 == element.id) nuevoProducto(element) 
+    });
+}
 function nuevoProducto(element){
 X = document.getElementById("miProducto");
 X.innerHTML = `
