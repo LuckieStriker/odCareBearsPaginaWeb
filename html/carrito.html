@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/custom_bootstrap.css" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/css/custom_bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/carrito.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,27 +37,7 @@
         <section class="col-sm-9 mb-2">
           <div class="card mb-4">
             <!--- Elemento en carrito -->
-            <div class="row p-3">
-              <div class="col-3">
-                <img
-                  src="../assets/img/Ositos/Picsart_22-10-05_03-05-01-913.jpg"
-                  class="img-fluid rounded w-75"
-                  alt="..."
-                />
-              </div>
-              <div class="col-3">
-                  <h5>Pareja de ositos</h5>
-              </div>
-              <div class="col-1">
-                1
-            </div>
-            <div class="col-1">
-              $3200.00 MXN
-            </div>
-              <div class="col-2">
-                <a href="#" class="btn btn-light"> Borrar </a>
-              </div>
-            </div>
+            <div id="fila-1"></div>
           </div>
           <!--- Carta con botón de pago-->
           <div class="card">
@@ -70,7 +51,7 @@
                 </div>
               
               <div class="col-2 text-center my-auto">
-                <a href="#" class="btn btn-success"> Pagar </a>
+                <button href="#" class="btn btn-light"> Pagar </button>
               </div>
             </div>
             <div class="row">
@@ -99,14 +80,14 @@
                 Perrito bonito, fácil de cuidar, ¡Te seguirá a todas partes!
               </p>
               <img
-                src="../assets/img/Ositos/Picsart_22-10-05_03-05-01-913.jpg"
+                src="/assets/img/Ositos/OsoAzul.jpg"
                 class="img-fluid img-thumbnail w-75"
                 alt="Producto recomendado"
               />
               <br>
               <h5> $300.00 MXN</h5>
               <br>
-              <a href="#" class="btn btn-light my-3 add-cart"> Agregar </a>
+              <button href="#" class="btn btn-light my-3 add-cart"> Agregar </button>
             </div>
           </div>
         </div>
@@ -115,8 +96,7 @@
     </main>
     <!---Navbar --->
   <footer id="footer"></footer>
-  
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="../js/carrito.js"></script>
   </body>
 </html>
