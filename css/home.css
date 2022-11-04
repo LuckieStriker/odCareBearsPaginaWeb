@@ -49,41 +49,42 @@ h2, h3, h4, h5 {
 /* Altura del boton contenedor */
 a > .card{
   height: 200px;
+  color: #382b22;
 }
 /* Card Ositos */
 #card-ositos{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://picsum.photos/200);
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../assets/img/Ositos/Osos.jpg);
   background-color: #fff;
 }
 #card-ositos:hover{
   background-size: 120%;
   background-position: center;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://picsum.photos/200);
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../assets/img/Ositos/Osos.jpg);
   background-color: #fff;
 }
 /* Card Accesorios */
 #card-accesorios{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://picsum.photos/200);
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../assets/img/accesoriofil.jpg);
   background-color: #fff;
 }
 #card-accesorios:hover{
   background-size: 120%;
   background-position: center;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://picsum.photos/200);
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../assets/img/accesoriofil.jpg);
   background-color: #fff;
 }
 /* Card Ceramica */
 #card-ceramica{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://picsum.photos/200);
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../assets/img/Ceramica/tazafil.jpg);
   background-color: #fff;
 }
 #card-ceramica:hover{
   background-size: 120%;
   background-position: center;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://picsum.photos/200);
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../assets/img/Ceramica/tazafil.jpg);
   background-color: #fff;
 }
 /* Card Otros */
