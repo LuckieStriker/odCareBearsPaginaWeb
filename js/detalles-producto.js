@@ -10,7 +10,7 @@ const products = [
                 "descuento": 100.00,
                 "imagen": "/assets/img/Ositos/OsoMorado.jpg",
                 "imagenSec": "/assets/img/Ositos/OsoMorado1.jpg",
-                "imangenTer":"/assets/img/Ositos/OsoMorado2.jpg",
+                "imagenTer":"/assets/img/Ositos/OsoMorado2.jpg",
                 "descripcion":"Mochilita cariñosita con correas ajustables y cierre trasero para guardar lo que desees",
                 "id": 1
             },
@@ -21,7 +21,7 @@ const products = [
                 "descuento": 100.00,
                 "imagen": "/assets/img/Ositos/OsoAzul.jpg",
                 "imagenSec": "/assets/img/Ositos/OsoAzul1.jpg",
-                "imangenTer":"/assets/img/Ositos/OsitoAzul3.jpg",
+                "imagenTer":"/assets/img/Ositos/OsitoAzul3.jpg",
                 "descripcion":"Osito Dormiloncito, con su corazón intacto para que le des mucho amor, ojitos cansaditos y bonitos",
                 "id": 2
             },
@@ -38,19 +38,14 @@ const products = [
             },
             {
                 "categoria": "ositos",
-                "nombre": "Oso morado",
-                "precio": 199.00,
+                "nombre": "Love A Lot Bear",
+                "precio": 340.00,
                 "descuento": 100.00,
-                "imagen": "OsoMorado.jpg",
+                "imagen": "/assets/img/Ositos/OsoRosa.jpg",
+                "imagenSec": "/assets/img/Ositos/OsoRosa1.jpg",
+                "imagenTer": "/assets/img/Ositos/OsoRosa2.jpg",
+                "descripcion":"Osito con mucho amor para dar y que cuides de él, en perfecto estado. ",
                 "id": 4
-            },
-            {
-                "categoria": "ositos",
-                "nombre": "Oso rosa",
-                "precio": 199.00,
-                "descuento": 100.00,
-                "imagen": "OsoRosa.jpg",
-                "id": 5
             },
             {
                 "categoria": "ositos",
@@ -58,7 +53,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "OsoRosita.jpg",
-                "id": 6
+                "id": 5
             },
 
 
@@ -179,7 +174,7 @@ ventana.innerHTML = `
        <img src=${element.imagenSec}  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
    </div>
    <div class="small-img-col">
-       <img src="${element.imangenTer}"  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
+       <img src="${element.imagenTer}"  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
    </div>
    </div> `
 };
