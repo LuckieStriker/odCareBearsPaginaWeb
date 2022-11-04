@@ -49,10 +49,13 @@ const products = [
             },
             {
                 "categoria": "ositos",
-                "nombre": "Oso rosita",
-                "precio": 199.00,
+                "nombre": "Bebesito cariñosito rosita",
+                "precio": 349.00,
                 "descuento": 100.00,
-                "imagen": "OsoRosita.jpg",
+                "imagen": "/assets/img/Ositos/OsoRosita.jpg",
+                "imagenSec": "/assets/img/Ositos/OsoRosita1.jpg",
+                "imagenTer": "/assets/img/Ositos/OsoRosita2.jpg",
+                "descripcion":"Bebé de los cariñositos, adaptable a mochila, sin daños",
                 "id": 5
             },
 
