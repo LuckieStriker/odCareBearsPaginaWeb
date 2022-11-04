@@ -45,29 +45,11 @@
             <a class="nav-link active" href="../html/acerca.html">Nosotros</a>
           </li>
         </ul>
-        <div class="container">
-          <div class="row">
-            <div class="col-8"></div>
-            <div class="col-4">
-               <!--Buscador-->
-        <form class="form">
-          <button>
-              <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
-                  <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-          </button>
-          <input class="input" placeholder="Buscar" required="" type="text">
-          <button class="reset" type="reset">
-
-          </button>
-      </form> <!--Buscador-->
-            </div>
-          </div>
-        </div>
       </div>
       <!--Termina el contenedor de hamburguesa-->
 
       <!--Logos de carrito y oso-->
+      <div class="d-flex">
       <a class="p-1" href="../html/login.html">
         <img
           class="m-2"
@@ -77,6 +59,7 @@
           alt="Profile"
         />
       </a>
+      <div class="position-relative">
       <a class="pb" href="../html/carrito.html">
         <img
           class="m-2"
@@ -86,6 +69,9 @@
           alt="Cart"
         />
       </a>
+      <span class="position-absolute top-0 end-0 badge rounded-pill carrito" id="noItems"></span>
+    </div>
+    </div>
     </div>
   </nav>
 </header>

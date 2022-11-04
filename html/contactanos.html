@@ -27,73 +27,65 @@
     <!-- NAV BAR -->
     <div id="navigation" class="sticky-top"></div>
     <script src="../js/nav.js"></script>
+
     <!-- Descripción -->
-    <div class="container">
-        <div class="row">
-            <div id="titulo">
-                <h1 id="titulo-h1" class="text-center my-4">Contacta con nosotros</h1>
-                <p id="bienvenida">¡Queremos escucharte! ❤️</p>
-                <p id="parrafo">
+        <div class="contacto container-fluid">
+        <form class="contact-form">
+            <h1 id="titulo-h1">Contacto</h1>
+            <p id="bienvenida">¡Queremos escucharte! ❤️</p>
+            <p id="parrafo">
                     Si quieres información sobre cualquiera de nuestros productos o
                     estás interesado(a) en su distribución, rellena nuestro formulario y
                     nos pondremos en contacto contigo lo antes posible, será un placer
                     atenderte.
                 </p>
-            </div>
-        </div>
-        <br />
-        <div class="col">
-            <!-- Formulario -->
-            <form  id="form"  class="contactForm row g-3" name="contact-form">
-                <div class="col-md-5">
-                    <label for="inputname" class="form-label" id="labelname">Nombre</label>
-                    <input type="text" name="name"  class="form-control" id="name" placeholder="Alegrosita Feliz" required/>
-                    <small class="error hide">El nombre es Invalido</small>
-                    <!-- <div class="error hide">El nombre es Invalido</div> -->
+
+                <div class="form-group">
+                    <label for="inputname" class="form-label" id="labelemail">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo" required />
+                    <p class="msj-error" id="errorNombre"></p>
+                </div>  
+
+                <div class="form-group">
+                    <label for="inputemail" class="form-label" id="labelemail">Correo Electrónico</label>
+                    <input type="email" class="form-control formulario" id="email" name="email" placeholder="Correo electrónico" required />
+                    <p class="msj-error" id="errorEmail"></p>
                 </div>
 
-                <div class="col-md-2">
+                <div class="form-group">
+                    <label for="inputPhone" class="form-label" id="labelphone">Teléfono</label>
+                    <input type="text" class="form-control"  id="telefono" name="telefono" placeholder="Teléfono" required />
+                    <p class="msj-error"  id="errorTelefono"></p>
                 </div>
-
-                <div class="col-md-5">
-                    <label for="inputemail" class="form-label" id="labelemail">Email</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="alegrosita@kawais.com" required />
-                    <small class="error hide">El Email es invalido</small>
+   
+                <div class="form-group">
+                    <label for="inputmessage" class="form-label" id="labelmessage">Mensaje</label>
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje aquí  🐻"  class="form-control" id="mensaje" rows="3"  required></textarea>
+                    <p class="msj-error" id="errorMensaje"></p>
                 </div>
-
-                <div class="col-md-5">
-                    <label for="inputphone" class="form-label" id="labelphone">Telefono</label>
-                    <input type="text" name="phone" class="form-control" id="phone"  placeholder="5525663234"  required/>
-                    <small class="error hide">El Telefono es invalido, debe tener un total de 10 caracteres</small>
-                </div>
-
-                <div class= "mb-5">
-                    <label for="mensaje" class="form-label" id="mensaje">Mensaje</label>
-                    <textarea placeholder="Escribe tu mensaje aquí 🐻" class="form-control" name="message" id="message" rows="3" required></textarea>
-                    <small class="error hide">El mensaje es requerido</small>
-                </div>
-
 
                 <div class="d-grid gap-2 col-4 mx-auto">
-                    <button type="submit" class="btn btn-primary" id="btnenviar"><img width="40" height="40" src="../assets/img/enviar.svg" 
-                        alt="Iconoenviar"> Enviar</button> 
+                    <button type="submit" class="btn btn-primary" id="btnenviar"> Enviar</button> 
                 </div>
-            </form>
-            <br>
-        </div>
+        </form>    
+    </div>        
 
-    </div>
+
 
     <footer id ="footer"></footer>
 
     <script src="../js/contactanos.js"></script>
     <!-- script de SweetAlert -->
-    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Script de la funcion para enviar el email -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">(function(){emailjs.init("OYa_pQ5a6y0KVomtq");})();</script>
-    <!--BootstrapJS-->
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" 
+     crossorigin="anonymous"></script>
+
+
+
 </body>
 </html>
 

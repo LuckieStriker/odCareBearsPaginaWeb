@@ -11,9 +11,16 @@
         <!--CSS-->
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/login.css" />
+        <!-- Jquery -->
+        <script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous"></script>
+        
         <!--FONTS-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2&family=Lily+Script+One&display=swap" rel="stylesheet"/>
         <script
   src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -22,16 +29,15 @@
         <title>Login</title>
     </head>
 <body>
-
-
-
-
+  <!-- Parte del header navbar -->
+  <div id = "navigation" class="sticky-top"></div>
+  <script src="../js/nav.js"></script>
 
         <!-- Login -->
     <div class="login container-fluid">
         <form class="login-form">
             <p id="bienvenida">Bienvenido a OdCareBears</p>
-            <h1 class="titulo-h1">Ingresar</h1>
+            <h1  id="titulo-h1">Ingresar</h1>
 
             <div class="form-group">
                 <label for="inputemail" class="form-label" id="labelemail">Correo Electrónico</label>
@@ -56,16 +62,18 @@
         </form>
     </div>
 
-
-
-
+    <!-- Footer -->
+    <footer id ="footer"></footer>
 
 
 
     <script src="../js/login.js"></script>
     <!-- script de SweetAlert -->
-    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
-    <!--BootstrapJS-->
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" 
+    crossorigin="anonymous"></script>
+
 </body>
 </html> 

@@ -1,3 +1,5 @@
+//Archivo temporal para almacenar información de los productos
+
 const products = [
     {
         "categoria": "ositos",
@@ -126,50 +128,3 @@ const products = [
         ]
     }
 ]
-
-function getParameterByName(name, url = window.location.href) {
-    name = name.replace(/[\[\]]/g, '\\$&');
-    let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}
-
-function getCategoria(categoriaPath) {
-    let categoria = null;
-    products.forEach(element => {
-        if (element.categoria === categoriaPath) {
-            categoria = element;
-        }
-    });
-    return categoria;
-}
-let categoriaPath = getParameterByName('categoria');
-let categoria = getCategoria(categoriaPath);
-
-function pintarTitulo() {
-    document.getElementById('titulo-h1').innerHTML = categoria.nombre;
-}
-
-function pintarProductos() {
-    let html = "";
-    categoria.productos.forEach(element => {
-        let fila = '<div class="col-md-3"><br><a target="_target" href="/html/detalles-producto.html?id={id}"><img src="{imagen}" class="img-fluid rounded-4" alt=""></a><p align="center">{nombre}<br> {precioConDescuento}MXN   <s>{precioSinDescuento}MXN</s></p><a target="_target" href="/html/detalles-producto.html?id={id}"><p align="center"><button type="button" href="_target" class="btn-historial">Agregar al carrito</button></p></a></div>';
-        fila = fila.replace("{imagen}", '../assets/img/' + categoriaPath + '/' + element.imagen);
-        fila = fila.replace("{nombre}", element.nombre);
-        fila = fila.replace("{precioConDescuento}", element.precio - element.descuento);
-        fila = fila.replace("{precioSinDescuento}", element.precio);
-        fila = fila.replace("{id}", element.id);
-
-        console.log(fila);
-        html += fila;
-    })
-    document.getElementById('fila-1').innerHTML = html;
-}
-
-
-pintarTitulo();
-pintarProductos();
-console.log(products)
-console.log(categoria);
