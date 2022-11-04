@@ -102,7 +102,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Alajero.jpg",
-                "id": 7
+                "id": 8
             },
             {
                 "categoria": "ceramica",
@@ -110,7 +110,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "CajitaPastel.jpg",
-                "id": 8
+                "id": 9
             },
             {
                 "categoria": "ceramica",
@@ -118,7 +118,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "PlatoLargo.jpg",
-                "id": 9
+                "id": 10
             },
             {
                 "categoria": "ceramica",
@@ -126,7 +126,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Taza.jpg",
-                "id": 10
+                "id": 11
             },
 
         ]
