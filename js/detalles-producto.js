@@ -79,12 +79,12 @@ const products = [
             },
             {
                 "categoria": "Accesorios",
-                "nombre": "Aretes Estrella ",
+                "nombre": "Aretes Luna-Planeta ",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "/assets/img/Accesorios/AretesCiculares1.jpg",
-                "imagenSec": "/assets/img/Accesorios/AretesCirculares2.jpg",
-                "imagenTer": "/assets/img/Accesorios/AretesCirculares3.jpg",
+                "imagen": "/assets/img/Accesorios/AretesLunaPlaneta.jpg",
+                "imagenSec": "/assets/img/Accesorios/AretesLunaPlaneta2.jpg",
+                "imagenTer": "/assets/img/Accesorios/AreteLunaPlaneta3.jpg",
                 "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
                 "id": 7
             },
