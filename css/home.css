@@ -1,13 +1,14 @@
+/* General */
 html {
   overflow-x: hidden;
 }
-
 h2, h3, h4, h5 {
   display: block;
   text-align: center;
   font-family: 'Pacifico', cursive;
   margin: 32px;
 }
+
 /* Carrusel */
 /* Altura general del carrusel */
 .carrusel {
@@ -18,28 +19,34 @@ h2, h3, h4, h5 {
   object-fit: cover;
   /* background-size: cover; */
 }
-
+/* Enlace de la imagen del carrusel */
 .carousel-item a {
   object-fit: cover;
   max-width: 100%;
   min-width: 35%;
 }
-
+/* Ajuste de partes del carrusel para la responsividad y la muestra crrecta de las imagenes */
 .carousel-item>.img-contenedor{
   object-fit: cover;
 }
+/* Imagen */
 .carousel-item a img{ 
   object-fit: cover;
   min-width: 84px;
 }
-/* Letras del carrusel */
+
+/* Descripcion del carrusel */
+/* Fondo */
 .carousel .carousel-caption{
   background-color: rgb(118, 108, 134,0.4);
 }
+/* Texto */
 .carousel-caption h5{
   margin: 10px;
 }
 
+/* Botones de Categorias */
+/* Altura del boton contenedor */
 a > .card{
   height: 200px;
 }
@@ -50,20 +57,18 @@ a > .card{
   background-color: #fff;
 }
 #card-ositos:hover{
-  /* animation-duration: 1s;
-  animation-name: ositos-expandir; */
   background-size: 120%;
   background-position: center;
   background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://picsum.photos/200);
   background-color: #fff;
 }
-/* Card Kawaii */
-#card-kawaii{
+/* Card Accesorios */
+#card-accesorios{
   background-size: cover;
   background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://picsum.photos/200);
   background-color: #fff;
 }
-#card-kawaii:hover{
+#card-accesorios:hover{
   background-size: 120%;
   background-position: center;
   background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://picsum.photos/200);
@@ -93,6 +98,7 @@ a > .card{
   background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://picsum.photos/200);
   background-color: #fff;
 }
+
 /* Contenedor Categoria */
 .categoria{
   height: 300px;
@@ -111,22 +117,25 @@ a > .card{
 nav > a {
   max-width: 286px;
 }
+
 /* Scroll */
 ::-webkit-scrollbar {
   width: 12px;
   height: 10px;
 }
-/* Barra */
+/* Barra del scroll */
 ::-webkit-scrollbar-track {
   /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  */
   border-radius: 10px;
 }
-/* Desplazador */
+/* Desplazador del scroll */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: #F4B2B0;
   /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
 }
+
+/* Presentacion */
 /* Contenedor inicial */
 #presentacion{
   height: 800px;
@@ -144,10 +153,26 @@ nav > a {
   width: 500px;
   /* width: 500px; */
 }
+#presentacion figure{
+  z-index: 2;
+}
+#presentacion blockquote{
+  background-color: rgb(255, 255, 255,0.2);
+}
+#presentacion blockquote::after{
+  -moz-filter   : blur(5px);
+    -webkit-filter: blur(5px);
+    -o-filter     : blur(5px);
+
+  filter: blur(5px);
+}
+
+/* Elementos temporales */
 /* Elemento de en medio en el carrusel */
 .enmedio{
   min-width: 45%;
 }
+/* Vistas de la pantalla */
 /* Carrusel 2 */
 @media (max-width: 575px) {
   .carousel-inner .carousel-item > div {
@@ -155,6 +180,15 @@ nav > a {
   }
   .carousel-inner .carousel-item > div:first-child {
       display: block;
+  }
+  #osito{
+    animation-duration: 12s;
+    animation-name: mini-encoger-expandir;
+    animation-iteration-count: 1;
+    position: absolute;
+    top: 25%;
+    right: -50px;
+    width: 500px;
   }
 }
 
@@ -184,6 +218,7 @@ transform: translateX(0);
 }
 /* Carrusel 2 fin */
 
+/* Efectos */
 #chispa1{
   animation-name: chispazo1;
   animation-duration: 2s;
@@ -247,6 +282,27 @@ transform: translateX(0);
   100% {
     top: 25%;
     right: 1%;
+    width: 500px;
+  }
+}
+@keyframes mini-encoger-expandir {
+  0% {
+    opacity: 0;
+    top: 50%;
+    right: -20px;
+    width: 100px;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    top: 23%;
+    right: -50px;
+    width: 520px;
+  }
+  100% {
+    top: 25%;
+    right: -50px;
     width: 500px;
   }
 }
@@ -335,26 +391,6 @@ transform: translateX(0);
     overflow-x: scroll;
   }
 }
-/* Animacion de cada categoria */
-/* @keyframes ositos-expandir {
-  0% {
-    background-size: cover;
-    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://picsum.photos/200);
-  }
-  25% {
-    background-size: cover;
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://picsum.photos/200);
-  }
-  26% {
-    background-size: cover;
-    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(https://picsum.photos/200);
-  }
-  100% {
-    background-size: 120%;
-    background-position: center;
-    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(25  5,255,255,0.7)), url(https://picsum.photos/200);
-  }
-} */
 
 /* Boton Odry */
 .volver a {
