@@ -5,63 +5,89 @@ const products = [
         "productos": [
             {
                 "categoria": "ositos",
-                "nombre": "Osos",
+                "nombre": "Oso Morado",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "../assets/img/osito-morado1.jpg",
-                "imagenSec": "../assets/img/osito-morado2.jpg",
-                "imangenTer":"../assets/img/osito-morado3.jpg",
+                "imagen": "/assets/img/Ositos/OsoMorado.jpg",
+                "imagenSec": "/assets/img/Ositos/OsoMorado1.jpg",
+                "imagenTer":"/assets/img/Ositos/OsoMorado2.jpg",
                 "descripcion":"Mochilita cariñosita con correas ajustables y cierre trasero para guardar lo que desees",
                 "id": 1
             },
             {
                 "categoria": "ositos",
-                "nombre": "Oso azul",
+                "nombre": "Oso Dormiloncito",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "OsoAzul.jpg",
+                "imagen": "/assets/img/Ositos/OsoAzul.jpg",
+                "imagenSec": "/assets/img/Ositos/OsoAzul1.jpg",
+                "imagenTer":"/assets/img/Ositos/OsitoAzul3.jpg",
+                "descripcion":"Osito Dormiloncito, con su corazón intacto para que le des mucho amor, ojitos cansaditos y bonitos",
                 "id": 2
             },
             {
                 "categoria": "ositos",
-                "nombre": "Oso café",
+                "nombre": "Tiernosito café",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "OsoCafe.jpg",
+                "imagen": "/assets/img/Ositos/OsoCafe.jpg",
+                "imagenSec": "/assets/img/Ositos/OsoCafe1.jpg",
+                "imagenTer": "/assets/img/Ositos/OsoCafe2.jpg",
+                "descripcion":"Tiernosito café esta listo para que acaricies, y cuides de él",
                 "id": 3
             },
             {
                 "categoria": "ositos",
-                "nombre": "Oso morado",
-                "precio": 199.00,
+                "nombre": "Love A Lot Bear",
+                "precio": 340.00,
                 "descuento": 100.00,
-                "imagen": "OsoMorado.jpg",
+                "imagen": "/assets/img/Ositos/OsoRosa.jpg",
+                "imagenSec": "/assets/img/Ositos/OsoRosa1.jpg",
+                "imagenTer": "/assets/img/Ositos/OsoRosa2.jpg",
+                "descripcion":"Osito con mucho amor para dar y que cuides de él, en perfecto estado. ",
                 "id": 4
             },
             {
                 "categoria": "ositos",
-                "nombre": "Oso rosa",
-                "precio": 199.00,
+                "nombre": "Bebesito cariñosito rosita",
+                "precio": 349.00,
                 "descuento": 100.00,
-                "imagen": "OsoRosa.jpg",
+                "imagen": "/assets/img/Ositos/OsoRosita.jpg",
+                "imagenSec": "/assets/img/Ositos/OsoRosita1.jpg",
+                "imagenTer": "/assets/img/Ositos/OsoRosita2.jpg",
+                "descripcion":"Bebé de los cariñositos, adaptable a mochila, sin daños",
                 "id": 5
-            },
-            {
-                "categoria": "ositos",
-                "nombre": "Oso rosita",
-                "precio": 199.00,
-                "descuento": 100.00,
-                "imagen": "OsoRosita.jpg",
-                "id": 6
             },
 
 
         ]
     },
     {
-        "categoria": "kawaii",
-        "nombre": "Kawaii",
+        "categoria": "Accesorios",
+        "nombre": "Accesorios",
         "productos": [
+            {
+                "categoria": "Accesorios",
+                "nombre": "Aretes Estrella ",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "/assets/img/Accesorios/AretesCiculares1.jpg",
+                "imagenSec": "/assets/img/Accesorios/AretesCirculares2.jpg",
+                "imagenTer": "/assets/img/Accesorios/AretesCirculares3.jpg",
+                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
+                "id": 6
+            },
+            {
+                "categoria": "Accesorios",
+                "nombre": "Aretes Estrella ",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "/assets/img/Accesorios/AretesCiculares1.jpg",
+                "imagenSec": "/assets/img/Accesorios/AretesCirculares2.jpg",
+                "imagenTer": "/assets/img/Accesorios/AretesCirculares3.jpg",
+                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
+                "id": 7
+            },
 
         ]
     },
@@ -146,14 +172,17 @@ function getParameterByName(name, url = window.location.href) {
 }
 let ID1234 = getParameterByName('id');
 
-products[0].productos.forEach(element => {
-    ID1234 == element.id ? nuevoProducto(element) : console.log("nones")
-});
+
+for (i=0; i<products.length; i++){
+products[i].productos.forEach(element => {
+   if(ID1234 == element.id) nuevoProducto(element) 
+    });
+}
 function nuevoProducto(element){
 X = document.getElementById("miProducto");
 X.innerHTML = `
                 <h6>Home / ${element.categoria}</h6>
-                <h3 class="py-4">Osito Morado</h3>
+                <h3 class="py-4">${element.nombre}</h3>
                 <h2>$${element.precio-element.descuento} <s>$${element.precio}</s></h2 >
                 <input type="number" value="1">
                 <button class="bcomprar add-cart">Agregar al carrito </button>
@@ -173,7 +202,7 @@ ventana.innerHTML = `
        <img src=${element.imagenSec}  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
    </div>
    <div class="small-img-col">
-       <img src="${element.imangenTer}"  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
+       <img src="${element.imagenTer}"  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
    </div>
    </div> `
 };
