@@ -5,29 +5,35 @@ const products = [
         "productos": [
             {
                 "categoria": "ositos",
-                "nombre": "Osos",
+                "nombre": "Oso Morado",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "../assets/img/osito-morado1.jpg",
-                "imagenSec": "../assets/img/osito-morado2.jpg",
-                "imangenTer":"../assets/img/osito-morado3.jpg",
+                "imagen": "/assets/img/Ositos/OsoMorado.jpg",
+                "imagenSec": "/assets/img/Ositos/OsoMorado1.jpg",
+                "imangenTer":"/assets/img/Ositos/OsoMorado2.jpg",
                 "descripcion":"Mochilita cariñosita con correas ajustables y cierre trasero para guardar lo que desees",
                 "id": 1
             },
             {
                 "categoria": "ositos",
-                "nombre": "Oso azul",
+                "nombre": "Oso Dormiloncito",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "OsoAzul.jpg",
+                "imagen": "/assets/img/Ositos/OsoAzul.jpg",
+                "imagenSec": "/assets/img/Ositos/OsoAzul1.jpg",
+                "imangenTer":"/assets/img/Ositos/OsitoAzul3.jpg",
+                "descripcion":"Osito Dormiloncito, con su corazón intacto para que le des mucho amor, ojitos cansaditos y bonitos",
                 "id": 2
             },
             {
                 "categoria": "ositos",
-                "nombre": "Oso café",
+                "nombre": "Tiernosito café",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "OsoCafe.jpg",
+                "imagen": "/assets/img/Ositos/OsoCafe.jpg",
+                "imagenSec": "/assets/img/Ositos/OsoCafe1.jpg",
+                "imagenTer": "/assets/img/Ositos/OsoCafe2.jpg",
+                "descripcion":"Tiernosito café esta listo para que acaricies, y cuides de él",
                 "id": 3
             },
             {
@@ -153,7 +159,7 @@ function nuevoProducto(element){
 X = document.getElementById("miProducto");
 X.innerHTML = `
                 <h6>Home / ${element.categoria}</h6>
-                <h3 class="py-4">Osito Morado</h3>
+                <h3 class="py-4">${element.nombre}</h3>
                 <h2>$${element.precio-element.descuento} <s>$${element.precio}</s></h2 >
                 <input type="number" value="1">
                 <button class="bcomprar add-cart">Agregar al carrito </button>
