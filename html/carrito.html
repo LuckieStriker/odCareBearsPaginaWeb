@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/custom_bootstrap.css" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/css/custom_bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/carrito.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../css/carrito.css" />
@@ -37,42 +38,23 @@
 
       <section class="row m-2">
         <!--- Artículos del carrito --->
-        <section class="col-md-9 mb-2">
-          <!--- Carta de elemento en carrito -->
-          <!--
-          <div class="card mb-4 max-vh-20">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="{imagen}"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h5 class="card-title">Pareja de ositos</h5>
-                  <p class="card-text">$3200.00 MXN</p>
-                </div>
-              </div>
-              <div class="col-md-2 text-center my-auto">
-                <a href="#" class="btn btn-light borrar"> Borrar </a>
-              </div>
-            </div>
-          </div>-->
-          <div id="fila-1"></div>
+        <section class="col-sm-9 mb-2">
+          <div class="card mb-4">
+            <!--- Elemento en carrito -->
+            <div id="fila-1"></div>
+          </div>
           <!--- Carta con botón de pago-->
           <div class="card">
             <div class="row g-0">
-              <div class="col-md-4 my-auto">
+              <div class="col-4 my-auto">
               </div>
-              <div class="col-md-6 my-auto">
+              <div class="col-6 my-auto">
                 
                   <h5>Total:</h5>
                   <p >$3200.00 MXN</p>
                 </div>
               
-              <div class="col-md-2 text-center my-auto">
+              <div class="col-2 text-center my-auto">
                 <button href="#" class="btn btn-light"> Pagar </button>
               </div>
             </div>
@@ -89,6 +71,8 @@
             </div>
         
         </section>
+        
+
         <!--- Productos recomendados-->
         <section class="col-sm-3">
           <div class = "container-fluid">
@@ -116,7 +100,7 @@
     </main>
     <!---Navbar --->
   <footer id="footer"></footer>
-  
-    <script src="../js/cart2.js"></script>
+
+    <script src="../js/carrito.js"></script>
   </body>
 </html>

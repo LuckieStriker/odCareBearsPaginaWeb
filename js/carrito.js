@@ -40,28 +40,24 @@ function renderCart() {
     let html = "";
     cartProducts.forEach(element => {
         console.log(element.nombre);
-        let fila = 
-        `<div class="card mb-4 max-vh-20">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="{imagen}"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-6">
-            <div class="card-body">
-              <h5 class="card-title">{nombre}</h5>
-              <p class="card-text">\${precioSinDescuento}</p>
-            </div>
-          </div>
-          <div class="col-md-2 text-center my-auto borrar">
-            <a href="#" class="btn btn-light borrar" id ={id}> Borrar </a>
+        let fila = `<article class="row g-0">
+        <div class="col-md-4">
+          <img
+            src="/assets/img/Ositos/OsoAzul.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Pareja de ositos</h5>
+            <p class="card-text">$3200.00 MXN</p>
           </div>
         </div>
-      </div>`;
-
+        <div class="col-md-2 text-center my-auto">
+          <button href="#" class="btn btn-light borrar"> Borrar </button>
+        </div>
+      </article>`;
         //fila = fila.replace("{imagen}", '../assets/img/' + categoriaPath + '/' + element.imagen);
         fila = fila.replace("{nombre}", element.nombre);
         fila = fila.replace("{precioConDescuento}", element.precio - element.descuento);
@@ -73,13 +69,14 @@ function renderCart() {
     })
     document.getElementById('fila-1').innerHTML = html;
     document.querySelectorAll(".borrar").forEach(button => {
-        button.addEventListener('click', borrarArticulo);
-        console.log(button);
-    });
+      button.addEventListener('click', borrarArticulo);
+      console.log(button);
+  });
+    document.getElementById('noItems').innerText = cartProducts.length;
 };
 
 function borrarArticulo(){
-    let idProd = this.id;
-    this.parentElement.innerHTML = "";
-    console.log( this.id, cartProducts.filter(producto => producto.id != idProd));
+  let idProd = this.id;
+  this.parentElement.parentElement.innerHTML = "";
+  console.log( this.id, cartProducts.filter(producto => producto.id != idProd));
 }

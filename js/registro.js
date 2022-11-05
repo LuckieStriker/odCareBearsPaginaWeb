@@ -116,7 +116,7 @@ formulario.addEventListener('submit', (e) => {
 		const formDatos = Object.fromEntries(new FormData(e.target));
 		formulario.reset();
 		//Imprimiendo el objeto json
-		console.log(formDatos);
+		/* console.log(formDatos); */
 
 
 	console.log('Informacion Guardada');

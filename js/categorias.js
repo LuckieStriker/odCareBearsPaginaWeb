@@ -49,16 +49,96 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "OsoRosita.jpg",
-                "id": 6                
+                "id": 6
             },
 
 
         ]
     },
     {
-        "categoria": "kawaii",
-        "nombre": "Kawaii",
+        "categoria": "accesorios",
+        "nombre": "Accesorios Kawaii",
         "productos": [
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 7
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 8
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 9
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 10
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 11
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 12
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 13
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 14
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 15
+            },
+            {
+                "categoria": "accesorios",
+                "nombre": "Aretes",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "null",
+                "id": 16
+            },
 
         ]
     },
@@ -73,7 +153,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Alajero.jpg",
-                "id": 7
+                "id": 17
             },
             {
                 "categoria": "ceramica",
@@ -81,7 +161,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "CajitaPastel.jpg",
-                "id": 8
+                "id": 18
             },
             {
                 "categoria": "ceramica",
@@ -89,7 +169,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "PlatoLargo.jpg",
-                "id": 9
+                "id": 19
             },
             {
                 "categoria": "ceramica",
@@ -97,7 +177,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Taza.jpg",
-                "id": 10
+                "id": 20
             },
 
         ]
@@ -112,7 +192,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Pintura1.jpg",
-                "id": 11
+                "id": 21
             },
             {
                 "categoria": "otros",
@@ -120,7 +200,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Pintura1.jpg",
-                "id": 12
+                "id": 22
             }
 
         ]
@@ -155,16 +235,20 @@ function pintarTitulo() {
 function pintarProductos() {
     let html = "";
     categoria.productos.forEach(element => {
-        let fila = '<div class="col-md-3"><a target="_blank"><img src="{imagen}" class="img-fluid rounded-4" alt=""></a><p align="center">{nombre}<br> {precioConDescuento}MXN   <s>{precioSinDescuento}MXN</s></p></div>';
+        let fila = '<div class="col-md-3"><br><a target="_target" href="/html/detalles-producto.html?id={id}"><img src="{imagen}" class="img-fluid rounded-4" alt=""></a><p align="center">{nombre}<br> {precioConDescuento}MXN   <s>{precioSinDescuento}MXN</s></p><a target="_target" href="/html/detalles-producto.html?id={id}"><p align="center"><button type="button" href="_target" class="btn-historial">Agregar al carrito</button></p></a></div>';
         fila = fila.replace("{imagen}", '../assets/img/' + categoriaPath + '/' + element.imagen);
         fila = fila.replace("{nombre}", element.nombre);
         fila = fila.replace("{precioConDescuento}", element.precio - element.descuento);
         fila = fila.replace("{precioSinDescuento}", element.precio);
+        fila = fila.replace("{id}", element.id);
+
         console.log(fila);
         html += fila;
     })
     document.getElementById('fila-1').innerHTML = html;
 }
+
+
 pintarTitulo();
 pintarProductos();
 console.log(products)

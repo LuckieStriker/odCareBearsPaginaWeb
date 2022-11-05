@@ -9,29 +9,197 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/home.css">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2&family=Lily+Script+One&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
-  <script
-  src="https://code.jquery.com/jquery-3.6.1.min.js"
-  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <title>odCareBears</title>
+</head>
 </head>
 
 <body>
-<!--- NavBar --->
-<div id = "navigation" class="sticky-top"></div>
-<script src="js/nav.js"></script>
-<!--- NavBar --->
+  <header id="top">
+    <!-- -->
+    <!--- NavBar --->
+    <div id = "navigation" class="sticky-top"></div>
+    <script src="js/nav.js"></script>
+    <!--- NavBar --->
+  </header>
+  <main class="container-fluid p-0">
+    <!-- <h1>eComerce</h1> -->
+    <section class="position-absolute p-5 w-100 h-100">
+      <img src="./assets/img/chispa.svg" id="chispa1" alt="">
+      <img src="./assets/img/chispa.svg" id="chispa2" alt="">
+      <img src="./assets/img/chispa.svg" id="chispa3" alt="">
+      <img src="./assets/img/chispa.svg" id="chispa4" alt="">
+    </section>
+    <!-- Presentacion -->
+    <section class="container-fluid" id="presentacion">
+      <figure class="row position-absolute h-100 align-content-center">
+        <blockquote class="col-12 col-sm-6 align-content-center rounded-5">
+          <h2>"La felicidad la llevamos por dentro, pero a veces necesitamos que alguien nos ayude a encontrarla"</h2>
+          <figcaption class="blockquote-footer text-end me-5"><em>Trolls (pelicula)</em></figcaption>
+        </blockquote>
+      </figure>
+      <img id="osito" src="/assets/img/backgrounds/osito.png" alt="">
+    </section>
+    <!-- Inicio de categorias 272-->
+    <h2>Categorias</h2>
+    <section class="container-fluid p-0 categoria justify-content-center">
+      <div class="row m-0 h-100 w-100">
+          <div class="col-3 col-categorias p-0 align-content-center h-100">
+            <nav class="justify-content-center text-center h-100">
+              <a href="./html/categorias.html?categoria=ositos" class="w-100 h-100 d-inline-block p-0">
+                <div class="card d-inline-block h-100" style="width: 18rem;" id="card-ositos">
+                  <div class="card-body text-center h-100 d-grid align-content-center">
+                    <h5 class="card-title">Ositos</h5>
+                  </div>
+                </div>
+              </a>
+            </nav>
+          </div>
+          <div class="col-3 col-categorias p-0 align-content-center h-100">
+            <nav class="justify-content-center text-center h-100">
+              <a href="./html/categorias.html?categoria=kawaii" class="w-100 h-100 d-inline-block p-0">
+                <div class="card d-inline-block h-100" style="width: 18rem;" id="card-accesorios">
+                  <div class="card-body text-center h-100 d-grid align-content-center">
+                    <h5 class="card-title">Accesorios</h5>
+                  </div>
+                </div>
+              </a>
+            </nav>
+          </div>
+          <div class="col-3 col-categorias p-0 align-content-center h-100">
+            <nav class="justify-content-center text-center h-100">
+              <a href="./html/categorias.html?categoria=ceramica" class="w-100 h-100 d-inline-block p-0">
+                <div class="card d-inline-block h-100" style="width: 18rem;" id="card-ceramica">
+                  <div class="card-body text-center h-100 d-grid align-content-center">
+                    <h5 class="card-title">Ceramica</h5>
+                  </div>
+                </div>
+              </a>
+            </nav>
+          </div>
+          <div class="col-3 col-categorias p-0 align-content-center h-100">
+            <nav class="justify-content-center text-center h-100">
+              <a href="./html/categorias.html?categoria=otros" class="w-100 h-100 d-inline-block p-0">
+                <div class="card d-inline-block h-100" style="width: 18rem;" id="card-otros">
+                  <div class="card-body text-center h-100 d-grid align-content-center">
+                    <h5 class="card-title">Otros</h5>
+                  </div>
+                </div>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Basarme en https://bscs.mx/ -->
+    <!-- Fin de categorias -->
 
-  <main class="container-fluid">
-    <h1>eComerce</h1>
-
-
-
-
+    <!-- Checar https://www.codeply.com/p/0CWffz76Q9 -->
+    <!-- Inicio de destacados -->
+    <section>
+      <h2>Destacados</h2>
+    <!-- Carrusel 2 -->
+      <div class="row mx-auto my-auto justify-content-center">
+        <div class="col-12 carrusel">
+          <div id="recipeCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+            <!-- Contenido del carrusel -->
+            <div class="carousel-inner h-100 d-flex align-items-center rounded-4" role="listbox">
+              <div class="carousel-item col-12 m-0 active h-100">
+                <div class="img-contenedor w-100">
+                  <a href="#" class="d-block h-100 card-img">
+                    <img src="https://picsum.photos/200/300" class="img-fluid d-block w-100 h-100">
+                  </a>
+                </div>
+                <div class="carousel-caption d-block rounded-4">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item col-12 m-0 h-100">
+                <div class="img-contenedor w-100">
+                  <a href="#" class="d-block h-100 w-100 card-img">
+                    <img src="https://picsum.photos/200" class="img-fluid d-block w-100 h-100">
+                  </a>
+                </div>
+                <div class="carousel-caption d-block rounded-4">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item col-12 m-0 h-100">
+                <div class="img-contenedor w-100">
+                  <a href="#" class="d-block h-100 w-100 card-img">
+                    <img src="https://picsum.photos/300/200" class="img-fluid d-block w-100 h-100">
+                  </a>
+                </div>
+                <div class="carousel-caption d-block rounded-4">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item col-12 m-0 h-100">
+                <div class="img-contenedor w-100">
+                  <a href="#" class="d-block h-100 w-100 card-img">
+                    <img src="https://picsum.photos/300" class="img-fluid d-block w-100 h-100">
+                  </a>
+                </div>
+                <div class="carousel-caption d-block rounded-4">
+                  <h5>Fourth slide label</h5>
+                  <p>Some representative placeholder content for the fourth slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item col-12 m-0 h-100">
+                <div class="img-contenedor w-100">
+                  <a href="#" class="d-block h-100 w-100 card-img">
+                    <img src="https://picsum.photos/200" class="img-fluid d-block w-100 h-100">
+                  </a>
+                </div>
+                <div class="carousel-caption d-block rounded-4">
+                  <h5>Fifth slide label</h5>
+                  <p>Some representative placeholder content for the fifth slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item col-12 m-0 h-100">
+                <div class="img-contenedor w-100">
+                  <a href="#" class="d-block h-100 w-100 card-img">
+                    <img src="https://picsum.photos/300/200" class="img-fluid d-block w-100 h-100">
+                  </a>
+                </div>
+                <div class="carousel-caption d-block rounded-4">
+                  <h5>Sixth slide label</h5>
+                  <p>Some representative placeholder content for the sixth slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+              <img src="./assets/img/prev.svg" alt="previous" width="200">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+              <img src="./assets/img/next.svg" alt="next" width="200">
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de destacados -->
+    <!-- Voler -->
+    <div class="container-fluid mt-5">
+      <div class="row volver justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4">
+          <a class="button btn-historial w-100" href="#top">
+            <h5>
+              Ir arriba
+            </h5>
+          </a>
+        </div>
+      </div>
+    </div>
   </main>
   <footer id ="footer" class="container-fluid bd-footer bg-primary py-4 pt-md-5 mt-5 bg-info">
     <div class="row">
@@ -64,6 +232,8 @@
      </div>
   </footer>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Carrusel -->
+  <script src="./js/carrusel.js"></script>
 </body>
 
 </html
