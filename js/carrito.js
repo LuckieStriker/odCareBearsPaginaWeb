@@ -1,3 +1,4 @@
+const cartProducts = [];
 const data = JSON.parse(localStorage.getItem("productosCarrito"));
 if (!data) console.log("Aún no hay artículos en tu carrito :(");
 else {
@@ -16,7 +17,7 @@ const products = [
                 "descuento": 100.00,
                 "imagen": "/assets/img/Ositos/OsoAzul.jpg"}
 ];
-const cartProducts = [];
+
 
 
 console.log("Hola");
@@ -38,6 +39,7 @@ function addToCart(){
 
 function renderCart() {
     let html = "";
+    if (cartProducts.length !== 0){
     cartProducts.forEach(element => {
         console.log(element.nombre);
         let fila = `<article class="row g-0">
@@ -73,6 +75,7 @@ function renderCart() {
       console.log(button);
   });
     document.getElementById('noItems').innerText = cartProducts.length;
+  }
 };
 
 function borrarArticulo(){
