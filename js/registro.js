@@ -23,6 +23,7 @@ const statusInfo = {
 	password: false,
 };
 
+//Validaciones
 inputs.forEach((input) => {
 	input.addEventListener('keyup', (e) => {
 		switch (e.target.name) {
@@ -78,7 +79,7 @@ inputs.forEach((input) => {
 					input.nextElementSibling.classList.add("hide");
 				} else {
 					statusInfo.password = false;
-					passwordError.textContent = 'Contraseña incorrecta';
+					passwordError.textContent = 'Contraseña debil';
 					input.classList.add("border-danger");
 					input.nextElementSibling.classList.remove("hide");
 				}
@@ -89,7 +90,7 @@ inputs.forEach((input) => {
 
 
 
-  /**
+/**
  * Funcion para enviar las alertas
  */
 
@@ -107,13 +108,101 @@ const showAlert = () =>{
 };
 
 
+/**
+ * Funcion para mandar mensaje de vienvenida
+ */
+
+ const showwelcome = () =>{
+	Swal.fire({
+			icon: 'success',
+			title: 'Bienvenido',
+			backdrop: true,
+			padding: '2rem',
+			background: '#D9EFFA',
+			confirmButtonText: 'Cerrar',
+			with: '50%'
+	});
+};
+
+
+/**
+ * Email repetido
+ */
+const emailRepetido = () =>{
+	Swal.fire({
+		icon: 'error',
+		title: 'Vuelve a intentar',
+		text: '¡El email ya existe!',
+		backdrop: true,
+		padding: '2rem',
+		background: '#D9EFFA',
+		confirmButtonText: 'Cerrar',
+		with: '50%'
+	});
+};
+
+
+
+
+/**Registro de usuarios */
+
+const users = [];
+
+let user = {
+	correo: "",
+	nombre: "",
+	telefono: "",
+	password: ""
+};
+
+/**
+ * Funcion para guardar los usuarios
+ */
+function guardarUsuario(){
+	const email = document.getElementById("email").value;
+	const nombre = document.getElementById("nombre").value;
+	const phone = document.getElementById("phone").value;
+	const password = document.getElementById("password").value;
+	
+	let validacion = false;
+
+	user = {
+		email : email,
+		nombre: nombre,
+		phone: phone,
+		password: password
+	}
+
+	for(let i = 0; i < users.length; i++){
+		if(users[i].correo == user.correo)
+		validacion =true;
+	}
+
+	if(validacion)
+		emailRepetido();
+	else{
+		users.push(user);
+		localStorage.setItem("users", JSON.stringify(users));
+		showwelcome();
+		
+	}  
+	//console.log(users);  
+	                                             
+}
+
+
+
 
 //Evento de botón
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 	if (Object.values(statusInfo).every((value) => value === true)) {
+		guardarUsuario();
+		
 		//Convirtiendo a Json la informacion del usuario
-		const formDatos = Object.fromEntries(new FormData(e.target));
+		//const formDatos = Object.fromEntries(new FormData(e.target));
+
+
 		formulario.reset();
 		//Imprimiendo el objeto json
 		/* console.log(formDatos); */
@@ -126,4 +215,6 @@ formulario.addEventListener('submit', (e) => {
 		
 	}
 });
+
+
 
