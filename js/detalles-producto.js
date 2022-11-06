@@ -235,7 +235,7 @@ ventana.innerHTML = `
         let cart = {id: productId, cant: document.getElementById("cantidadArticulos").value}
         console.log(cart);
         let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
-        if (storedCart.length > 0){
+        if (storedCart){
         newCart = storedCart.slice();
         newCart.forEach(product => {
             console.log(product.id);
