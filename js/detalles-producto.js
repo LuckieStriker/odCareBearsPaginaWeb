@@ -84,8 +84,8 @@ const products = [
                 "descuento": 100.00,
                 "imagen": "/assets/img/Accesorios/AretesLunaPlaneta.jpg",
                 "imagenSec": "/assets/img/Accesorios/AretesLunaPlaneta2.jpg",
-                "imagenTer": "/assets/img/Accesorios/AreteLunaPlaneta3.jpg",
-                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
+                "imagenTer": "/assets/img/Accesorios/AretesLunaPlaneta3.jpg",
+                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con imagen de la luna, estrellas y un planeta.",
                 "id": 7
             },
 
