@@ -9,7 +9,7 @@ $(function () {
     const navCartItemNumber = () =>{
       let totalItems = 0;
       let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
-          if (storedCart.length > 0){
+          if (storedCart){
               storedCart.forEach(product => {
               totalItems += parseInt(product.cant);
               })
