@@ -64,7 +64,7 @@ inputs.forEach((input)=>{
 	Swal.fire({
 		icon: 'error',
 		title: 'Vuelve a intentar',
-		text: '¡Los datos son incorrectos!',
+		text: '¡Los datos son incorrectos! 😢',
 		backdrop: true,
 		padding: '2rem',
 		background: '#D9EFFA',
@@ -75,24 +75,76 @@ inputs.forEach((input)=>{
 
 
 
+/**
+ * Funcion para enviar las alertas de usuario registrado
+ */
+
+ const showwelcome = () =>{
+	Swal.fire({
+			icon: 'success',
+			title: 'Bienvenido',
+			backdrop: true,
+			padding: '2rem',
+			background: '#D9EFFA',
+			confirmButtonText: 'Cerrar',
+			with: '50%'
+	});
+};
+
+
+
+function ingresarLogin(){
+    const email= document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    let user = localStorage.getItem('users');
+    console.log(user);
+
+    let data = JSON.parse(user);
+    console.log(data);
+
+    for(let i = 0; i < data.length; i++){
+        if(data[i].email == email && data[i].password == password){
+			showwelcome();
+			location.href = 'perfil.html';
+			break;
+
+        }else{
+            showAlert();
+			break;
+    
+        }
+    }
+ }
+
+
+
+
+
+
+
+
+
+
 
 //Evento de botón
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 	if (Object.values(statusInfo).every((value) => value === true)) {
 	
-	const datos = Object.fromEntries(new FormData(e.target));
-
-	formulario.reset();
+		ingresarLogin();
+		
+		formulario.reset();
+	//const datos = Object.fromEntries(new FormData(e.target));
+	//formulario.reset();
 		//Imprimiendo el objeto json
-		console.log(datos);
+		//console.log(datos);
 	//login(datos);
 	} else {
 		
 		console.log('No enviado');
-		showAlert();
+		
 		
 	}
 });
-
 

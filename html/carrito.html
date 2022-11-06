@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/custom_bootstrap.css" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/css/custom_bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/carrito.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/carrito.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap"
       rel="stylesheet"
@@ -36,46 +41,46 @@
         <section class="col-sm-9 mb-2">
           <div class="card mb-4">
             <!--- Elemento en carrito -->
-            <div class="row p-3">
-              <div class="col-3">
-                <img
-                  src="../assets/img/Ositos/Picsart_22-10-05_03-05-01-913.jpg"
-                  class="img-fluid rounded w-75"
-                  alt="..."
-                />
+            <div id="fila-1"></div>
+              
+                <div class="container">
+                  <div class="row">
+                    <div class="col p-2 my-auto">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
+                        class="img-fluid rounded-2" alt="Shopping item">
+                    </div>
+                    <div class="col my-auto text-center">
+                      <b>Iphone 11 pro</b>
+                    </div>
+                  
+                    <div class="col my-auto text-center">
+                      <input type="number" value = "5"></input>
+                    </div>
+                    <div class="col my-auto text-center">
+                      <b class="">$900.00 MXN</b>
+                    </div>
+                    <div class="col my-auto text-center">
+                    <a href="#!"><img src="/assets/img/trash.svg" class="borrar"></a>
+                  </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-3">
-                  <h5>Pareja de ositos</h5>
-              </div>
-              <div class="col-1">
-                1
-            </div>
-            <div class="col-1">
-              $3200.00 MXN
-            </div>
-              <div class="col-2">
-                <a href="#" class="btn btn-light"> Borrar </a>
-              </div>
-            </div>
           </div>
           <!--- Carta con botón de pago-->
           <div class="card">
-            <div class="row g-0">
-              <div class="col-4 my-auto">
-              </div>
-              <div class="col-6 my-auto">
-                
-                  <h5>Total:</h5>
-                  <p >$3200.00 MXN</p>
+            <div class="row">
+
+              <div class="col-sm-7 my-auto text-center">
+                  <h5> Total: $900.00 MXN </h5>
                 </div>
               
-              <div class="col-2 text-center my-auto">
-                <a href="#" class="btn btn-success"> Pagar </a>
+              <div class="col-sm-3 text-center my-2">
+                <button href="#" class="btn btn-light"> Pagar </button>
               </div>
             </div>
             <div class="row">
-                <div class="col-4"></div>
-                <div class="col-8 text-center">
+                <div class="col text-center mt-4">
                     <small class="text-muted">
                     ¿Tu Compra es un regalo? 
                     ¡Agrega una envoltura! 
@@ -89,7 +94,7 @@
         
 
         <!--- Productos recomendados-->
-        <section class="col-sm-3">
+        <section class="col-sm-3 d-sm-none d-sm-block">
           <div class = "container-fluid">
           <div class="card">
             <div class="card-header">Promocionado</div>
@@ -99,14 +104,14 @@
                 Perrito bonito, fácil de cuidar, ¡Te seguirá a todas partes!
               </p>
               <img
-                src="../assets/img/Ositos/Picsart_22-10-05_03-05-01-913.jpg"
+                src="/assets/img/Ositos/OsoAzul.jpg"
                 class="img-fluid img-thumbnail w-75"
                 alt="Producto recomendado"
               />
               <br>
               <h5> $300.00 MXN</h5>
               <br>
-              <a href="#" class="btn btn-light my-3 add-cart"> Agregar </a>
+              <button href="#" class="btn btn-light my-3 add-cart"> Agregar </button>
             </div>
           </div>
         </div>
@@ -115,8 +120,7 @@
     </main>
     <!---Navbar --->
   <footer id="footer"></footer>
-  
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="../js/carrito.js"></script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+
 const products = [
     {
         "categoria": "ositos",
@@ -5,51 +6,58 @@ const products = [
         "productos": [
             {
                 "categoria": "ositos",
-                "nombre": "Osos",
+                "nombre": "Oso Morado",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "osos.jpg",
+                "imagen": "OsoMorado.jpg",
+                "imagenSec": "OsoMorado1.jpg",
+                "imagenTer":"OsoMorado2.jpg",
+                "descripcion":"Mochilita cariñosita con correas ajustables y cierre trasero para guardar lo que desees",
                 "id": 1
             },
             {
                 "categoria": "ositos",
-                "nombre": "Oso azul",
+                "nombre": "Oso Dormiloncito",
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "OsoAzul.jpg",
+                "imagenSec": "OsoAzul1.jpg",
+                "imagenTer":"OsitoAzul3.jpg",
+                "descripcion":"Osito Dormiloncito, con su corazón intacto para que le des mucho amor, ojitos cansaditos y bonitos",
                 "id": 2
             },
             {
                 "categoria": "ositos",
-                "nombre": "Oso café",
+                "nombre": "Tiernosito café",
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "OsoCafe.jpg",
+                "imagenSec": "OsoCafe1.jpg",
+                "imagenTer": "OsoCafe2.jpg",
+                "descripcion":"Tiernosito café esta listo para que acaricies, y cuides de él",
                 "id": 3
             },
             {
                 "categoria": "ositos",
-                "nombre": "Oso morado",
-                "precio": 199.00,
+                "nombre": "Love A Lot Bear",
+                "precio": 340.00,
                 "descuento": 100.00,
-                "imagen": "OsoMorado.jpg",
+                "imagen": "OsoRosa.jpg",
+                "imagenSec": "OsoRosa1.jpg",
+                "imagenTer": "OsoRosa2.jpg",
+                "descripcion":"Osito con mucho amor para dar y que cuides de él, en perfecto estado. ",
                 "id": 4
             },
             {
                 "categoria": "ositos",
-                "nombre": "Oso rosa",
-                "precio": 199.00,
-                "descuento": 100.00,
-                "imagen": "OsoRosa.jpg",
-                "id": 5
-            },
-            {
-                "categoria": "ositos",
-                "nombre": "Oso rosita",
-                "precio": 199.00,
+                "nombre": "Bebesito cariñosito rosita",
+                "precio": 349.00,
                 "descuento": 100.00,
                 "imagen": "OsoRosita.jpg",
-                "id": 6
+                "imagenSec": "OsoRosita1.jpg",
+                "imagenTer": "OsoRosita2.jpg",
+                "descripcion":"Bebé de los cariñositos, adaptable a mochila, sin daños",
+                "id": 5
             },
 
 
@@ -57,88 +65,56 @@ const products = [
     },
     {
         "categoria": "accesorios",
-        "nombre": "Accesorios Kawaii",
+        "nombre": "Accesorios",
         "productos": [
             {
                 "categoria": "accesorios",
-                "nombre": "Aretes",
+                "nombre": "Aretes Estrella ",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "null",
+                "imagen": "AretesCiculares1.jpg",
+                "imagenSec": "AretesCirculares2.jpg",
+                "imagenTer": "AretesCirculares3.jpg",
+                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
+                "id": 6
+            },
+            {
+                "categoria": "Accesorios",
+                "nombre": "Aretes Luna y Planeta",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "LunaPlaneta1.jpg",
+                "imagenSec": "LunaPlaneta2.jpg",
+                "imagenTer": "LunaPlaneta3.jpg",
+                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
                 "id": 7
             },
             {
-                "categoria": "accesorios",
-                "nombre": "Aretes",
+                "categoria": "Accesorios",
+                "nombre": "Aretes Luna y estrella",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "null",
+                "imagen": "LunaEstrellita.jpg",
+                "imagenSec": "LunaPlaneta2.jpg",
+                "imagenTer": "LunaPlaneta3.jpg",
+                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
                 "id": 8
             },
             {
-                "categoria": "accesorios",
-                "nombre": "Aretes",
+                "categoria": "Accesorios",
+                "nombre": "Noche Estrellada",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "null",
-                "id": 9
+                "imagen": "NocheEstrellada1.jpg",
+                "imagenSec": "LunaPlaneta2.jpg",
+                "imagenTer": "LunaPlaneta3.jpg",
+                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
+                "id": 7
             },
-            {
-                "categoria": "accesorios",
-                "nombre": "Aretes",
-                "precio": 199.00,
-                "descuento": 100.00,
-                "imagen": "null",
-                "id": 10
-            },
-            {
-                "categoria": "accesorios",
-                "nombre": "Aretes",
-                "precio": 199.00,
-                "descuento": 100.00,
-                "imagen": "null",
-                "id": 11
-            },
-            {
-                "categoria": "accesorios",
-                "nombre": "Aretes",
-                "precio": 199.00,
-                "descuento": 100.00,
-                "imagen": "null",
-                "id": 12
-            },
-            {
-                "categoria": "accesorios",
-                "nombre": "Aretes",
-                "precio": 199.00,
-                "descuento": 100.00,
-                "imagen": "null",
-                "id": 13
-            },
-            {
-                "categoria": "accesorios",
-                "nombre": "Aretes",
-                "precio": 199.00,
-                "descuento": 100.00,
-                "imagen": "null",
-                "id": 14
-            },
-            {
-                "categoria": "accesorios",
-                "nombre": "Aretes",
-                "precio": 199.00,
-                "descuento": 100.00,
-                "imagen": "null",
-                "id": 15
-            },
-            {
-                "categoria": "accesorios",
-                "nombre": "Aretes",
-                "precio": 199.00,
-                "descuento": 100.00,
-                "imagen": "null",
-                "id": 16
-            },
+
+            
+
+
 
         ]
     },
@@ -153,7 +129,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Alajero.jpg",
-                "id": 17
+                "id": 7
             },
             {
                 "categoria": "ceramica",
@@ -161,7 +137,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "CajitaPastel.jpg",
-                "id": 18
+                "id": 8
             },
             {
                 "categoria": "ceramica",
@@ -169,7 +145,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "PlatoLargo.jpg",
-                "id": 19
+                "id": 9
             },
             {
                 "categoria": "ceramica",
@@ -177,7 +153,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Taza.jpg",
-                "id": 20
+                "id": 10
             },
 
         ]
@@ -192,7 +168,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Pintura1.jpg",
-                "id": 21
+                "id": 11
             },
             {
                 "categoria": "otros",
@@ -200,7 +176,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Pintura1.jpg",
-                "id": 22
+                "id": 12
             }
 
         ]
@@ -215,6 +191,13 @@ function getParameterByName(name, url = window.location.href) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+let ID1234 = getParameterByName('id');
+for (i=0; i<products.length; i++){
+    products[i].productos.forEach(element => {
+       if(ID1234 == element.id) nuevoProducto(element) 
+        });
+    }
+
 
 function getCategoria(categoriaPath) {
     let categoria = null;
@@ -232,15 +215,16 @@ function pintarTitulo() {
     document.getElementById('titulo-h1').innerHTML = categoria.nombre;
 }
 
+
 function pintarProductos() {
     let html = "";
     categoria.productos.forEach(element => {
-        let fila = '<div class="col-md-3"><br><a target="_target" href="/html/detalles-producto.html?id={id}"><img src="{imagen}" class="img-fluid rounded-4" alt=""></a><p align="center">{nombre}<br> {precioConDescuento}MXN   <s>{precioSinDescuento}MXN</s></p><a target="_target" href="/html/detalles-producto.html?id={id}"><p align="center"><button type="button" href="_target" class="btn-historial">Agregar al carrito</button></p></a></div>';
+        let fila = '<div class="col-md-3"><br><a target="_target" href="/html/detalles-producto.html?id={id}"><img src="{imagen}" class="img-fluid rounded-4" alt=""></a><p align="center">{nombre}<br> {precioConDescuento}MXN   <s>{precioSinDescuento}MXN</s></p><p align="center"><button type="button" class="btn-historial add-cart" name="{id}" value ="1">Agregar al carrito</button></p></a></div>';
         fila = fila.replace("{imagen}", '../assets/img/' + categoriaPath + '/' + element.imagen);
         fila = fila.replace("{nombre}", element.nombre);
         fila = fila.replace("{precioConDescuento}", element.precio - element.descuento);
         fila = fila.replace("{precioSinDescuento}", element.precio);
-        fila = fila.replace("{id}", element.id);
+        fila = fila.replaceAll("{id}", element.id);
 
         console.log(fila);
         html += fila;
@@ -248,8 +232,39 @@ function pintarProductos() {
     document.getElementById('fila-1').innerHTML = html;
 }
 
-
 pintarTitulo();
 pintarProductos();
 console.log(products)
 console.log(categoria);
+
+// Funcionalidad de agregar producto al carrito
+
+document.querySelectorAll(".add-cart").forEach(button => {
+    button.addEventListener('click', addToCart);
+});
+
+function addToCart() {
+    let newCart = [];
+    let flag = false;
+    let productId = this.name;
+    let cart = {id: productId, cant: this.value}
+    console.log(cart);
+    let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
+    if (storedCart.length > 0){
+    //storedCart.push(cart)}
+    newCart = storedCart.slice();
+    newCart.forEach(product => {
+        console.log(product.id);
+        if(product.id == productId){
+             product.cant = parseInt(product.cant) + parseInt(cart.cant);
+             flag = true;
+            }
+        });
+        if (!flag) newCart.push(cart);
+    }
+    
+    else {
+        newCart.push(cart);
+    } ;
+localStorage.setItem("productosCarrito", JSON.stringify(newCart));
+}
