@@ -219,12 +219,12 @@ function pintarTitulo() {
 function pintarProductos() {
     let html = "";
     categoria.productos.forEach(element => {
-        let fila = '<div class="col-md-3"><br><a target="_target" href="/html/detalles-producto.html?id={id}"><img src="{imagen}" class="img-fluid rounded-4" alt=""></a><p align="center">{nombre}<br> {precioConDescuento}MXN   <s>{precioSinDescuento}MXN</s></p><a target="_target" href="/html/detalles-producto.html?id={id}"><p align="center"><button type="button" href="_target" class="btn-historial">Agregar al carrito</button></p></a></div>';
+        let fila = '<div class="col-md-3"><br><a target="_target" href="/html/detalles-producto.html?id={id}"><img src="{imagen}" class="img-fluid rounded-4" alt=""></a><p align="center">{nombre}<br> {precioConDescuento}MXN   <s>{precioSinDescuento}MXN</s></p><p align="center"><button type="button" class="btn-historial add-cart" name="{id}" value ="1">Agregar al carrito</button></p></a></div>';
         fila = fila.replace("{imagen}", '../assets/img/' + categoriaPath + '/' + element.imagen);
         fila = fila.replace("{nombre}", element.nombre);
         fila = fila.replace("{precioConDescuento}", element.precio - element.descuento);
         fila = fila.replace("{precioSinDescuento}", element.precio);
-        fila = fila.replace("{id}", element.id);
+        fila = fila.replaceAll("{id}", element.id);
 
         console.log(fila);
         html += fila;
@@ -236,3 +236,35 @@ pintarTitulo();
 pintarProductos();
 console.log(products)
 console.log(categoria);
+
+// Funcionalidad de agregar producto al carrito
+
+document.querySelectorAll(".add-cart").forEach(button => {
+    button.addEventListener('click', addToCart);
+});
+
+function addToCart() {
+    let newCart = [];
+    let flag = false;
+    let productId = this.name;
+    let cart = {id: productId, cant: this.value}
+    console.log(cart);
+    let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
+    if (storedCart.length > 0){
+    //storedCart.push(cart)}
+    newCart = storedCart.slice();
+    newCart.forEach(product => {
+        console.log(product.id);
+        if(product.id == productId){
+             product.cant = parseInt(product.cant) + parseInt(cart.cant);
+             flag = true;
+            }
+        });
+        if (!flag) newCart.push(cart);
+    }
+    
+    else {
+        newCart.push(cart);
+    } ;
+localStorage.setItem("productosCarrito", JSON.stringify(newCart));
+}

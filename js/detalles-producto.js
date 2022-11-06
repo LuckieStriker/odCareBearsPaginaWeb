@@ -184,8 +184,8 @@ X.innerHTML = `
                 <h6>Home / ${element.categoria}</h6>
                 <h3 class="py-4">${element.nombre}</h3>
                 <h2>$${element.precio-element.descuento} <s>$${element.precio}</s></h2 >
-                <input type="number" value="1">
-                <button class="bcomprar add-cart">Agregar al carrito </button>
+                <input type="number" id="cantidadArticulos" value="1">
+                <button class="bcomprar add-cart" name=${element.id}>Agregar al carrito </button>
                 <h4 class="mt-5 mb-5">Detalles del Producto</h4>
                 <span>${element.descripcion}`
                 CajaImg(element);
@@ -221,3 +221,38 @@ ventana.innerHTML = `
     })
     document.getElementById('fila-1').innerHTML = html; modificar para que quede en el mismo formato 
     */
+
+    // Funcionalidad de agregar producto al carrito
+
+    document.querySelectorAll(".add-cart").forEach(button => {
+        button.addEventListener('click', addToCart);
+    });
+
+    function addToCart() {
+        let newCart = [];
+        let flag = false;
+        let productId = this.name;
+        let cart = {id: productId, cant: document.getElementById("cantidadArticulos").value}
+        console.log(cart);
+        let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
+        if (storedCart.length > 0){
+        newCart = storedCart.slice();
+        newCart.forEach(product => {
+            console.log(product.id);
+            if(product.id == productId){
+                 product.cant = parseInt(product.cant) + parseInt(cart.cant);
+                 flag = true;
+                }
+            });
+            if (!flag) newCart.push(cart);
+        }
+        
+        else {
+            newCart.push(cart);
+        } ;
+    localStorage.setItem("productosCarrito", JSON.stringify(newCart));
+    }
+
+
+
+
