@@ -236,7 +236,6 @@ ventana.innerHTML = `
         console.log(cart);
         let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
         if (storedCart.length > 0){
-        //storedCart.push(cart)}
         newCart = storedCart.slice();
         newCart.forEach(product => {
             console.log(product.id);
@@ -253,3 +252,7 @@ ventana.innerHTML = `
         } ;
     localStorage.setItem("productosCarrito", JSON.stringify(newCart));
     }
+
+
+
+
