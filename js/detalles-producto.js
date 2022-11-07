@@ -71,15 +71,15 @@ const products = [
                 "nombre": "Aretes Estrella ",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "/assets/img/Accesorios/AretesCiculares1.jpg",
-                "imagenSec": "/assets/img/Accesorios/AretesCirculares2.jpg",
-                "imagenTer": "/assets/img/Accesorios/AretesCirculares3.jpg",
-                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
+                "imagen": "/assets/img/Accesorios/Estrellitas.jpg",
+                "imagenSec": "/assets/img/Accesorios/Estrellitas4.jpg",
+                "imagenTer": "/assets/img/Accesorios/Estrellitas3.jpg",
+                "descripcion":"Hermosos aretes en dorado y azul, figuras de planeta y luna con estrellas, con moños azul, pequeños y discretos ",
                 "id": 6
             },
             {
                 "categoria": "Accesorios",
-                "nombre": "Aretes Luna-Planeta ",
+                "nombre": "Aretes Aros Luna-Planeta ",
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "/assets/img/Accesorios/AretesLunaPlaneta.jpg",
@@ -87,6 +87,29 @@ const products = [
                 "imagenTer": "/assets/img/Accesorios/AretesLunaPlaneta3.jpg",
                 "descripcion":"Hermosos aretes en dorado y azul en forma circular, con imagen de la luna, estrellas y un planeta.",
                 "id": 7
+            },
+            {
+                "categoria": "Accesorios",
+                "nombre": "Aretes Luna-Estrella ",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "/assets/img/Accesorios/LunaEstrellita.jpg",
+                "imagenSec": "/assets/img/Accesorios/LunaEstrellita2.jpg",
+                "imagenTer": "/assets/img/Accesorios/EstrellitasPerla.jpg",
+                "descripcion":"Hermosos aretes en dorado y azul, una luna y una estrella con una perla.",
+                "id": 8
+            },
+            
+            {
+                "categoria": "Accesorios",
+                "nombre": "Noche Estrellada ",
+                "precio": 199.00,
+                "descuento": 100.00,
+                "imagen": "/assets/img/Accesorios/NocheEstrellada1.jpg",
+                "imagenSec": "/assets/img/Accesorios/NocheEstrellada2.jpg",
+                "imagenTer": "/assets/img/Accesorios/NocheEstrellada1.jpg",
+                "descripcion":"Hermosos aretes en dorado y azul, una luna llena en aros, con estrellas y planetas pequeños colgantes.",
+                "id": 9
             },
 
         ]
@@ -101,8 +124,11 @@ const products = [
                 "nombre": "Alajero",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "Alajero.jpg",
-                "id": 8
+                "imagen": "/assets/img/Ceramica/Alajero.jpg",
+                "imagenSec": "/assets/img/Ceramica/Alajero1.jpg",
+                "imagenTer": "/assets/img/Ceramica/Alajero2.jpg",
+                "descripcion":"Alajero de ceramica con flores, bordes dorados en la base.",
+                "id": 10
             },
             {
                 "categoria": "ceramica",
@@ -110,7 +136,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "CajitaPastel.jpg",
-                "id": 9
+                "id": 11
             },
             {
                 "categoria": "ceramica",
@@ -118,7 +144,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "PlatoLargo.jpg",
-                "id": 10
+                "id": 12
             },
             {
                 "categoria": "ceramica",
@@ -126,7 +152,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Taza.jpg",
-                "id": 11
+                "id": 13
             },
 
         ]
@@ -141,7 +167,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Pintura1.jpg",
-                "id": 12
+                "id": 14
             },
             {
                 "categoria": "otros",
@@ -149,7 +175,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Pintura1.jpg",
-                "id": 13
+                "id": 15
             }
 
         ]
