@@ -72,9 +72,9 @@ const products = [
                 "nombre": "Aretes Estrella ",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "AretesCiculares1.jpg",
-                "imagenSec": "AretesCirculares2.jpg",
-                "imagenTer": "AretesCirculares3.jpg",
+                "imagen": "Estrellitas.jpg",
+                "imagenSec": "Estrellitas3.jpg",
+                "imagenTer": "Estrellitas4.jpg",
                 "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
                 "id": 6
             },
