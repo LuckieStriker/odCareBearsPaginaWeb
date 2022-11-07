@@ -183,10 +183,13 @@ const products = [
             },
             {
                 "categoria": "otros",
-                "nombre": "Pintura",
-                "precio": 199.00,
+                "nombre": "Pintura De Oso",
+                "precio": 299.00,
                 "descuento": 100.00,
-                "imagen": "Pintura1.jpg",
+                "imagen": "/assets/img/Otros/Pintura1.jpg",
+                "imagenSec": "/assets/img/Otros/Pintura2.jpg",
+                "imagenTer": "/assets/img/Otros/Pintura1.jpg",
+                "descripcion":"Pintura con técnica sobre oleo",
                 "id": 15
             }
 
