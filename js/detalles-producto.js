@@ -122,7 +122,7 @@ const products = [
             {
                 "categoria": "ceramica",
                 "nombre": "Alajero",
-                "precio": 199.00,
+                "precio": 390.00,
                 "descuento": 100.00,
                 "imagen": "/assets/img/Ceramica/Alajero.jpg",
                 "imagenSec": "/assets/img/Ceramica/Alajero1.jpg",
@@ -133,25 +133,34 @@ const products = [
             {
                 "categoria": "ceramica",
                 "nombre": "Cajita pastel",
-                "precio": 199.00,
+                "precio": 590.00,
                 "descuento": 100.00,
-                "imagen": "CajitaPastel.jpg",
+                "imagen": "/assets/img/Ceramica/CajitaPastel.jpg",
+                "imagenSec": "/assets/img/Ceramica/CajitaPastel1.jpg",
+                "imagenTer": "/assets/img/Ceramica/CajitaPastel2.jpg",
+                "descripcion":"Pastelito,con fresas en la parte de arriba,puedes guardar aretes y collares en los compartimientos internos. <br> Fue pintado y moldeado a mano.<br> **Incluye 2 macarons de Ositos.",
                 "id": 11
             },
             {
                 "categoria": "ceramica",
                 "nombre": "Plato largo",
-                "precio": 199.00,
+                "precio": 475.00,
                 "descuento": 100.00,
-                "imagen": "PlatoLargo.jpg",
+                "imagen": "/assets/img/Ceramica/PlatoLargo.jpg",
+                "imagenSec": "/assets/img/Ceramica/PlatoLargo2.jpg",
+                "imagenTer": "/assets/img/Ceramica/PlatoLargo.jpg",
+                "descripcion":"Platón de ceramica, con la imagen de Cinnamoroll pintado a mano, con técnica de hoja de oro.",
                 "id": 12
             },
             {
                 "categoria": "ceramica",
-                "nombre": "Taza",
+                "nombre": "Alajero My Melody",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "Taza.jpg",
+                "imagen": "/assets/img/Ceramica/Taza.jpg",
+                "imagenSec": "/assets/img/Ceramica/Taza2.jpg",
+                "imagenTer": "/assets/img/Ceramica/Taza1.jpg",
+                "descripcion":"Pequeño alajero de My Melody, se asoma su figura.",
                 "id": 13
             },
 
@@ -163,10 +172,13 @@ const products = [
         "productos": [
             {
                 "categoria": "otros",
-                "nombre": "Pintura",
-                "precio": 199.00,
+                "nombre": "Pintura De Oso",
+                "precio": 299.00,
                 "descuento": 100.00,
-                "imagen": "Pintura1.jpg",
+                "imagen": "/assets/img/Otros/Pintura1.jpg",
+                "imagenSec": "/assets/img/Otros/Pintura2.jpg",
+                "imagenTer": "/assets/img/Otros/Pintura1.jpg",
+                "descripcion":"Pintura con técnica sobre oleo",
                 "id": 14
             },
             {
