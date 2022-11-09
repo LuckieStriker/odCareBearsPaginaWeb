@@ -112,10 +112,6 @@ const products = [
                 "id": 9
             },
 
-            
-
-
-
         ]
     },
     {
