@@ -29,7 +29,7 @@ inputs.forEach((input)=>{
                    }
 				else{
 					statusInfo.email = false;
-					emailError.textContent = "Correo lectrónico Incorrecto";
+					emailError.textContent = "Correo electrónico incorrecto";
 					input.classList.add("border-danger");
 					input.nextElementSibling.classList.remove("hide");
 				}
@@ -43,7 +43,7 @@ inputs.forEach((input)=>{
                 }
 				else{
 					statusInfo.password = false;
-					passwordError.textContent = "Contraseña Incorrecta";
+					passwordError.textContent = "Contraseña incorrecta";
 					input.classList.add("border-danger");
 					input.nextElementSibling.classList.remove("hide");
 				}
