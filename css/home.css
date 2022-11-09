@@ -90,13 +90,13 @@ a > .card{
 /* Card Otros */
 #card-otros{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://picsum.photos/200);
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../assets/img/otrosfil.jpg);
   background-color: #fff;
 }
 #card-otros:hover{
   background-size: 120%;
   background-position: center;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://picsum.photos/200);
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../assets/img/otrosfil.jpg);
   background-color: #fff;
 }
 
