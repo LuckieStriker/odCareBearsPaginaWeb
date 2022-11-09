@@ -34,7 +34,7 @@ const products = [
                 "imagen": "OsoCafe.jpg",
                 "imagenSec": "OsoCafe1.jpg",
                 "imagenTer": "OsoCafe2.jpg",
-                "descripcion":"Tiernosito café esta listo para que acaricies, y cuides de él",
+                "descripcion":"Tiernosito café esta listo para que acaricies y cuides de él",
                 "id": 3
             },
             {
@@ -75,7 +75,7 @@ const products = [
                 "imagen": "Estrellitas.jpg",
                 "imagenSec": "Estrellitas4.jpg",
                 "imagenTer": "Estrellitas3.jpg",
-                "descripcion":"Hermosos aretes en dorado y azul, figuras de planeta y luna con estrellas, con moños azul, pequeños y discretos ",
+                "descripcion":"Hermosos aretes en dorado y azul, figuras de planeta y luna con estrellas, con moños azul, pequeños y discretos.",
                 "id": 6
             },
             {
@@ -128,7 +128,7 @@ const products = [
                 "imagen": "Alajero.jpg",
                 "imagenSec": "Alajero1.jpg",
                 "imagenTer": "Alajero2.jpg",
-                "descripcion":"Alajero de ceramica con flores, bordes dorados en la base.",
+                "descripcion":"Alajero de cerámica con flores, bordes dorados en la base.",
                 "id": 10
             },
             {
@@ -139,7 +139,7 @@ const products = [
                 "imagen": "CajitaPastel.jpg",
                 "imagenSec": "CajitaPastel1.jpg",
                 "imagenTer": "CajitaPastel2.jpg",
-                "descripcion":"Pastelito,con fresas en la parte de arriba,puedes guardar aretes y collares en los compartimientos internos. <br> Fue pintado y moldeado a mano.<br> **Incluye 2 macarons de Ositos.",
+                "descripcion":"Pastelito, con fresas en la parte de arriba, puedes guardar aretes y collares en los compartimientos internos. <br> Fue pintado y moldeado a mano.<br> **Incluye 2 macarons de Ositos.",
                 "id": 11
             },
             {
@@ -150,18 +150,18 @@ const products = [
                 "imagen": "PlatoLargo.jpg",
                 "imagenSec": "PlatoLargo2.jpg",
                 "imagenTer": "PlatoLargo.jpg",
-                "descripcion":"Platón de ceramica, con la imagen de Cinnamoroll pintado a mano, con técnica de hoja de oro.",
+                "descripcion":"Platón de cerámica, con la imagen de Cinnamonroll pintado a mano, con técnica de hoja de oro.",
                 "id": 12
             },
             {
                 "categoria": "ceramica",
-                "nombre": "Alajero My Melody",
+                "nombre": "Alajero 'My Melody'",
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Taza.jpg",
                 "imagenSec": "Taza2.jpg",
                 "imagenTer": "Taza1.jpg",
-                "descripcion":"Pequeño alajero de My Melody, se asoma su figura.",
+                "descripcion":"Pequeño alajero de 'My Melody', se asoma su figura.",
                 "id": 13
             },
 
@@ -173,24 +173,24 @@ const products = [
         "productos": [
             {
                 "categoria": "otros",
-                "nombre": "Pintura De Oso",
+                "nombre": "Pintura de oso",
                 "precio": 299.00,
                 "descuento": 100.00,
                 "imagen": "Pintura1.jpg",
                 "imagenSec": "Pintura2.jpg",
                 "imagenTer": "Pintura1.jpg",
-                "descripcion":"Pintura con técnica sobre oleo",
+                "descripcion":"Pintura con técnica sobre oleo.",
                 "id": 14
             },
             {
                 "categoria": "otros",
-                "nombre": "Pintura De Oso",
+                "nombre": "Pintura de oso",
                 "precio": 299.00,
                 "descuento": 100.00,
                 "imagen": "Pintura1.jpg",
                 "imagenSec": "Pintura2.jpg",
                 "imagenTer": "Pintura1.jpg",
-                "descripcion":"Pintura con técnica sobre oleo",
+                "descripcion":"Pintura con técnica sobre oleo.",
                 "id": 15
             }
 
