@@ -20,3 +20,4 @@ $(function () {
   const myTimeout = setTimeout(navCartItemNumber, 500);
   
 
+export {navCartItemNumber};

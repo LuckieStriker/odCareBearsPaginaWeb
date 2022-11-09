@@ -1,4 +1,3 @@
-import {navCartItemNumber} from "/js/nav.js";
 const products = [
     {
         "categoria": "ositos",
@@ -198,104 +197,107 @@ const products = [
     }
 ]
 
+let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
+let html="";
+let total = 0;
+renderCart();
 
-function cambioImg(smallImg) {
-    let fullImg = document.getElementById("CajaImg");
-    fullImg.src = smallImg.src;
+function renderCart() {
+
+    const ids = [];
+    storedCart.forEach(prod => ids.push(prod.id));
+
+    for (let i=0; i<products.length; i++){
+        products[i].productos.forEach(element => {
+           //if(ids.includes(String(element.id))) console.log(element, storedCart[ids.indexOf(String(element.id))].cant)
+           
+           if(ids.includes(String(element.id))) {
+            let cantidad = storedCart[ids.indexOf(String(element.id))].cant;
+            renderProduct(element, cantidad)
+            }
+            });
+            document.getElementById('fila-1').innerHTML = html;
+            
+}
+document.getElementById("totalCarrito").innerHTML = `<h5> Total: $${total} MXN </h5>`;
+console.log(total);
 }
 
-function getParameterByName(name, url = window.location.href) {
-    name = name.replace(/[\[\]]/g, '\\$&');
-    let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+function renderProduct(prod, cant){
+    let fila = `<div class="card mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col p-2 my-auto">
+          <img
+            src="${prod.imagen}"
+            class="img-fluid rounded-2" alt="Shopping item">
+        </div>
+        <div class="col my-auto text-center">
+          <b>${prod.nombre}</b>
+        </div>
+      
+        <div class="col my-auto text-center">
+          <input type="number" name="${prod.id}" value = "${cant}"></input>
+        </div>
+        <div class="col my-auto text-center">
+          <b class="">$${prod.precio-prod.descuento} MXN</b>
+        </div>
+        <div class="col my-auto text-center">
+        <a href="#!"><img src="/assets/img/trash.svg" name="${prod.id}" class="borrar"></a>
+      </div>
+      </div>
+    </div>
+  </div>`;
+  html += fila;
+  total += parseInt(prod.precio-prod.descuento)*cant;
 }
-let ID1234 = getParameterByName('id');
 
+document.querySelectorAll("input").forEach(cant_input => cant_input.addEventListener('input', refreshCart));
+document.querySelectorAll(".borrar").forEach(borrarbtn => borrarbtn.addEventListener('click', borrarArt));
 
-for (let i=0; i<products.length; i++){
-products[i].productos.forEach(element => {
-   if(ID1234 == element.id) nuevoProducto(element) 
-    });
+function refreshCart(){
+let newCart = [];
+let productId = this.name;
+let flag = false;
+total = 0;
+if (storedCart){
+    newCart = storedCart.slice();
+    newCart.forEach(product => {
+        if(product.id == productId){
+             product.cant = this.value;
+             flag = true;
+            }
+        });
+        if (!flag) newCart.push({id: productId, cant: this.value});
+    }
+    
+    else {
+        newCart.push(cart);
+    } ;
+    localStorage.setItem("productosCarrito", JSON.stringify(newCart));
+    renderCart();
 }
-function nuevoProducto(element){
-let X = document.getElementById("miProducto");
-X.innerHTML = `
-                <h6>Home / ${element.categoria}</h6>
-                <h3 class="py-4">${element.nombre}</h3>
-                <h2>$${element.precio-element.descuento} <s>$${element.precio}</s></h2 >
-                <input type="number" id="cantidadArticulos" value="1">
-                <button class="bcomprar add-cart" name=${element.id}>Agregar al carrito </button>
-                <h4 class="mt-5 mb-5">Detalles del Producto</h4>
-                <span>${element.descripcion}`
-                CajaImg(element);
-};
-function CajaImg(element){
-let ventana=document.getElementById("miVentana");
-ventana.innerHTML = `
-<img  id="CajaImg" class="img-fluid w-100 rounded mb-2" src=${element.imagen} alt="">
-<div class="small-img-group">
-   <div class="small-img-col">
-       <img src=${element.imagen}  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
-   </div>
-   <div class="small-img-col">
-       <img src=${element.imagenSec}  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
-   </div>
-   <div class="small-img-col">
-       <img src="${element.imagenTer}"  width="100% " class="small-img rounded" onclick="cambioImg(this)" alt="">
-   </div>
-   </div> `
-};
 
-
-/**function pintarProductos() {
-    let html = "";
-    categoria.productos.forEach(element => {
-        let fila = '<div class="col-md-3"><a target="_blank"><img src="{imagen}" class="img-fluid rounded-4" alt=""></a><p align="center">{nombre}<br> {precioConDescuento}MXN   <s>{precioSinDescuento}MXN</s></p></div>';
-        fila = fila.replace("{imagen}", '../assets/img/' + categoriaPath + '/' + element.imagen);
-        fila = fila.replace("{nombre}", element.nombre);
-        fila = fila.replace("{precioConDescuento}", element.precio - element.descuento);
-        fila = fila.replace("{precioSinDescuento}", element.precio);
-        console.log(fila);
-        html += fila;
-    })
-    document.getElementById('fila-1').innerHTML = html; modificar para que quede en el mismo formato 
-    */
-
-    // Funcionalidad de agregar producto al carrito
-
-    document.querySelectorAll(".add-cart").forEach(button => {
-        button.addEventListener('click', addToCart);
-    });
-
-    function addToCart() {
-        let newCart = [];
-        let flag = false;
-        let productId = this.name;
-        let cart = {id: productId, cant: document.getElementById("cantidadArticulos").value}
-        console.log(cart);
-        let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
-        if (storedCart){
+function borrarArt() {
+    let newCart = [];
+    let productId = this.name;
+    console.log(productId);
+    let flag = false;
+    total = 0;
+    if (storedCart){
+        let count = 0;
         newCart = storedCart.slice();
         newCart.forEach(product => {
-            console.log(product.id);
             if(product.id == productId){
-                 product.cant = parseInt(product.cant) + parseInt(cart.cant);
-                 flag = true;
+                newCart = newCart.splice(count,1);
+                console.log(newCart);
                 }
+                count++;
             });
-            if (!flag) newCart.push(cart);
         }
-        
-        else {
-            newCart.push(cart);
-        } ;
-    localStorage.setItem("productosCarrito", JSON.stringify(newCart));
-    navCartItemNumber();
-    }
-
-
-
-
+         ;
+        localStorage.setItem("productosCarrito", JSON.stringify(newCart));
+        document.getElementById('fila-1').innerHTML = html;
+        html ='';
+        renderCart();
+}
