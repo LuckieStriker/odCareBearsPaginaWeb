@@ -11,7 +11,7 @@ const products = [
                 "imagen": "/assets/img/Ositos/OsoMorado.jpg",
                 "imagenSec": "/assets/img/Ositos/OsoMorado1.jpg",
                 "imagenTer":"/assets/img/Ositos/OsoMorado2.jpg",
-                "descripcion":"Mochilita cariñosita con correas ajustables y cierre trasero para guardar lo que desees",
+                "descripcion":"Mochilita cariñosita con correas ajustables y cierre trasero para guardar lo que desees.",
                 "id": 1
             },
             {
@@ -22,7 +22,7 @@ const products = [
                 "imagen": "/assets/img/Ositos/OsoAzul.jpg",
                 "imagenSec": "/assets/img/Ositos/OsoAzul1.jpg",
                 "imagenTer":"/assets/img/Ositos/OsitoAzul3.jpg",
-                "descripcion":"Osito Dormiloncito, con su corazón intacto para que le des mucho amor, ojitos cansaditos y bonitos",
+                "descripcion":"Osito Dormiloncito, con su corazón intacto para que le des mucho amor, ojitos cansaditos y bonitos.",
                 "id": 2
             },
             {
@@ -33,7 +33,7 @@ const products = [
                 "imagen": "/assets/img/Ositos/OsoCafe.jpg",
                 "imagenSec": "/assets/img/Ositos/OsoCafe1.jpg",
                 "imagenTer": "/assets/img/Ositos/OsoCafe2.jpg",
-                "descripcion":"Tiernosito café esta listo para que acaricies, y cuides de él",
+                "descripcion":"Tiernosito café esta listo para que acaricies y cuides de él.",
                 "id": 3
             },
             {
@@ -44,7 +44,7 @@ const products = [
                 "imagen": "/assets/img/Ositos/OsoRosa.jpg",
                 "imagenSec": "/assets/img/Ositos/OsoRosa1.jpg",
                 "imagenTer": "/assets/img/Ositos/OsoRosa2.jpg",
-                "descripcion":"Osito con mucho amor para dar y que cuides de él, en perfecto estado. ",
+                "descripcion":"Osito con mucho amor para dar y que cuides de él, en perfecto estado.",
                 "id": 4
             },
             {
@@ -55,7 +55,7 @@ const products = [
                 "imagen": "/assets/img/Ositos/OsoRosita.jpg",
                 "imagenSec": "/assets/img/Ositos/OsoRosita1.jpg",
                 "imagenTer": "/assets/img/Ositos/OsoRosita2.jpg",
-                "descripcion":"Bebé de los cariñositos, adaptable a mochila, sin daños",
+                "descripcion":"Bebé de los cariñositos, adaptable a mochila, sin daños.",
                 "id": 5
             },
 
@@ -74,7 +74,7 @@ const products = [
                 "imagen": "/assets/img/Accesorios/Estrellitas.jpg",
                 "imagenSec": "/assets/img/Accesorios/Estrellitas4.jpg",
                 "imagenTer": "/assets/img/Accesorios/Estrellitas3.jpg",
-                "descripcion":"Hermosos aretes en dorado y azul, figuras de planeta y luna con estrellas, con moños azul, pequeños y discretos ",
+                "descripcion":"Hermosos aretes en dorado y azul, figuras de planeta y luna con estrellas, con moños azules, pequeños y discretos.",
                 "id": 6
             },
             {
@@ -121,13 +121,13 @@ const products = [
 
             {
                 "categoria": "ceramica",
-                "nombre": "Alajero",
+                "nombre": "Alhajero",
                 "precio": 390.00,
                 "descuento": 100.00,
                 "imagen": "/assets/img/Ceramica/Alajero.jpg",
                 "imagenSec": "/assets/img/Ceramica/Alajero1.jpg",
                 "imagenTer": "/assets/img/Ceramica/Alajero2.jpg",
-                "descripcion":"Alajero de ceramica con flores, bordes dorados en la base.",
+                "descripcion":"Alhajero de ceramica con flores, bordes dorados en la base.",
                 "id": 10
             },
             {
@@ -138,7 +138,7 @@ const products = [
                 "imagen": "/assets/img/Ceramica/CajitaPastel.jpg",
                 "imagenSec": "/assets/img/Ceramica/CajitaPastel1.jpg",
                 "imagenTer": "/assets/img/Ceramica/CajitaPastel2.jpg",
-                "descripcion":"Pastelito,con fresas en la parte de arriba,puedes guardar aretes y collares en los compartimientos internos. <br> Fue pintado y moldeado a mano.<br> **Incluye 2 macarons de Ositos.",
+                "descripcion":"Pastelito con fresas en la parte de arriba, puedes guardar aretes y collares en los compartimientos internos. <br> Fue pintado y moldeado a mano.<br> **Incluye 2 macarons de Ositos.",
                 "id": 11
             },
             {
@@ -154,13 +154,13 @@ const products = [
             },
             {
                 "categoria": "ceramica",
-                "nombre": "Alajero My Melody",
+                "nombre": "Alhajero My Melody",
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "/assets/img/Ceramica/Taza.jpg",
                 "imagenSec": "/assets/img/Ceramica/Taza2.jpg",
                 "imagenTer": "/assets/img/Ceramica/Taza1.jpg",
-                "descripcion":"Pequeño alajero de My Melody, se asoma su figura.",
+                "descripcion":"Pequeño alhajero de My Melody, se asoma su figura.",
                 "id": 13
             },
 
@@ -178,7 +178,7 @@ const products = [
                 "imagen": "/assets/img/Otros/Pintura1.jpg",
                 "imagenSec": "/assets/img/Otros/Pintura2.jpg",
                 "imagenTer": "/assets/img/Otros/Pintura1.jpg",
-                "descripcion":"Pintura con técnica sobre oleo",
+                "descripcion":"Pintura con técnica sobre óleo.",
                 "id": 14
             },
             {
@@ -189,7 +189,7 @@ const products = [
                 "imagen": "/assets/img/Otros/Pintura1.jpg",
                 "imagenSec": "/assets/img/Otros/Pintura2.jpg",
                 "imagenTer": "/assets/img/Otros/Pintura1.jpg",
-                "descripcion":"Pintura con técnica sobre oleo",
+                "descripcion":"Pintura con técnica sobre óleo.",
                 "id": 15
             }
 

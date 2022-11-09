@@ -71,7 +71,7 @@ const products = [
 
             {
                 "categoria": "ceramica",
-                "nombre": "Alajero",
+                "nombre": "Alhajero",
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Alajero.jpg",
