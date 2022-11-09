@@ -1,4 +1,4 @@
-
+import {navCartItemNumber} from "/js/nav.js";
 const products = [
     {
         "categoria": "ositos",
@@ -267,4 +267,5 @@ function addToCart() {
         newCart.push(cart);
     } ;
 localStorage.setItem("productosCarrito", JSON.stringify(newCart));
+navCartItemNumber();
 }

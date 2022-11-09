@@ -1,3 +1,4 @@
+import {navCartItemNumber} from "/js/nav.js";
 const products = [
     {
         "categoria": "ositos",
@@ -214,13 +215,13 @@ function getParameterByName(name, url = window.location.href) {
 let ID1234 = getParameterByName('id');
 
 
-for (i=0; i<products.length; i++){
+for (let i=0; i<products.length; i++){
 products[i].productos.forEach(element => {
    if(ID1234 == element.id) nuevoProducto(element) 
     });
 }
 function nuevoProducto(element){
-X = document.getElementById("miProducto");
+let X = document.getElementById("miProducto");
 X.innerHTML = `
                 <h6>Home / ${element.categoria}</h6>
                 <h3 class="py-4">${element.nombre}</h3>
@@ -232,7 +233,7 @@ X.innerHTML = `
                 CajaImg(element);
 };
 function CajaImg(element){
-ventana=document.getElementById("miVentana");
+let ventana=document.getElementById("miVentana");
 ventana.innerHTML = `
 <img  id="CajaImg" class="img-fluid w-100 rounded mb-2" src=${element.imagen} alt="">
 <div class="small-img-group">
@@ -292,6 +293,7 @@ ventana.innerHTML = `
             newCart.push(cart);
         } ;
     localStorage.setItem("productosCarrito", JSON.stringify(newCart));
+    navCartItemNumber();
     }
 
 
