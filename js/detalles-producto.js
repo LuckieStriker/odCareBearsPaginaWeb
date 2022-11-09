@@ -296,6 +296,7 @@ ventana.innerHTML = `
     navCartItemNumber();
     }
 
+    export{cambioImg};
 
 
 

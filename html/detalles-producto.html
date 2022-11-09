@@ -15,7 +15,7 @@
     <title>Listado producto</title>
     <!--<script src="../js/detalles-producto.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/detalles-producto.css">
+    <link rel="stylesheet" href="/css/detalles-producto.css">
 </head>
 <body>
 <!--- NavBar --->
@@ -52,6 +52,9 @@
     <!---Navbar --->
     <footer id="footer"></footer>    
 </body>
-<script type ="module" src="/js/detalles-producto.js"></script>
-    
+<script type="module">
+    import {cambioImg} from '/js/detalles-producto.js'
+    window.cambioImg = cambioImg
+</script>
+<script type ="module" src="/js/detalles-producto.js"></script>    
 </html>

@@ -22,7 +22,7 @@ const mostrarDatos=()=>{
         }
 
 const datosPerson=()=>{
-    const usuarios = JSON.parse(localStorage.getItem("usuariosData"));
+    const usuarios = JSON.parse(localStorage.getItem("users"));
    
     document.getElementById("name").innerText = usuarios.nombre
     document.getElementById("email").innerText = usuarios.email
