@@ -192,7 +192,7 @@ function getParameterByName(name, url = window.location.href) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 let ID1234 = getParameterByName('id');
-for (i=0; i<products.length; i++){
+for (let i=0; i<products.length; i++){
     products[i].productos.forEach(element => {
        if(ID1234 == element.id) nuevoProducto(element) 
         });
