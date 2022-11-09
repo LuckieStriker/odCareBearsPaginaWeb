@@ -156,17 +156,15 @@ const products = [
     }
 ]
 
+let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
 let html="";
 let total = 0;
 renderCart();
 
 function renderCart() {
 
-    let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
     const ids = [];
     storedCart.forEach(prod => ids.push(prod.id));
-    console.log(storedCart); 
-
 
     for (let i=0; i<products.length; i++){
         products[i].productos.forEach(element => {
@@ -198,17 +196,67 @@ function renderProduct(prod, cant){
         </div>
       
         <div class="col my-auto text-center">
-          <input type="number" value = "${cant}"></input>
+          <input type="number" name="${prod.id}" value = "${cant}"></input>
         </div>
         <div class="col my-auto text-center">
           <b class="">$${prod.precio-prod.descuento} MXN</b>
         </div>
         <div class="col my-auto text-center">
-        <a href="#!"><img src="/assets/img/trash.svg" class="borrar"></a>
+        <a href="#!"><img src="/assets/img/trash.svg" name="${prod.id}" class="borrar"></a>
       </div>
       </div>
     </div>
   </div>`;
   html += fila;
   total += parseInt(prod.precio-prod.descuento)*cant;
+}
+
+document.querySelectorAll("input").forEach(cant_input => cant_input.addEventListener('input', refreshCart));
+document.querySelectorAll(".borrar").forEach(borrarbtn => borrarbtn.addEventListener('click', borrarArt));
+
+function refreshCart(){
+let newCart = [];
+let productId = this.name;
+let flag = false;
+total = 0;
+if (storedCart){
+    newCart = storedCart.slice();
+    newCart.forEach(product => {
+        if(product.id == productId){
+             product.cant = this.value;
+             flag = true;
+            }
+        });
+        if (!flag) newCart.push({id: productId, cant: this.value});
+    }
+    
+    else {
+        newCart.push(cart);
+    } ;
+    localStorage.setItem("productosCarrito", JSON.stringify(newCart));
+    renderCart();
+}
+
+function borrarArt() {
+    let newCart = [];
+    let productId = this.name;
+    console.log(productId);
+    let flag = false;
+    total = 0;
+    if (storedCart){
+        let count = 0;
+        newCart = storedCart.slice();
+        newCart.forEach(product => {
+            if(product.id == productId){
+                newCart = newCart.splice(count,1);
+                console.log(newCart);
+                }
+                count++;
+            });
+        }
+         ;
+        localStorage.setItem("productosCarrito", JSON.stringify(newCart));
+        document.getElementById('fila-1').innerHTML = html;
+        html ='';
+        renderCart();
 }
