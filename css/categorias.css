@@ -90,3 +90,10 @@ button.btn-historial:active::before {
     -webkit-transform: translate3d(0, 0, -1em);
     transform: translate3d(0, 0, -1em);
 }
+#productos{
+    font-family: 'Niramit', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #766C83;
+}
