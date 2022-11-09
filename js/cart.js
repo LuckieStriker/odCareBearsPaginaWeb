@@ -1,4 +1,3 @@
-import {navCartItemNumber} from "/js/nav.js";
 const products = [
     {
         "categoria": "ositos",
@@ -198,89 +197,107 @@ const products = [
     }
 ]
 
-function getParameterByName(name, url = window.location.href) {
-    name = name.replace(/[\[\]]/g, '\\$&');
-    let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
+let html="";
+let total = 0;
+renderCart();
+
+function renderCart() {
+
+    const ids = [];
+    storedCart.forEach(prod => ids.push(prod.id));
+
+    for (let i=0; i<products.length; i++){
+        products[i].productos.forEach(element => {
+           //if(ids.includes(String(element.id))) console.log(element, storedCart[ids.indexOf(String(element.id))].cant)
+           
+           if(ids.includes(String(element.id))) {
+            let cantidad = storedCart[ids.indexOf(String(element.id))].cant;
+            renderProduct(element, cantidad)
+            }
+            });
+            document.getElementById('fila-1').innerHTML = html;
+            
 }
-let ID1234 = getParameterByName('id');
-for (let i=0; i<products.length; i++){
-    products[i].productos.forEach(element => {
-       if(ID1234 == element.id) nuevoProducto(element) 
-        });
-    }
-
-
-function getCategoria(categoriaPath) {
-    let categoria = null;
-    products.forEach(element => {
-        if (element.categoria === categoriaPath) {
-            categoria = element;
-        }
-    });
-    return categoria;
-}
-let categoriaPath = getParameterByName('categoria');
-let categoria = getCategoria(categoriaPath);
-
-function pintarTitulo() {
-    document.getElementById('titulo-h1').innerHTML = categoria.nombre;
+document.getElementById("totalCarrito").innerHTML = `<h5> Total: $${total} MXN </h5>`;
+console.log(total);
 }
 
-
-function pintarProductos() {
-    let html = "";
-    categoria.productos.forEach(element => {
-        let fila = '<div class="col-md-3"><br><a target="_target" href="/html/detalles-producto.html?id={id}"><img src="{imagen}" class="img-fluid rounded-4" alt=""></a><p align="center">{nombre}<br> {precioConDescuento}MXN   <s>{precioSinDescuento}MXN</s></p><p align="center"><button type="button" class="btn-historial add-cart" name="{id}" value ="1">Agregar al carrito</button></p></a></div>';
-        fila = fila.replace("{imagen}", '../assets/img/' + categoriaPath + '/' + element.imagen);
-        fila = fila.replace("{nombre}", element.nombre);
-        fila = fila.replace("{precioConDescuento}", element.precio - element.descuento);
-        fila = fila.replace("{precioSinDescuento}", element.precio);
-        fila = fila.replaceAll("{id}", element.id);
-
-        console.log(fila);
-        html += fila;
-    })
-    document.getElementById('fila-1').innerHTML = html;
+function renderProduct(prod, cant){
+    let fila = `<div class="card mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col p-2 my-auto">
+          <img
+            src="${prod.imagen}"
+            class="img-fluid rounded-2" alt="Shopping item">
+        </div>
+        <div class="col my-auto text-center">
+          <b>${prod.nombre}</b>
+        </div>
+      
+        <div class="col my-auto text-center">
+          <input type="number" name="${prod.id}" value = "${cant}"></input>
+        </div>
+        <div class="col my-auto text-center">
+          <b class="">$${prod.precio-prod.descuento} MXN</b>
+        </div>
+        <div class="col my-auto text-center">
+        <a href="#!"><img src="/assets/img/trash.svg" name="${prod.id}" class="borrar"></a>
+      </div>
+      </div>
+    </div>
+  </div>`;
+  html += fila;
+  total += parseInt(prod.precio-prod.descuento)*cant;
 }
 
-pintarTitulo();
-pintarProductos();
-console.log(products)
-console.log(categoria);
+document.querySelectorAll("input").forEach(cant_input => cant_input.addEventListener('input', refreshCart));
+document.querySelectorAll(".borrar").forEach(borrarbtn => borrarbtn.addEventListener('click', borrarArt));
 
-// Funcionalidad de agregar producto al carrito
-
-document.querySelectorAll(".add-cart").forEach(button => {
-    button.addEventListener('click', addToCart);
-});
-
-function addToCart() {
-    let newCart = [];
-    let flag = false;
-    let productId = this.name;
-    let cart = {id: productId, cant: this.value}
-    console.log(cart);
-    let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
-    if (storedCart.length > 0){
-    //storedCart.push(cart)}
+function refreshCart(){
+let newCart = [];
+let productId = this.name;
+let flag = false;
+total = 0;
+if (storedCart){
     newCart = storedCart.slice();
     newCart.forEach(product => {
-        console.log(product.id);
         if(product.id == productId){
-             product.cant = parseInt(product.cant) + parseInt(cart.cant);
+             product.cant = this.value;
              flag = true;
             }
         });
-        if (!flag) newCart.push(cart);
+        if (!flag) newCart.push({id: productId, cant: this.value});
     }
     
     else {
         newCart.push(cart);
     } ;
-localStorage.setItem("productosCarrito", JSON.stringify(newCart));
-navCartItemNumber();
+    localStorage.setItem("productosCarrito", JSON.stringify(newCart));
+    renderCart();
+}
+
+function borrarArt() {
+    let newCart = [];
+    let productId = this.name;
+    console.log(productId);
+    let flag = false;
+    total = 0;
+    if (storedCart){
+        let count = 0;
+        newCart = storedCart.slice();
+        newCart.forEach(product => {
+            if(product.id == productId){
+                newCart = newCart.splice(count,1);
+                console.log(newCart);
+                }
+                count++;
+            });
+        }
+         ;
+        localStorage.setItem("productosCarrito", JSON.stringify(newCart));
+        document.getElementById('fila-1').innerHTML = html;
+        html ='';
+        renderCart();
 }

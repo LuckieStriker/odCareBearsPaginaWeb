@@ -19,8 +19,6 @@ const products = [
 ];
 
 
-
-console.log("Hola");
 document.querySelectorAll(".add-cart").forEach(button => {
     button.addEventListener('click', addToCart);
 });
