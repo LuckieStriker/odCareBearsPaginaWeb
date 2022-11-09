@@ -27,7 +27,7 @@
   <body>
       <!---Navbar --->
   <div id="navigation" class="sticky-top"></div>
-  <script src="../js/nav.js"></script>
+  <script type="module" src="../js/nav.js"></script>
 <!---Navbar --->
     <main class="container-fluid">
       <page-title class="row justify-content-center my-3">
@@ -39,39 +39,15 @@
       <section class="row m-2">
         <!--- Artículos del carrito --->
         <section class="col-sm-9 mb-2">
-          <div class="card mb-4">
-            <!--- Elemento en carrito -->
-            <div id="fila-1"></div>
-              
-                <div class="container">
-                  <div class="row">
-                    <div class="col p-2 my-auto">
-                      <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
-                        class="img-fluid rounded-2" alt="Shopping item">
-                    </div>
-                    <div class="col my-auto text-center">
-                      <b>Iphone 11 pro</b>
-                    </div>
-                  
-                    <div class="col my-auto text-center">
-                      <input type="number" value = "5"></input>
-                    </div>
-                    <div class="col my-auto text-center">
-                      <b class="">$900.00 MXN</b>
-                    </div>
-                    <div class="col my-auto text-center">
-                    <a href="#!"><img src="/assets/img/trash.svg" class="borrar"></a>
-                  </div>
-                  </div>
-                </div>
-              </div>
+          <!--- Elemento en carrito -->
+
+              <div id="fila-1"> <h2 class="text-center">Tu carrito está vacío :( </h2></div>
           </div>
           <!--- Carta con botón de pago-->
           <div class="card">
             <div class="row">
 
-              <div class="col-sm-7 my-auto text-center">
+              <div id="totalCarrito" class="col-sm-7 my-auto text-center">
                   <h5> Total: $900.00 MXN </h5>
                 </div>
               
@@ -94,7 +70,7 @@
         
 
         <!--- Productos recomendados-->
-        <section class="col-sm-3 d-sm-none d-sm-block">
+        <section class="col-sm-3">
           <div class = "container-fluid">
           <div class="card">
             <div class="card-header">Promocionado</div>
@@ -121,6 +97,7 @@
     <!---Navbar --->
   <footer id="footer"></footer>
 
-    <script src="../js/carrito.js"></script>
+    <!--<script src="../js/carrito.js"></script>-->
+    <script type ="module" src="/js/cart.js"></script>
   </body>
 </html>
