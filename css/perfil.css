@@ -120,7 +120,7 @@ button.btn-historial:active::before {
     height: 90px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 768px) {
     .perfil{
         width: 80%;
     }
