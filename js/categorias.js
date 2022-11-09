@@ -5,7 +5,7 @@ const products = [
         "nombre": "Ositos Cariñositos",
         "productos": [
             {
-                "categoria": "ositos",
+                "categoria": "Ositos",
                 "nombre": "Oso Morado",
                 "precio": 199.00,
                 "descuento": 100.00,
@@ -16,7 +16,7 @@ const products = [
                 "id": 1
             },
             {
-                "categoria": "ositos",
+                "categoria": "Ositos",
                 "nombre": "Oso Dormiloncito",
                 "precio": 199.00,
                 "descuento": 100.00,
@@ -27,7 +27,7 @@ const products = [
                 "id": 2
             },
             {
-                "categoria": "ositos",
+                "categoria": "Ositos",
                 "nombre": "Tiernosito café",
                 "precio": 199.00,
                 "descuento": 100.00,
@@ -38,7 +38,7 @@ const products = [
                 "id": 3
             },
             {
-                "categoria": "ositos",
+                "categoria": "Ositos",
                 "nombre": "Love A Lot Bear",
                 "precio": 340.00,
                 "descuento": 100.00,
@@ -49,7 +49,7 @@ const products = [
                 "id": 4
             },
             {
-                "categoria": "ositos",
+                "categoria": "Ositos",
                 "nombre": "Bebesito cariñosito rosita",
                 "precio": 349.00,
                 "descuento": 100.00,
@@ -121,7 +121,7 @@ const products = [
         "productos": [
 
             {
-                "categoria": "ceramica",
+                "categoria": "Ceramica",
                 "nombre": "Alajero",
                 "precio": 390.00,
                 "descuento": 100.00,
@@ -132,7 +132,7 @@ const products = [
                 "id": 10
             },
             {
-                "categoria": "ceramica",
+                "categoria": "Ceramica",
                 "nombre": "Cajita pastel",
                 "precio": 590.00,
                 "descuento": 100.00,
@@ -143,7 +143,7 @@ const products = [
                 "id": 11
             },
             {
-                "categoria": "ceramica",
+                "categoria": "Ceramica",
                 "nombre": "Plato largo",
                 "precio": 475.00,
                 "descuento": 100.00,
@@ -154,7 +154,7 @@ const products = [
                 "id": 12
             },
             {
-                "categoria": "ceramica",
+                "categoria": "Ceramica",
                 "nombre": "Alajero 'My Melody'",
                 "precio": 199.00,
                 "descuento": 100.00,
@@ -172,7 +172,7 @@ const products = [
         "nombre": "Otros",
         "productos": [
             {
-                "categoria": "otros",
+                "categoria": "Otros",
                 "nombre": "Pintura de oso",
                 "precio": 299.00,
                 "descuento": 100.00,
@@ -183,7 +183,7 @@ const products = [
                 "id": 14
             },
             {
-                "categoria": "otros",
+                "categoria": "Otros",
                 "nombre": "Pintura de oso",
                 "precio": 299.00,
                 "descuento": 100.00,
@@ -243,8 +243,12 @@ function pintarProductos() {
 
         console.log(fila);
         html += fila;
+
+        document.getElementById('categoria').innerHTML = element.categoria;
+       
     })
     document.getElementById('fila-1').innerHTML = html;
+    
 }
 
 pintarTitulo();
