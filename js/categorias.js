@@ -244,7 +244,7 @@ function pintarProductos() {
         console.log(fila);
         html += fila;
 
-        document.getElementById('categoria').innerHTML = element.categoria;
+        document.getElementById('titulo').innerHTML = element.categoria;
        
     })
     document.getElementById('fila-1').innerHTML = html;

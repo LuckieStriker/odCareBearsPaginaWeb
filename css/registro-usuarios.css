@@ -33,7 +33,7 @@ button.btn{
 /*Parrafos*/
 
 #parrafo{
-    font-family: 'Baloo 2';
+    font-family: 'Niramit', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -43,7 +43,7 @@ button.btn{
 
 /* label Formularios */
 .contact-form label {
-    font-family: 'Baloo 2';
+    font-family: 'Niramit', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -57,8 +57,9 @@ button.btn{
     box-sizing: border-box;
     border: 1px solid #766C83;
     border-radius: 15px;
-    font-family: 'Baloo 2';
+    font-family: 'Niramit', sans-serif;
     font-style: normal;
+    font-weight: 400;
     font-size: 20px;
     color: #766C83;
     flex: none;
@@ -146,7 +147,7 @@ button.btn-registro:hover:active ::before {
 
 /*elementos a*/
 .anclas{
-    font-family: 'Baloo 2';
+    font-family: 'Niramit', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -161,7 +162,7 @@ button.btn-registro:hover:active ::before {
 /*clase error*/
 .msj-error{
     color: red;
-    font-family: 'Baloo 2';
+    font-family: 'Niramit', sans-serif;
     font-style: normal;
     font-size: 18px;
 
