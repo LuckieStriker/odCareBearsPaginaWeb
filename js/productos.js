@@ -10,7 +10,7 @@ const products = [
                 "nombre": "Osos",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "osos.jpg",
+                "imagen": "https://i.ibb.co/BjB10BQ/Osos.jpg",
                 "id": 1
             },
             {
@@ -18,7 +18,7 @@ const products = [
                 "nombre": "Oso azul",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "OsoAzul.jpg",
+                "imagen": "https://i.ibb.co/WgNGg7d/OsoAzul.jpg",
                 "id": 2
             },
             {
@@ -26,7 +26,7 @@ const products = [
                 "nombre": "Oso café",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "OsoCafe.jpg",
+                "imagen": "https://i.ibb.co/xHPXJw9/OsoCafe.jpg",
                 "id": 3
             },
             {
@@ -34,7 +34,7 @@ const products = [
                 "nombre": "Oso morado",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "OsoMorado.jpg",
+                "imagen": "https://i.ibb.co/744rDWn/Oso-Morado.jpg",
                 "id": 4
             },
             {
@@ -42,7 +42,7 @@ const products = [
                 "nombre": "Oso rosa",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "OsoRosa.jpg",
+                "imagen": "https://i.ibb.co/dfbZP07/OsoRosa.jpg",
                 "id": 5
             },
             {
@@ -50,7 +50,7 @@ const products = [
                 "nombre": "Oso rosita",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "OsoRosita.jpg",
+                "imagen": "https://i.ibb.co/mS5fHF0/Oso-Rosita.jpg",
                 "id": 6
             },
 
@@ -74,7 +74,7 @@ const products = [
                 "nombre": "Alhajero",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "Alajero.jpg",
+                "imagen": "https://i.ibb.co/8KxkNZ6/Alajero.jpg",
                 "id": 7
             },
             {
@@ -82,7 +82,7 @@ const products = [
                 "nombre": "Cajita pastel",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "CajitaPastel.jpg",
+                "imagen": "https://i.ibb.co/3Njn98y/Cajita-Pastel.jpg",
                 "id": 8
             },
             {
@@ -90,7 +90,7 @@ const products = [
                 "nombre": "Plato largo",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "PlatoLargo.jpg",
+                "imagen": "https://i.ibb.co/37pQK3V/Plato-Largo.jpg",
                 "id": 9
             },
             {
@@ -98,7 +98,7 @@ const products = [
                 "nombre": "Taza",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "Taza.jpg",
+                "imagen": "https://i.ibb.co/wwk0Bmy/Taza.jpg",
                 "id": 10
             },
 
@@ -113,7 +113,7 @@ const products = [
                 "nombre": "Pintura",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "Pintura1.jpg",
+                "imagen": "https://i.ibb.co/wYPK6Tn/Pintura1.jpg",
                 "id": 11
             },
             {
@@ -121,7 +121,7 @@ const products = [
                 "nombre": "Pintura",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "Pintura1.jpg",
+                "imagen": "https://i.ibb.co/wYPK6Tn/Pintura1.jpg",
                 "id": 12
             }
 
