@@ -54,49 +54,49 @@ a > .card{
 /* Card Ositos */
 #card-ositos{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../assets/img/Ositos/Osos.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://i.ibb.co/BjB10BQ/Osos.jpg);
   background-color: #fff;
 }
 #card-ositos:hover{
   background-size: 120%;
   background-position: center;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../assets/img/Ositos/Osos.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://i.ibb.co/BjB10BQ/Osos.jpg);
   background-color: #fff;
 }
 /* Card Accesorios */
 #card-accesorios{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../assets/img/accesoriofil.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://i.ibb.co/6vLTc5F/accesoriofil.jpg);
   background-color: #fff;
 }
 #card-accesorios:hover{
   background-size: 120%;
   background-position: center;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../assets/img/accesoriofil.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://i.ibb.co/6vLTc5F/accesoriofil.jpg);
   background-color: #fff;
 }
 /* Card Ceramica */
 #card-ceramica{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../assets/img/Ceramica/tazafil.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://i.ibb.co/FXS5QH3/tazafil.jpg);
   background-color: #fff;
 }
 #card-ceramica:hover{
   background-size: 120%;
   background-position: center;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../assets/img/Ceramica/tazafil.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://i.ibb.co/FXS5QH3/tazafil.jpg);
   background-color: #fff;
 }
 /* Card Otros */
 #card-otros{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../assets/img/otrosfil.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://i.ibb.co/TLND302/otrosfil.jpg);
   background-color: #fff;
 }
 #card-otros:hover{
   background-size: 120%;
   background-position: center;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../assets/img/otrosfil.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://i.ibb.co/TLND302/otrosfil.jpg);
   background-color: #fff;
 }
 
@@ -141,7 +141,7 @@ nav > a {
 #presentacion{
   height: 800px;
   background-size: cover;
-  background-image: url("../assets/img/backgrounds/png_20221027_180509_0000.png")
+  background-image: url("https://i.ibb.co/NnkwWCy/png-20221027-180509-0000.png"), url("../assets/img/backgrounds/png_20221027_180509_0000.png");
 }
 /* Osito en la presentacion */
 #osito{
