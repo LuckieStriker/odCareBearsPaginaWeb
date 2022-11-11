@@ -2,11 +2,35 @@
 html {
   overflow-x: hidden;
 }
-h2, h3, h4, h5 {
+h2, h3{
   display: block;
   text-align: center;
   font-family: 'Pacifico', cursive;
   margin: 32px;
+  color: rgb(118, 108, 131);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+h4{
+  display: block;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  margin: 32px;
+  color: rgb(233, 221, 249);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.frase, h5{
+  display: block;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  margin: 32px;
+  color: rgba(29, 0, 66, 0.8);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.arriba{
+  font-family: 'Niramit', sans-serif;
+    color: rgb(4, 4, 5);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Carrusel */
@@ -44,7 +68,7 @@ h2, h3, h4, h5 {
 .carousel-caption h5{
   margin: 10px;
 }
-
+ 
 /* Botones de Categorias */
 /* Altura del boton contenedor */
 a > .card{
@@ -54,49 +78,49 @@ a > .card{
 /* Card Ositos */
 #card-ositos{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../assets/img/Ositos/Osos.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://i.ibb.co/BjB10BQ/Osos.jpg);
   background-color: #fff;
 }
 #card-ositos:hover{
   background-size: 120%;
   background-position: center;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../assets/img/Ositos/Osos.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://i.ibb.co/BjB10BQ/Osos.jpg);
   background-color: #fff;
 }
 /* Card Accesorios */
 #card-accesorios{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../assets/img/accesoriofil.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://i.ibb.co/6vLTc5F/accesoriofil.jpg);
   background-color: #fff;
 }
 #card-accesorios:hover{
   background-size: 120%;
   background-position: center;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../assets/img/accesoriofil.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://i.ibb.co/6vLTc5F/accesoriofil.jpg);
   background-color: #fff;
 }
 /* Card Ceramica */
 #card-ceramica{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../assets/img/Ceramica/tazafil.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://i.ibb.co/FXS5QH3/tazafil.jpg);
   background-color: #fff;
 }
 #card-ceramica:hover{
   background-size: 120%;
   background-position: center;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../assets/img/Ceramica/tazafil.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://i.ibb.co/FXS5QH3/tazafil.jpg);
   background-color: #fff;
 }
 /* Card Otros */
 #card-otros{
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../assets/img/otrosfil.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://i.ibb.co/TLND302/otrosfil.jpg);
   background-color: #fff;
 }
 #card-otros:hover{
   background-size: 120%;
   background-position: center;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../assets/img/otrosfil.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(https://i.ibb.co/TLND302/otrosfil.jpg);
   background-color: #fff;
 }
 
@@ -141,7 +165,7 @@ nav > a {
 #presentacion{
   height: 800px;
   background-size: cover;
-  background-image: url("../assets/img/backgrounds/png_20221027_180509_0000.png")
+  background-image: url("https://i.ibb.co/NnkwWCy/png-20221027-180509-0000.png"), url("../assets/img/backgrounds/png_20221027_180509_0000.png");
 }
 /* Osito en la presentacion */
 #osito{
@@ -406,7 +430,7 @@ transform: translateX(0);
   font-size: 10px;
 }
 
-.volver a.btn-historial {
+.volver a {
   font-weight: 600;
   color: #382b22;
   text-transform: uppercase;
@@ -420,7 +444,7 @@ transform: translateX(0);
   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
-.volver a.btn-historial::before {
+.volver a::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -438,26 +462,26 @@ transform: translateX(0);
   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
-.volver a.btn-historial:hover {
+.volver a:hover {
   background: #ffe9e9;
   -webkit-transform: translate(0, 0.25em);
   transform: translate(0, 0.25em);
 }
 
-.volver a.btn-historial:hover::before {
+.volver a:hover::before {
   -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
   box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
   -webkit-transform: translate3d(0, 0.5em, -1em);
   transform: translate3d(0, 0.5em, -1em);
 }
 
-.volver a.btn-historial:active {
+.volver a:active {
   background: #ffe9e9;
   -webkit-transform: translate(0em, 0.75em);
   transform: translate(0em, 0.75em);
 }
 
-.volver a.btn-historial:active::before {
+.volver a:active::before {
   -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
   box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
   -webkit-transform: translate3d(0, 0, -1em);

@@ -15,7 +15,7 @@ const products = [
                 "nombre": "Osos",
                 "precio": 300.00,
                 "descuento": 100.00,
-                "imagen": "/assets/img/Ositos/OsoAzul.jpg"}
+                "imagen": "https://i.ibb.co/WgNGg7d/OsoAzul.jpg"}
 ];
 
 
@@ -43,7 +43,7 @@ function renderCart() {
         let fila = `<article class="row g-0">
         <div class="col-md-4">
           <img
-            src="/assets/img/Ositos/OsoAzul.jpg"
+            src="https://i.ibb.co/WgNGg7d/OsoAzul.jpg"
             class="img-fluid rounded-start"
             alt="..."
           />

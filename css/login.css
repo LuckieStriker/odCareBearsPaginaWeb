@@ -28,7 +28,7 @@ button.btn{
     line-height: 80px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #F4B2B0; 
-    -webkit-text-stroke-color:  #f58682; ;
+    -webkit-text-stroke-color:  #f58682; ; 
     -webkit-text-stroke-width: 1px ;
 }
 
@@ -39,7 +39,7 @@ button.btn{
     font-weight: 400;
     font-size: 20px;
     text-align: center;
-    color: rgba(29, 0, 66, 0.8);
+    color: #766C83;
 }
 
 #parrafo{
@@ -48,7 +48,7 @@ button.btn{
     font-weight: 400;
     font-size: 20px;
     text-align: center;
-    color: rgba(29, 0, 66, 0.8);
+    color: #766C83;
 }
 
 /* label Formularios */
@@ -90,7 +90,7 @@ button {
     vertical-align: middle;
     text-decoration: none;
     font-family: 'Niramit', sans-serif;;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 button.btn-ingresar{
