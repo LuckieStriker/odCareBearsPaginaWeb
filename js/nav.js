@@ -17,7 +17,7 @@ $(function () {
           }
   }
 
-  const myTimeout = setTimeout(navCartItemNumber, 500);
+  const myTimeout = setTimeout(navCartItemNumber, 1000);
   
 
 export {navCartItemNumber};
