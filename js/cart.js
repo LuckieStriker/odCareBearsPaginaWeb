@@ -256,9 +256,6 @@ function renderProduct(prod, cant) {
     total += parseInt(prod.precio - prod.descuento) * cant;
 }
 
-document.querySelectorAll("input").forEach(cant_input => cant_input.addEventListener('input', refreshCart));
-document.querySelectorAll(".borrar").forEach(borrarbtn => borrarbtn.addEventListener('click', borrarArt));
-
 function refreshCart() {
     let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
     let newCart = [];
@@ -300,4 +297,39 @@ function borrarArt() {
     html = '';
     renderCart();
     navCartItemNumber();
+}
+
+// Funcionalidad de agregar producto al carrito
+
+document.querySelectorAll(".add-cart").forEach(button => {
+    button.addEventListener('click', addToCart);
+});
+
+function addToCart() {
+    let newCart = [];
+    let flag = false;
+    let productId = this.name;
+    let cart = {id: productId, cant: this.value}
+    console.log(cart);
+    let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
+    if (storedCart.length > 0){
+    //storedCart.push(cart)}
+    newCart = storedCart.slice();
+    newCart.forEach(product => {
+        console.log(product.id);
+        if(product.id == productId){
+             product.cant = parseInt(product.cant) + parseInt(cart.cant);
+             flag = true;
+            }
+        });
+        if (!flag) newCart.push(cart);
+    }
+    
+    else {
+        newCart.push(cart);
+    } ;
+localStorage.setItem("productosCarrito", JSON.stringify(newCart));
+navCartItemNumber();
+html="";
+renderCart();
 }
