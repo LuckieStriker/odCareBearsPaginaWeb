@@ -228,9 +228,11 @@ function renderProduct(prod, cant){
     <div class="container">
       <div class="row">
         <div class="col p-2 my-auto">
+            <a href="/html/detalles-producto.html?id=${prod.id}">
           <img
             src="${prod.imagen}"
             class="img-fluid rounded-2" alt="Shopping item">
+            </a>
         </div>
         <div class="col my-auto text-center">
           <b>${prod.nombre}</b>
