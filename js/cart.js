@@ -239,7 +239,7 @@ function renderProduct(prod, cant){
         </div>
       
         <div class="col my-auto text-center">
-          <input type="number" name="${prod.id}" value = "${cant}"></input>
+          <input type="number" name="${prod.id}" value = "${cant}" min="0" pattern="^[0-50]"> </input>
         </div>
         <div class="col my-auto text-center">
           <b class="">$${prod.precio-prod.descuento} MXN</b>

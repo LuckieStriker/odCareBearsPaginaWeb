@@ -15,7 +15,7 @@
     <title>Listado producto</title>
     <!--<script src="../js/detalles-producto.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/detalles-producto.css">
+    <link rel="stylesheet" href="/css/detalles-producto.css">
 </head>
 <body>
 <!--- NavBar --->
@@ -42,7 +42,7 @@
                 <h6>Home / Osito</h6>
                 <h3 class="py-4">Osito </h3>
                 <h2>$. MNMX</h2 >
-                <input type="number" value="1">
+                <input type="number" value="1" min="0" pattern="^[0-50]">
                 <button class="bcomprar add-cart">Agregar al carrito </button>
                 <h4 class="mt-5 mb-5">Detalles del Producto</h4>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. In labore ipsum atque eum magnam dolorem vitae eveniet dolore, modi ipsam, quis doloribus neque quos molestiae laborum distinctio dignissimos. Sint, neque!</span>
@@ -52,6 +52,9 @@
     <!---Navbar --->
     <footer id="footer"></footer>    
 </body>
-<script type ="module" src="/js/detalles-producto.js"></script>
-    
+<script type="module">
+    import {cambioImg} from '/js/detalles-producto.js'
+    window.cambioImg = cambioImg
+</script>
+<script type ="module" src="/js/detalles-producto.js"></script>    
 </html>

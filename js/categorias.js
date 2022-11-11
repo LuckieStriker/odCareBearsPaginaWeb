@@ -72,9 +72,9 @@ const products = [
                 "nombre": "Aretes Estrella ",
                 "precio": 199.00,
                 "descuento": 100.00,
-                "imagen": "AretesCiculares1.jpg",
-                "imagenSec": "AretesCirculares2.jpg",
-                "imagenTer": "AretesCirculares3.jpg",
+                "imagen": "Estrellitas.jpg",
+                "imagenSec": "Estrellitas3.jpg",
+                "imagenTer": "Estrellitas4.jpg",
                 "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
                 "id": 6
             },
@@ -109,12 +109,8 @@ const products = [
                 "imagenSec": "LunaPlaneta2.jpg",
                 "imagenTer": "LunaPlaneta3.jpg",
                 "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
-                "id": 7
+                "id": 9
             },
-
-            
-
-
 
         ]
     },
@@ -129,7 +125,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Alajero.jpg",
-                "id": 7
+                "id": 10
             },
             {
                 "categoria": "ceramica",
@@ -137,7 +133,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "CajitaPastel.jpg",
-                "id": 8
+                "id": 11
             },
             {
                 "categoria": "ceramica",
@@ -145,7 +141,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "PlatoLargo.jpg",
-                "id": 9
+                "id": 12
             },
             {
                 "categoria": "ceramica",
@@ -153,7 +149,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Taza.jpg",
-                "id": 10
+                "id": 13
             },
 
         ]
@@ -168,7 +164,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Pintura1.jpg",
-                "id": 11
+                "id": 14
             },
             {
                 "categoria": "otros",
@@ -176,7 +172,7 @@ const products = [
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Pintura1.jpg",
-                "id": 12
+                "id": 15
             }
 
         ]
@@ -228,6 +224,7 @@ function pintarProductos() {
 
         console.log(fila);
         html += fila;
+        document.getElementById('titulo').innerHTML = element.categoria;
     })
     document.getElementById('fila-1').innerHTML = html;
 }

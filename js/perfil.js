@@ -22,9 +22,10 @@ const mostrarDatos=()=>{
         }
 
 const datosPerson=()=>{
-    const usuarios = JSON.parse(localStorage.getItem("usuariosData"));
+    const usuarios = JSON.parse(localStorage.getItem("users"));
    
-    document.getElementById("name").innerText = usuarios.nombre
-    document.getElementById("email").innerText = usuarios.email
-    document.getElementById("numTel").innerText = usuarios.telefono
+    document.getElementById("name").innerText = usuarios[0].nombre
+    document.getElementById("email").innerText = usuarios[0].email
+    document.getElementById("numTel").innerText = usuarios[0].phone
 }
+        

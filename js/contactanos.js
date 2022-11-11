@@ -66,7 +66,7 @@ inputs.forEach((inp) => {
                                         inp.nextElementSibling.classList.add("hide");
                                 }else{
                                         statusInfo.telefono = false;
-                                        telefonoError.textContent = "Teléfono Incorrecto";
+                                        telefonoError.textContent = "Teléfono incorrecto";
                                         inp.classList.add("border-danger");
                                         inp.nextElementSibling.classList.remove("hide");
                                 }
