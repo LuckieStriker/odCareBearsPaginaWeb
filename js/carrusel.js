@@ -5,6 +5,7 @@
         const minPerSlide = 3
         let next = el.nextElementSibling
         for (let i=1; i<minPerSlide; i++) {
+            console.log(next);
             if (!next) {
                 // wrap carousel by using first child
                 next = items[0]

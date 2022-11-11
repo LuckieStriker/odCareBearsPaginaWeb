@@ -79,7 +79,7 @@ button {
     vertical-align: middle;
     text-decoration: none;
     font-family: 'Niramit', sans-serif;;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 
@@ -91,7 +91,7 @@ button.btn-registro{
     background: #fff0f0;
     border: 2px solid #b18597;
     border-radius: 0.85em;
-    padding: 1em .50em;
+    padding: 1em .20em;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);

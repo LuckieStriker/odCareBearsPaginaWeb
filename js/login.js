@@ -119,14 +119,6 @@ function ingresarLogin(){
 
 
 
-
-
-
-
-
-
-
-
 //Evento de botón
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
