@@ -12,7 +12,7 @@ button.btn{
     line-height: 80px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #F4B2B0; 
-    -webkit-text-stroke-color:  #f58682; ;
+    -webkit-text-stroke-color:  #f58682; 
     -webkit-text-stroke-width: 1px ;
 }
 

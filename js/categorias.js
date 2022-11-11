@@ -12,7 +12,7 @@ const products = [
                 "imagen": "OsoMorado.jpg",
                 "imagenSec": "OsoMorado1.jpg",
                 "imagenTer":"OsoMorado2.jpg",
-                "descripcion":"Mochilita cariñosita con correas ajustables y cierre trasero para guardar lo que desees",
+                "descripcion":"Mochilita cariñosita con correas ajustables y cierre trasero para guardar lo que desees.",
                 "id": 1
             },
             {
@@ -23,7 +23,7 @@ const products = [
                 "imagen": "OsoAzul.jpg",
                 "imagenSec": "OsoAzul1.jpg",
                 "imagenTer":"OsitoAzul3.jpg",
-                "descripcion":"Osito Dormiloncito, con su corazón intacto para que le des mucho amor, ojitos cansaditos y bonitos",
+                "descripcion":"Osito Dormiloncito, con su corazón intacto para que le des mucho amor, ojitos cansaditos y bonitos.",
                 "id": 2
             },
             {
@@ -34,7 +34,7 @@ const products = [
                 "imagen": "OsoCafe.jpg",
                 "imagenSec": "OsoCafe1.jpg",
                 "imagenTer": "OsoCafe2.jpg",
-                "descripcion":"Tiernosito café esta listo para que acaricies, y cuides de él",
+                "descripcion":"Tiernosito café esta listo para que acaricies y cuides de él.",
                 "id": 3
             },
             {
@@ -45,7 +45,7 @@ const products = [
                 "imagen": "OsoRosa.jpg",
                 "imagenSec": "OsoRosa1.jpg",
                 "imagenTer": "OsoRosa2.jpg",
-                "descripcion":"Osito con mucho amor para dar y que cuides de él, en perfecto estado. ",
+                "descripcion":"Osito con mucho amor para dar y que cuides de él, en perfecto estado.",
                 "id": 4
             },
             {
@@ -56,7 +56,7 @@ const products = [
                 "imagen": "OsoRosita.jpg",
                 "imagenSec": "OsoRosita1.jpg",
                 "imagenTer": "OsoRosita2.jpg",
-                "descripcion":"Bebé de los cariñositos, adaptable a mochila, sin daños",
+                "descripcion":"Bebé de los cariñositos, adaptable a mochila, sin daños.",
                 "id": 5
             },
 
@@ -75,7 +75,7 @@ const products = [
                 "imagen": "Estrellitas.jpg",
                 "imagenSec": "Estrellitas3.jpg",
                 "imagenTer": "Estrellitas4.jpg",
-                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
+                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azules y blancos, pequeños y discretos.",
                 "id": 6
             },
             {
@@ -86,7 +86,7 @@ const products = [
                 "imagen": "LunaPlaneta1.jpg",
                 "imagenSec": "LunaPlaneta2.jpg",
                 "imagenTer": "LunaPlaneta3.jpg",
-                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
+                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azules y blancos, pequeños y discretos.",
                 "id": 7
             },
             {
@@ -97,7 +97,7 @@ const products = [
                 "imagen": "LunaEstrellita.jpg",
                 "imagenSec": "LunaPlaneta2.jpg",
                 "imagenTer": "LunaPlaneta3.jpg",
-                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
+                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azules y blancos, pequeños y discretos.",
                 "id": 8
             },
             {
@@ -108,7 +108,7 @@ const products = [
                 "imagen": "NocheEstrellada1.jpg",
                 "imagenSec": "LunaPlaneta2.jpg",
                 "imagenTer": "LunaPlaneta3.jpg",
-                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azul y blanco, pequeños y discretos ",
+                "descripcion":"Hermosos aretes en dorado y azul en forma circular, con moños azules y blancos, pequeños y discretos.",
                 "id": 9
             },
 
@@ -125,7 +125,7 @@ const products = [
 
             {
                 "categoria": "ceramica",
-                "nombre": "Alajero",
+                "nombre": "Alhajero",
                 "precio": 199.00,
                 "descuento": 100.00,
                 "imagen": "Alajero.jpg",
@@ -228,6 +228,7 @@ function pintarProductos() {
 
         console.log(fila);
         html += fila;
+        document.getElementById('titulo').innerHTML = element.categoria;
     })
     document.getElementById('fila-1').innerHTML = html;
 }

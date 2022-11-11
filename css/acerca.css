@@ -5,7 +5,8 @@ html{
 #descripcion{
   color: #766c86;
   height: 156px;
-  overflow-y: hidden;        
+  overflow-y: hidden;  
+  font-family: 'Niramit', sans-serif;      
 }
 /* Fuerza a que el container no cambie su tamaño */
 .first-content{
@@ -70,4 +71,8 @@ html{
   #descripcion{
     overflow-y: scroll;
   }
+}
+
+.description{
+  font-family: 'Niramit', sans-serif;
 }
