@@ -212,8 +212,11 @@ nav > a {
     animation-iteration-count: 1;
     position: absolute;
     top: 25%;
-    right: -50px;
-    width: 500px;
+    /* right: -50px; */
+    width: 100%;
+  }
+  #chispa2{
+    display: none;
   }
 }
 
