@@ -184,12 +184,12 @@ const products = [
             },
             {
                 "categoria": "Otros",
-                "nombre": "Pintura de oso",
-                "precio": 299.00,
+                "nombre": "Pintura de pastelillo",
+                "precio": 1850.00,
                 "descuento": "precio"*0.1,
-                "imagen": "Pintura1.jpg",
-                "imagenSec": "Pintura2.jpg",
-                "imagenTer": "Pintura1.jpg",
+                "imagen": "PinturaPastelillo.jpg",
+                "imagenSec": "PinturaPastelillo1.jpg",
+                "imagenTer": "PinturaPastelillo2.jpg",
                 "descripcion":"Pintura con técnica sobre oleo.",
                 "id": 15
             }
