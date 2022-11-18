@@ -187,18 +187,46 @@ function guardarUsuario(){
 		
 	}  
 	//console.log(users);  
-	                                             
+	mandarDatos(nombre,email,password,phone)                                             
 }
 
+//Union de api con front
 
+function mandarDatos(nombre, email,password, telefono){
+	const data=
+	{
+		"fullName": nombre,
+		"email": email,
+		"password": password,
+		"telephone": telefono
+	}
+	
+ fetch('https://odcarebears-backend-production.up.railway.app/api/usuario',{
+		
+ 		method: "POST",
+		body: JSON.stringify(data),
+		headers: {
+			'Accept': 'application/json',
+			'Content-Type': 'application/json'
+		  },
+	  
+
+	})
+	
+	.then(respuesta=>respuesta.json())
+	.then(cuerpo=>{
+	  console.log("conexion exitosa siiuuuuuu")
+	})
+	.catch(error => console.log(error))
+  }
 
 
 //Evento de botón
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 	if (Object.values(statusInfo).every((value) => value === true)) {
-		guardarUsuario();
-		
+		guardarUsuario(),
+		//mandarDatos(inputs.values, email,telefono,password);
 		//Convirtiendo a Json la informacion del usuario
 		//const formDatos = Object.fromEntries(new FormData(e.target));
 
