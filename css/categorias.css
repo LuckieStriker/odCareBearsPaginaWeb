@@ -97,12 +97,3 @@ button.btn-historial:active::before {
     font-size: 20px;
     color: #766C83;
 }
-
-.imagenesX{
-    max-height: 216px;
-    max-width: 216px;
-    object-fit: cover;
-    min-width: 84px;
-  
-
-}
