@@ -51,7 +51,7 @@ const products = [
             {
                 "categoria": "Ositos",
                 "nombre": "Bebesito cariñosito rosita",
-                "precio": 350.00,
+                "precio": 145.00,
                 "descuento": "precio"*0.1,
                 "imagen": "OsoRosita.jpg",
                 "imagenSec": "OsoRosita1.jpg",
@@ -81,7 +81,7 @@ const products = [
             {
                 "categoria": "Accesorios",
                 "nombre": "Aretes Aros Luna-Planeta ",
-                "precio": 199.00,
+                "precio": 140.00,
                 "descuento": "precio"*0.1,
                 "imagen": "LunaPlaneta1.jpg",
                 "imagenSec": "LunaPlaneta2.jpg",
@@ -92,7 +92,7 @@ const products = [
             {
                 "categoria": "Accesorios",
                 "nombre": "Aretes Luna-Estrella ",
-                "precio": 199.00,
+                "precio": 130.00,
                 "descuento": "precio"*0.1,
                 "imagen": "LunaEstrellita.jpg",
                 "imagenSec": "LunaPlaneta2.jpg",
@@ -134,7 +134,7 @@ const products = [
             {
                 "categoria": "Ceramica",
                 "nombre": "Cajita pastel",
-                "precio": 590.00,
+                "precio": 450.00,
                 "descuento": "precio"*0.1,
                 "imagen": "CajitaPastel.jpg",
                 "imagenSec": "CajitaPastel1.jpg",
@@ -145,7 +145,7 @@ const products = [
             {
                 "categoria": "Ceramica",
                 "nombre": "Plato largo",
-                "precio": 475.00,
+                "precio": 350.00,
                 "descuento": "precio"*0.1,
                 "imagen": "PlatoLargo.jpg",
                 "imagenSec": "PlatoLargo2.jpg",
@@ -174,7 +174,7 @@ const products = [
             {
                 "categoria": "Otros",
                 "nombre": "Pintura de oso",
-                "precio": 299.00,
+                "precio": 1300.00,
                 "descuento": "precio"*0.1,
                 "imagen": "Pintura1.jpg",
                 "imagenSec": "Pintura2.jpg",
