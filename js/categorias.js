@@ -241,7 +241,7 @@ function pintarProductos() {
         fila = fila.replace("{precioSinDescuento}", element.precio);
         fila = fila.replaceAll("{id}", element.id);
 
-        console.log(fila);
+        //console.log(fila);
         html += fila;
 
         document.getElementById('titulo').innerHTML = element.categoria;
@@ -253,8 +253,8 @@ function pintarProductos() {
 
 pintarTitulo();
 pintarProductos();
-console.log(products)
-console.log(categoria);
+//console.log(products)
+//console.log(categoria);
 
 // Funcionalidad de agregar producto al carrito
 
