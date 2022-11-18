@@ -1,3 +1,4 @@
+import {navCartItemNumber} from "/js/nav.js";
 
 function cambioImg(smallImg) {
     let fullImg = document.getElementById("CajaImg");
@@ -27,6 +28,7 @@ myHeaders.append('Content-Type','application/json;charset=UTF-8');
             console.log(cuerpo)
      data=
     {
+        "id":cuerpo.idProducto,
         "nombre": cuerpo.nombreProducto,
         "descripcion": cuerpo.descripcion,
         "categoria": cuerpo.idCategoria.nombreCategoria,
@@ -53,6 +55,9 @@ X.innerHTML = `
                 <h4 class="mt-5 mb-5">Detalles del Producto</h4>
                 <span>${element.descripcion}`
                 CajaImg(element);
+                document.querySelectorAll(".add-cart").forEach(button => {
+                    button.addEventListener('click', addToCart);
+                });
 };
 function CajaImg(element){
 let ventana=document.getElementById("miVentana");
@@ -72,27 +77,13 @@ ventana.innerHTML = `
 };
 
 
-/**function pintarProductos() {
-    let html = "";
-    categoria.productos.forEach(element => {
-        let fila = '<div class="col-md-3"><a target="_blank"><img src="{imagen}" class="img-fluid rounded-4" alt=""></a><p align="center">{nombre}<br> {precioConDescuento}MXN   <s>{precioSinDescuento}MXN</s></p></div>';
-        fila = fila.replace("{imagen}", '../assets/img/' + categoriaPath + '/' + element.imagen);
-        fila = fila.replace("{nombre}", element.nombre);
-        fila = fila.replace("{precioConDescuento}", element.precio - element.descuento);
-        fila = fila.replace("{precioSinDescuento}", element.precio);
-        console.log(fila);
-        html += fila;
-    })
-    document.getElementById('fila-1').innerHTML = html; modificar para que quede en el mismo formato 
-    */
-
-    // Funcionalidad de agregar producto al carrito
 
     document.querySelectorAll(".add-cart").forEach(button => {
         button.addEventListener('click', addToCart);
     });
 
     function addToCart() {
+        console.log("agregar al carrito")
         let newCart = [];
         let flag = false;
         let productId = this.name;
