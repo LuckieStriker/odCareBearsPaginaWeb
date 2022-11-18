@@ -16,13 +16,13 @@ const mostrarDatos=()=>{
 
         let table = document.getElementById("tablita");
         for (let i =0; i < products[0].productos.length; i++) {
-        table.innerHTML += `<tr><td><img class="img-hist rounded" src="/assets/img/Ositos/${products[0].productos[i].imagen}"></td> <td>${products[0].productos[i].nombre}</td> <td>$${products[0].productos[i].precio} MXN </td></tr>`;
+        table.innerHTML += `<tr><td><img class="img-hist rounded" src="${products[0].productos[i].imagen}"></td> <td>${products[0].productos[i].nombre}</td> <td>$${products[0].productos[i].precio} MXN </td></tr>`;
         }
     
         }
 
 const datosPerson=()=>{
-    const usuarios = JSON.parse(localStorage.getItem("users"));
+    const usuarios = JSON.parse(localStorage.getItem("users")); 
    
     document.getElementById("name").innerText = usuarios[0].nombre
     document.getElementById("email").innerText = usuarios[0].email
