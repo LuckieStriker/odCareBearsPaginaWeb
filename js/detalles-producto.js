@@ -47,7 +47,7 @@ let X = document.getElementById("miProducto");
 X.innerHTML = `
                 <h6>Home / ${element.categoria}</h6>
                 <h3 class="py-4">${element.nombre}</h3>
-                <h2>$${element.precio-element.descuento} <s>$${element.precio}</s></h2 >
+                <h2>$${Math.round(element.precio-element.descuento)} <s>$${element.precio}</s></h2 >
                 <input type="number" id="cantidadArticulos" value="1" min="0" pattern="^[0-50]">
                 <button class="bcomprar add-cart" name=${element.id}>Agregar al carrito </button>
                 <h4 class="mt-5 mb-5">Detalles del Producto</h4>
