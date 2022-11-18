@@ -155,7 +155,7 @@ const products = [
             },
             {
                 "categoria": "Ceramica",
-                "nombre": "Alajero 'My Melody'",
+                "nombre": "Alhajero 'My Melody'",
                 "precio": 199.00,
                 "descuento": "precio"*0.1,
                 "imagen": "Taza.jpg",
