@@ -310,13 +310,13 @@ function addToCart() {
     let flag = false;
     let productId = this.name;
     let cart = {id: productId, cant: this.value}
-    console.log(cart);
+    //console.log(cart);
     let storedCart = JSON.parse(localStorage.getItem("productosCarrito"));
     if (storedCart.length > 0){
     //storedCart.push(cart)}
     newCart = storedCart.slice();
     newCart.forEach(product => {
-        console.log(product.id);
+        //console.log(product.id);
         if(product.id == productId){
              product.cant = parseInt(product.cant) + parseInt(cart.cant);
              flag = true;
