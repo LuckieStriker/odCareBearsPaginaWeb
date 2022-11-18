@@ -1,6 +1,6 @@
 /* General */
-html {
-  overflow-x: hidden;
+html, body, head {
+  max-width: 100%;
 }
 h2, h3{
   display: block;
